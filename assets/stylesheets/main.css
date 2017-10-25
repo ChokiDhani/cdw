@@ -3253,7 +3253,7 @@ table span {
     color: rgb(137, 102, 51);
 }
 
-.tab_content_image img {
+#ticket .tab_content_image img {
     width: 100%;
 }
 
