@@ -1313,6 +1313,11 @@ hr {
     color: rgb(137, 102, 51);
 }
 
+#aboutusclick {
+    position: relative;
+    top: -85px;
+}
+
 .aboutuscontent {
     margin-top: 50px;
 }
