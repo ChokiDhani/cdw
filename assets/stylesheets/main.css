@@ -3253,6 +3253,10 @@ table span {
     color: rgb(137, 102, 51);
 }
 
+.tab_content_image img {
+    width: 100%;
+}
+
 .corporatecontent {
     margin: 0px;
     margin-bottom: 35px;
