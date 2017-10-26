@@ -1126,7 +1126,7 @@ hr {
     width: 12%;
     bottom: -2px;
     left: 44%;
-    border: 1px thin white;
+    border: 0.5px solid white;
 }
 
 #footer .footsec:after {
