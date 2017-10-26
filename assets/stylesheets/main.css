@@ -1123,9 +1123,9 @@ hr {
 #footer .foothead:after {
     content: "";
     position: absolute;
-    width: 14%;
+    width: 12%;
     bottom: -2px;
-    left: 43%;
+    left: 44%;
     border: 1px solid white;
 }
 
