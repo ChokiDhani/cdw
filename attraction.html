@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="assets/stylesheets/main.css">
     <!-- Javascript -->
     <script src="assets/javascripts/vendor/head.core.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
     <script src="assets/javascripts/vendor/modernizr.custom.js"></script>
 </head>
 
@@ -36,10 +35,11 @@
         <div class="overlay overlay-scale">
             <div>
                 <div class="container">
+                    <div class="menu_title text-left"> <a href="#">MENU</a> </div>
                     <div class="menu_logo text-center">
                         <a href="#"> <img src="assets/images/menu_overlay_logo.png" alt="logo"> </a>
                     </div>
-                    <button type="button" id="closeMenu" class="overlay-close">Close <i class="fa fa-times" aria-hidden="true"></i> </button>
+                    <button type="button" id="closeMenu" class="overlay-close"> <i class="fa fa-times" aria-hidden="true" style="font-size: 35px;"></i> </button>
                     <div class="fat-nav__wrapper">
                         <div class="container">
                             <div class="row">
@@ -75,20 +75,25 @@
                 </div>
             </div>
         </div>
-        <div class="logo-wrapper">
-            <div class="logo1"> <img src="assets/images/logo1.png" alt="logo"> </div>
-        </div>
-        <div id="logo2"> <img src="assets/images/logo2.png" alt="logo"> </div>
+        <a href="index.html">
+            <div class="logo-wrapper">
+                <div class="logo1"> <img src="assets/images/logo1.png" alt="logo"> </div>
+            </div>
+            <div id="logo2"> <img src="assets/images/logo2.png" alt="logo"> </div>
+        </a>
         <div id="topbar">
             <div class="container">
                 <div class="row">
                     <div class="col-6 text-left menu_icon">
-                        <div id="trigger-overlay" class="menu"> <span>
+                        <!--  <div id="trigger-overlay" class="menu"> <span>
                     <i class="fa fa-bars btn" aria-hidden="true"></i>
                     <span class="menutext">MENU</span> </span>
-                        </div>
-                    </div>
-                    <div class="col-6 text-right"> <a href="index.html"><span class="optbar optgap">HOME</span></a> <a href="#"><span class="optbar optgap">ABOUT US</span></a> <a href="contact.html"><span class="optgap">CONTACT US</span></a> </div>
+                        </div>--><a href="#aboutUs"><span class="optbar optgap">ABOUT US</span></a> <a href="contact.html"><span class="optgap">CONTACT US</span></a> </div>
+                    <div class="col-6 text-right"> <a href="#"><span class="optbar optgap"><i class="fa fa-facebook" aria-hidden="true"></i></span></a> <a href="#"><span class="optbar optgap"><i class="fa fa-twitter" aria-hidden="true"></i>
+</span>
+</a><a href="#"><span class="optgap"><i class="fa fa-youtube-play" aria-hidden="true"></i>
+</span>
+</a></div>
                 </div>
             </div>
         </div>
@@ -121,10 +126,10 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active"> <img class="w-100 " src="assets/images/blueperma.jpg" alt="First slide"> <img class="w-101 " src="assets/images/attractionback.jpg" alt="First slide"> </div>
-                <div class="carousel-item"> <img class="w-100 " src="assets/images/blueperma.jpg" alt="Second slide"> <img class="w-101 " src="assets/images/attractionback.jpg" alt="Second slide"></div>
-                <div class="carousel-item"> <img class="w-100 " src="assets/images/blueperma.jpg" alt="Third slide"><img class="w-101" src="assets/images/attractionback.jpg" alt="Third slide"> </div>
-                <div class="carousel-item"> <img class="w-100 " src="assets/images/blueperma.jpg" alt="Fourth slide"> <img class="w-101 " src="assets/images/attractionback.jpg" alt="Fourth slide"> </div>
+                <div class="carousel-item active"> <img class="w-100 " src="assets/images/IMG_7110.jpg" alt="First slide"> <img class="w-101 " src="assets/images/attractionback.jpg" alt="First slide"> </div>
+                <div class="carousel-item"> <img class="w-100 " src="assets/images/IMG_7110.jpg" alt="Second slide"> <img class="w-101 " src="assets/images/attractionback.jpg" alt="Second slide"></div>
+                <div class="carousel-item"> <img class="w-100 " src="assets/images/IMG_7110.jpg" alt="Third slide"><img class="w-101" src="assets/images/attractionback.jpg" alt="Third slide"> </div>
+                <div class="carousel-item"> <img class="w-100 " src="assets/images/IMG_7110.jpg" alt="Fourth slide"> <img class="w-101 " src="assets/images/attractionback.jpg" alt="Fourth slide"> </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> <span>
             <img src="assets/images/arrowleft.png" alt="">
@@ -468,18 +473,7 @@
     <footer id="footer" class="text-justify">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 footsec">
-                    <h6 class="foothead">Chokhi Dhani</h6>
-                    <ul class="optlist">
-                        <li><a href="#">Dining</a></li>
-                        <li><a href="attraction.html">Attraction</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="ticketprice.html">Ticket Price</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="corporate.html">Corporate Parties</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 footsec">
+                <div class="col-12 footsec">
                     <h6 class="foothead">Assistance</h6>
                     <ul class="optlist">
                         <li><a href="#">Privacy Policy</a></li>
@@ -488,7 +482,9 @@
                         <li><a href="#">Legal Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-4 footlast">
+            </div>
+            <div class="row">
+                <div class="col-12 footlast">
                     <h6 class="foothead">Keep in touch</h6>
                     <ul class="optlist">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
