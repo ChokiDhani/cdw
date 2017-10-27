@@ -38,7 +38,7 @@
 */
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     margin: 0px;
@@ -894,24 +894,26 @@ section {
         }
     }
     #header-mobile .overlay_menu_list:after {
-    content: "";
+     content: "";
     display: table;
-    background-image: url(../images/overlay_li_border.png);
+    background-image: url(../../../border_overlay.png);
+    background-repeat: no-repeat;
     position: absolute;
     right: 12%;
-    top: 40px;
-    height: 95%;
+    top: 70px;
+    height: 100%;
     width: 2px;
     }
 
     #header-mobile .overlay_menu_list2:after {
     content: "";
-    display: table;
-    background-image: url(../images/overlay_li_border.png);
+    display: table;   
     position: absolute;
-    left: 14%;
-    top: 40px;
-    height: 95%;
+    left: 14%;    
+    background-image: url(../../../border_overlay.png);
+    background-repeat: no-repeat;    
+    top: 70px;
+    height: 100%;
     width: 2px;
     }
 /* Header Ends ----------*/
