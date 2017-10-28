@@ -38,7 +38,7 @@
 */
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden!important;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     margin: 0px;
@@ -419,12 +419,12 @@ section {
       font-size: 25px;
     }
  }
-@media (max-width:400px){
+/*@media (max-width:400px){
     section:after{
         margin-left: -150px;
         width:90%;
     }
-}
+}*/
 /* Logo ----------*/
 .logo1.img_scroll {
     margin-left: -35px;
@@ -716,7 +716,7 @@ section {
 }
 
 
-@media (max-width:890px){
+@media (max-width:767px){
     #header{
         display: none;;
     }
@@ -725,10 +725,16 @@ section {
     #header_mobile{
         display: block;
     }
+    #header_mobile .overlay{
+    background-image: url("../images/mobile_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    }
     #header_mobile .logo_mobile{
         position: absolute;
         left: 50%;
-        margin-left: -102px;
+        top: 72px;
+        margin-left: -80px;
         z-index: 100;
     }
     #trigger-overlay{
@@ -755,15 +761,16 @@ section {
     -webkit-backface-visibility: hidden;
     text-align: center;
     }
-
+    #header_mobile .overlay_menu_list2 i{
+        padding-right: 3px;
+    }
     #header_mobile .overlay ul li a {
     color: #4b3618;
     line-height: 40px;
     margin-bottom: 10px;
     font-size: 20px;
     cursor:pointer;
-    border-bottom: 1px solid #4b3618;
-    }
+     }
     @media (max-width:640px){
         #header_mobile .overlay ul li a {
             font-size: 16px
@@ -779,6 +786,15 @@ section {
         .fat-nav__wrapper{
             margin-top: 0px;
         }
+    }
+    @media(max-width:360px){
+        #header_mobile .logo_mobile{
+        position: absolute;
+        left: 50%;
+        top: 72px;
+        margin-left: -53px;
+        z-index: 100;
+    }
     }
     .overlay .overlay-close {
     width: 50px;
@@ -800,22 +816,24 @@ section {
     #header_mobile .overlay_menu_list:after {
     content: "";
     display: table;
-    background-image: url(../images/overlay_li_border.png);
+    background-image: url(../images/border_overlay.png);
     position: absolute;
     right: 12%;
-    top: 40px;
-    height: 95%;
+    background-repeat: no-repeat;
+    top: 60px;
+    height: 100%;
     width: 2px;
     }
 
     #header_mobile .overlay_menu_list2:after {
     content: "";
     display: table;
-    background-image: url(../images/overlay_li_border.png);
+    background-image: url(../images/border_overlay.png);
     position: absolute;
     left: 14%;
-    top: 40px;
-    height: 95%;
+    top: 60px;
+    background-repeat: no-repeat;
+    height: 100%;
     width: 2px;
     }
     }
@@ -823,19 +841,27 @@ section {
 /*mobile-header*/
 #header-mobile{
     background-color: #896633;
-    min-height: 90px;
+    min-height: 70px;
+    display: none;
 }
-#header-mobile img{
-    height: 75px;
+@media(max-width:767px){
+    #header-mobile{
+        display: block;
+    }
 }
+
 #header-mobile .logo_mobile{
     position: absolute;
-    top: 10px;
+    top: 3px;
     right: 25px;
 }
+#header-mobile .overlay_menu_list2 i{
+        padding-right: 3px;
+    }
+
 #header-mobile .mobile-menu{
     position: absolute;
-    top: 20px;
+    top: 17px;
     left: 25px;
 }
 #header-mobile .mobile-menu i{
@@ -843,6 +869,12 @@ section {
     color: white;
     font-weight: 500;
         cursor: pointer;
+}
+#header-mobile .mobile-menu .btn{
+    padding: 0px 5px;
+}
+#header-mobile .logo_mobile img{
+    height: 60px;
 }
 #header-mobile .overlay ul li {
     display: block;
@@ -854,15 +886,18 @@ section {
     -webkit-backface-visibility: hidden;
     text-align: center;
     }
-
+#header-mobile .overlay{
+    background-image: url("../images/mobile_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    }
     #header-mobile .overlay ul li a {
     color: #4b3618;
     line-height: 40px;
     margin-bottom: 10px;
     font-size: 20px;
     cursor:pointer;
-    border-bottom: 1px solid #4b3618;
-    }
+      }
     @media (max-width:640px){
         #header-mobile .overlay ul li a {
             font-size: 14px;
@@ -881,7 +916,7 @@ section {
     }
 @media (max-width:480px){
         #header-mobile .overlay ul li a {
-            font-size: 12px;
+            font-size: 11px;
             line-height: 25px;
     }
             #header-mobile .pad{
@@ -890,28 +925,33 @@ section {
     }
     @media (max-width:360px){
        #header_mobile .overlay ul li a {
-            font-size: 11px;
+            font-size: 10px;
+        }
+        #header_mobile .overlay_menu_list2:after{
+            left: 8%;
         }
     }
     #header-mobile .overlay_menu_list:after {
     content: "";
     display: table;
-    background-image: url(../images/overlay_li_border.png);
+    background-image: url(../images/border_overlay.png);
     position: absolute;
     right: 12%;
-    top: 40px;
-    height: 95%;
+    top: 60px;
+    background-repeat: no-repeat;
+    height: 100%;
     width: 2px;
     }
 
     #header-mobile .overlay_menu_list2:after {
     content: "";
     display: table;
-    background-image: url(../images/overlay_li_border.png);
+    background-image: url(../images/border_overlay.png);
     position: absolute;
     left: 14%;
-    top: 40px;
-    height: 95%;
+    background-repeat: no-repeat;
+    top: 60px;
+    height: 100%;
     width: 2px;
     }
 /* Header Ends ----------*/
@@ -1306,12 +1346,15 @@ hr {
 #footer .link{
     display: none;
 }
+
 @media (max-width:767px){
     
 #footer .link{
     display: block;
     position: absolute;
     right: 0px;
+    margin-right: 5px;
+    border-radius: 2px 2px 0px 0px;
     bottom: 0px;
     font-size: 25px;
     padding: 0px 5px;
@@ -1656,7 +1699,7 @@ button {
 }
 @media (max-width:360px){
     .modal-wrap .modal-header .modal-title{
-        font-size: 28px;
+        font-size: 26px;
     }
 }
 button:hover {
@@ -1673,7 +1716,10 @@ button a {
     color: white;
     font-size: 15px;
 }
-
+#closeMenu:hover i{
+    padding-left: 0px;
+    transition: 0s;
+}
 button i {
     margin-left: 8px;
 }
@@ -2182,7 +2228,8 @@ button:hover a {
 }
 
 #section_4 .mobile-fac .factabs {
-    width: max-content;
+    width: fit-content;
+    width: -moz-fit-content;
     margin: 0 auto;
 }
 
@@ -2280,6 +2327,7 @@ button:hover a {
     }
     #section_4 .facheading h3 {
         font-size: 20px;
+        margin-left: 10px;
     }
     #section_4 ul li{
         font-size: 14px;
@@ -2857,6 +2905,9 @@ h3 {
         margin: 0px 5%;
         max-height: 275px;
     }
+    .part .head h3{
+        font-size: 27px;
+    }
 }
 
 
@@ -2880,6 +2931,9 @@ h4 {
     color: rgb(137, 102, 51);
     margin-bottom: 0px;
 }
+#dining:after{
+    display: none;
+}
 
 .diningcontent {
     margin: 0px;
@@ -2896,6 +2950,9 @@ h4 {
     }
     .pc_dining {
         display: none;
+    }
+    .diningcontent{
+        margin-top: 0px;
     }
 }
 
@@ -2967,6 +3024,12 @@ h4 {
 @media (max-width:767px) {
     .details {
         display: none;
+    }
+    #restro .first{
+        margin-top: 0px;
+    }
+    .restro-container .heading{
+        margin-top: 5px;
     }
     .restaurant_image {
         position: relative;
@@ -3495,7 +3558,11 @@ table span {
 .icon i {
     font-size: 75px;
 }
-
+@media(max-width:767px){
+    .icon{
+        margin-top: 30px;
+    }
+}
 .contact_details h4 {
     color: black;
     font-size: 16px;
@@ -3773,6 +3840,9 @@ table span {
 @media (max-width:480px){
     #testimonial #carouselExampleIndicators2{
         min-height: 350px;
+    }
+    #testimonial button{
+        padding: 1px 3px;
     }
 }
 @media (max-width:400px){
