@@ -724,7 +724,7 @@ section {
         display: inline;
     }
     #header_mobile .mobile-menu {
-        position: absolute;
+        position: fixed;
         right: 10px;
         top: 0px;
         z-index: 800;
@@ -1047,11 +1047,14 @@ section {
     right: 20px;
     top: 5px;
 }
+#lightBox{
+    background-color: rgba(0,0,0,0.8) !important;
+}
 #lightBox #nextImage {
     background-image: url("../images/arrowright.png");
 }
 #lightBox .image {
-    background-image: url("../images/load.gif");
+    background-image: url("");
 }
 #lightBox .container {
     display: block;
@@ -1587,8 +1590,8 @@ button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0s ease-in-out;
+    transition: all 0s ease-in-out;
 }
 .modal-wrap.visible {
     opacity: 1;
@@ -1597,6 +1600,8 @@ button {
 .modal-wrap .modal-container {
     background: #fff;
     margin: 1em;
+    border: 1px solid white;
+    border-radius: 10px 10px;
     max-width: 100%;
     width: 600px;
     z-index: 100;
@@ -1632,6 +1637,7 @@ button {
 .modal-wrap .modal-content {
     float: left;
     margin: 0;
+    border-radius: 10px 10px;
     padding: 15px 30px;
     width: 100%;
 }
@@ -2906,6 +2912,8 @@ h4 {
 }
 .restaurants {
     width: 100%;
+    position: relative;
+    overflow: hidden;
     margin-bottom: 50px;
 }
 .restaurant_image {
@@ -2954,6 +2962,7 @@ h4 {
     .details {
         margin-top: 35px;
         max-height: 280px;
+        min-height: 240px;
         padding: 0px 40px;
     }
     
@@ -2967,10 +2976,21 @@ h4 {
     }
 }
 @media (max-width:767px) {
-    .details {
-        display: none;
+    .details{
+        width: auto;
+        margin-top: 0px;
+        background-color: rgba(137,102,51,0.7);
+        min-height: 240px;
+        position: absolute;
+        top: -100%; 
+        -webkit-transition: 1s;
+        -o-transition:1s ;
+        transition:1s ;
     }
-    
+    .restaurants:hover .details{
+        top: 15%;
+    }
+        
     #restro .first {
         margin-top: 0px;
     }
@@ -2987,27 +3007,31 @@ h4 {
         display: block;
         position: absolute;
         width: 90%;
-        bottom: 0px;
+        bottom: 10px;
         margin: 1% 4%;
     }
     
-    .nxt h6 {
+    .nxt span h6 {
         padding: 10px;
         background-color: rgba(131, 102, 51, 0.8);
     }
-    
-    .nxt a {
-        text-decoration: none;
-        color: white;
-        margin: 0px 25px;
+   .nxt .title {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    margin: 0px 0px;
+    }
+    .restaurants:hover .nxt{
+        display: none;
     }
     
-    .nxt span {
+    .nxt .arrow {
         margin-left: 20px;
         color: white;
         position: absolute;
         right: 25px;
-        top: 23px;
+        top: 0px;
         font-style: normal;
         font-family: monospace;
         font-weight: bold;
@@ -3019,6 +3043,9 @@ h4 {
     }
 }
 @media (max-width:480px) {
+    .details{
+        min-height: 260px;
+    }
     .restro-container {
         max-width: 91%;
     }
@@ -3190,10 +3217,11 @@ table span {
     text-align: left;
     border: 1px solid rgb(137, 102, 51);
 }
-#corporate a {
+#corporate a,#ticket a {
     color: #896633;
     font-size: 18px;
-    padding: 14px;
+    display: block;
+    padding: 14.5px;
 }
 #corporate .set {
     max-width: fit-content;
@@ -3238,7 +3266,7 @@ table span {
     z-index: 10;
 }
 .set img {
-    height: 75%;
+   /* height: 75%;*/
     width: 75%;
 }
 .nav-pills .nav-link {
@@ -3363,7 +3391,7 @@ table span {
         position: relative;
         background-color: transparent;
         border-bottom: 1px solid #896633;
-        padding: 0px 10px;
+        padding: 0px 0.5px;
         height: 80px;
     }
     
@@ -3373,25 +3401,25 @@ table span {
     
     #corporate .down_icon {
         position: absolute;
-        top: 25px;
-        right: 10px;
+        top: 0px;
+        right: -25%;
         font-size: 30px;
     }
     
     #corporate .set2 {
         min-width: auto;
         padding: 9px;
-        font-size: 18px;
+      /*  font-size: 18px;*/
     }
     
     #corporate .tab_details_end {
         margin-top: 10px;
     }
     
-    .set img {
+   /* .set img {
         height: 85%;
         width: 75%;
-    }
+    }*/
 }
 @media(max-width:480px) {
     #corporate .tab_details_intro p {
@@ -3411,18 +3439,18 @@ table span {
     }
     
     #corporate .set2 {
-        font-size: 13px;
+     /*   font-size: 13px;*/
         padding: 9px 0px
     }
     
-    .set img {
+    /*.set img {
         height: 75%;
         width: 70%;
-    }
+    }*/
 }
 @media(max-width:360px) {
     #corporate .set2 {
-        font-size: 10px;
+       /* font-size: 10px;*/
         padding: 4px 0px
     }
 }
@@ -3867,7 +3895,7 @@ table span {
 
 /*TickePrice Page ---------*/
 #ticket {
-    padding-top: 46px;
+    padding-top: 75px;
     text-align: center;
     color: rgb(137, 102, 51);
 }
@@ -3907,11 +3935,7 @@ table span {
     text-align: left;
     border: 1px solid rgb(137, 102, 51);
 }
-#ticket a {
-    color: #896633;
-    font-size: 18px;
-    padding: 14px;
-}
+
 #ticket .tab_content_image img {
     width: 100%;
 }
@@ -4034,7 +4058,7 @@ table span {
         position: relative;
         background-color: transparent;
         border-radius: 0px;
-        padding-left: 6px;
+        padding: 0px;
         height: 80px;
     }
     
@@ -4044,13 +4068,13 @@ table span {
     
     #ticket .set2 {
         padding: 11px;
-        font-size: 18px;
+   /*     font-size: 18px;*/
     }
     
     #ticket .set img {
         padding-left: 10px;
-        height: 85%;
-        width: 75%;
+      /*  height: 85%;
+        width: 75%;*/
     }
     
     #ticket .mobile_wrap .card-body {
@@ -4068,8 +4092,8 @@ table span {
     #ticket .down_icon {
         color: #896633;
         position: absolute !important;
-        left: 90% !important;
-        top: 30px;
+        left: 108% !important;
+        top: 7px;
         font-size: 30px;
     }
     
@@ -4093,5 +4117,101 @@ table span {
 @media(max-width:480px) {
     .corporateheading h2 {
         font-size: 25px;
+    }
+}
+#ticket h5,#corporate h5{
+    font-family: 'Cinzel',serif;
+}
+@media(max-width:480px){
+    #ticket h5,#corporate h5{
+    font-size: 15px;
+}
+}
+
+.collapsibleTrue {
+    background: #896633;
+}
+.collapsibleTrue .nav_inactive{
+    display: none;
+}
+.collapsibleTrue .nav_active{
+    display: block;
+    width: 75%;
+  
+}
+.collapsibleTrue .set2{
+    color: #fff;
+}
+#ticket .collapsibleTrue .set2 i{
+    color: #fff;
+}
+/*Ticket Page Ends*/
+/*Other Page*/
+.points{
+    margin-top: 20px;
+}
+.points li{
+    margin: 0px;
+    padding: 0px;
+    list-style: circle;
+    font-size: 18px;
+    font-family: 'Cinzel',serif;
+    margin-bottom: 10px;
+}
+@media (max-width:767px){
+    .points li{
+        font-size: 15px;
+    }
+}
+/*site_map*/
+#site .link_title{
+    background-color: #896633;
+    opacity: 0.9;
+    color: white;
+    padding-top: 6px;
+    text-align: center;
+}
+#site .site_map_links{
+    margin-top: 20px;
+}
+#site h4{
+    display: inline-block;
+    font-size: 20px;
+    
+}
+#site ul{
+    padding:20px 0px 0px 30px;
+    text-align: justify;
+     color: #896633;
+}
+#site ul li a{
+     color: #4b3618;
+    line-height: 28px;
+    
+}
+#site ul li i{
+    font-size: 8px;
+    color: #4b3618;
+    padding-right: 5px;
+}
+#site .social_links i{
+ font-size: 16px;
+}
+@media(max-width:767px){
+  #site .site_map_links{
+    margin-top: 0px;
+  }  
+    #site ul{
+        padding-left: 0px;
+        }
+    #site ul li i{
+      padding-right: 0px;
+    }
+    
+}
+@media(max-width:580px){
+    #site ul li{
+        padding-left: 40%;
+      
     }
 }

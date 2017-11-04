@@ -36,7 +36,7 @@
             setTimeout(function () {
                 classie.add(overlay, 'open');
                 classie.remove(overlay, 'close');
-            }, 20);
+            }, 0);
         }
     }
     triggerBttn.addEventListener('click', toggleOverlay);
