@@ -844,6 +844,9 @@ section {
     background-color: #896633;
     min-height: 70px;
     display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 @media(max-width:767px) {
@@ -3264,6 +3267,10 @@ table span {
     #corporate {
         padding-top: 0px;
     }
+    
+    .corporate_container {
+        padding-top: 70px;
+    }
 }
 .corporatecontent {
     margin: 0px;
@@ -3672,7 +3679,7 @@ table span {
 }
 @media (max-width:767px) {
     #gallery {
-        padding-top: 40px;
+        padding-top: 85px;
     }
 }
 #content .gallery_container .wrapper {
