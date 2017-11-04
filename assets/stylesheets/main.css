@@ -1346,6 +1346,11 @@ hr {
 #footer a {
     color: white;
     text-decoration: none;
+    transition: 1s ease-in-out;
+}
+#footer a:hover {
+    font-weight: bold;
+    transition: 1s ease-in-out;
 }
 #footer i {
     padding-right: 12px;
@@ -1435,18 +1440,23 @@ hr {
 .optlist li:last-child {
     border-right: none;
 }
+
+/*
 #footer .fbook:hover {
     color: #4267B2;
 }
+
 #footer .insta:hover {
     color: #DC2F7F;
 }
+
 #footer .tweet:hover {
     color: #1DA1F2;
 }
+
 #footer .ytube:hover {
     color: #f00;
-}
+}*/
 
 /*Footer Ends*/
 
@@ -1598,6 +1608,9 @@ hr {
 #content .break {
     display: none;
 }
+.moreexperience {
+    font-size: 15px;
+}
 @media (max-width:767px) {
     #content .break {
         display: block;
@@ -1641,7 +1654,7 @@ button {
     top: 0;
     visibility: hidden;
     width: 100%;
-    z-index: 100;
+    z-index: 200;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2736,7 +2749,7 @@ h3 {
     content: "";
     display: block;
     position: absolute;
-    top: 20px;
+    top: 3px;
     left: 50%;
     width: 1.2px;
     height: 35px;
