@@ -1297,6 +1297,7 @@ hr {
 }
 .logos ul li {
     display: inline-block;
+    margin-top: -6px;
 }
 .logos a .fb {
     background-position: 0px 0px;
