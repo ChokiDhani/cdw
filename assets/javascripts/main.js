@@ -23,6 +23,25 @@ $(document).ready(function () {
         }
     });
     $('.lightBox').lightBox();
+    var owl1 = $('#owl-carousel1');
+    owl1.owlCarousel({
+        items: 1
+        , loop: true
+        , autoplay: true
+        , autoplayTimeout: 5000
+        , responsiveClass: true
+        , responsive: {
+            0: {
+                items: 1
+            , }
+            , 768: {
+                items: 1
+            , }
+            , 992: {
+                items: 1
+            , }
+        }
+    });
     var owl = $('.owl-carousel');
     owl.owlCarousel({
         items: 3
@@ -43,6 +62,7 @@ $(document).ready(function () {
             , }
         }
     });
+    
 });
 var disappear = function () {
     document.getElementById('close').onclick = function () {
