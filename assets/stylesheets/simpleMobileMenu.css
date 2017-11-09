@@ -88,7 +88,7 @@ header {
 @media all and (max-width:768px) {
     .smobitrigger,
     .mnuclose {
-        display: inline-block
+        display: inline-block;
     }
     .smobitrigger {
         color: #fff;
