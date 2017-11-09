@@ -7,22 +7,44 @@ $(document).ready(function () {
         $("#topbar").removeClass('activeMenu')
             /*$('body').css('overflow-y', 'visible');*/
     });
-    $(".collapsible").click(function(){
+    $(".collapsible").click(function () {
         $('.collapsible').removeClass("collapsibleTrue");
-       $(this).toggleClass("collapsibleTrue"); 
+        $(this).toggleClass("collapsibleTrue");
     });
-    $("#open-modal").click(function(){
-       $("body").css("overflow","hidden"); 
+    $("#open-modal").click(function () {
+        $("body").css("overflow", "hidden");
     });
-    $(window).scroll(function(){
-       if($(window).scrollTop()>480){
-           $("#header_mobile .mobile-menu").css("background-color","#896633");
-       } 
-        else{
-            $("#header_mobile .mobile-menu").css("background-color","transparent");
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 480) {
+            $("#header_mobile .mobile-menu").css("background-color", "#896633");
+        }
+        else {
+            $("#header_mobile .mobile-menu").css("background-color", "transparent");
         }
     });
     $('.lightBox').lightBox();
+    /*change start*/
+    var owl1 = $('#owl-carousel1');
+    owl1.owlCarousel({
+        items: 1
+        , nav: true
+        , loop: true
+        , autoplay: true
+        , autoplayTimeout: 5000
+        , responsiveClass: true
+        , responsive: {
+            0: {
+                items: 1
+            , }
+            , 768: {
+                items: 1
+            , }
+            , 992: {
+                items: 1
+            , }
+        }
+    });
+    /*change end*/
     var owl1 = $('#owl-carousel1');
     owl1.owlCarousel({
         items: 1
@@ -62,7 +84,6 @@ $(document).ready(function () {
             , }
         }
     });
-    
 });
 var disappear = function () {
     document.getElementById('close').onclick = function () {
@@ -84,5 +105,11 @@ openModal.addEventListener('click', function () {
 // Close modal event listener
 closeModal.addEventListener('click', function () {
     modal.classList.remove('visible');
-    $("body").css("overflow","scroll");
+    $("body").css("overflow", "scroll");
+});
+/*toggle*/
+$(document).ready(function () {
+    $(".navigation ul li").click(function () {
+        $('.navigation ul li > ul').not($(this).children("ul ").toggle()).hide();
+    });
 });

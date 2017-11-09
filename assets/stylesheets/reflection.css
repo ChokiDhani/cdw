@@ -1,4 +1,3 @@
-
 /*tilting image animation*/
 
 .reflection-container {
@@ -43,11 +42,11 @@
 }
 
 .reflection-container .reflection-grid-cell-1:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(-10deg);
+    transform: rotateX(5deg) rotateY(-5deg);
 }
 
 .reflection-container .reflection-grid-cell-1:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(5%);
 }
 
 .reflection-container .reflection-grid-cell-2 {
@@ -56,11 +55,11 @@
 }
 
 .reflection-container .reflection-grid-cell-2:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(-12deg);
+    transform: rotateX(5deg) rotateY(-7deg);
 }
 
 .reflection-container .reflection-grid-cell-2:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(5%);
 }
 
 .reflection-container .reflection-grid-cell-3 {
@@ -69,11 +68,11 @@
 }
 
 .reflection-container .reflection-grid-cell-3:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(-10deg);
+    transform: rotateX(5deg) rotateY(-5deg);
 }
 
 .reflection-container .reflection-grid-cell-3:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(5%);
 }
 
 .reflection-container .reflection-grid-cell-4 {
@@ -82,11 +81,11 @@
 }
 
 .reflection-container .reflection-grid-cell-4:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(-5deg);
+    transform: rotateX(5deg) rotateY(-0deg);
 }
 
 .reflection-container .reflection-grid-cell-4:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-5 {
@@ -95,11 +94,11 @@
 }
 
 .reflection-container .reflection-grid-cell-5:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(0deg);
+    transform: rotateX(5deg) rotateY(0deg);
 }
 
 .reflection-container .reflection-grid-cell-5:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-6 {
@@ -108,11 +107,11 @@
 }
 
 .reflection-container .reflection-grid-cell-6:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(5deg);
+    transform: rotateX(5deg) rotateY(0deg);
 }
 
 .reflection-container .reflection-grid-cell-6:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-7 {
@@ -121,11 +120,11 @@
 }
 
 .reflection-container .reflection-grid-cell-7:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(10deg);
+    transform: rotateX(5deg) rotateY(5deg);
 }
 
 .reflection-container .reflection-grid-cell-7:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-8 {
@@ -134,11 +133,11 @@
 }
 
 .reflection-container .reflection-grid-cell-8:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(15deg);
+    transform: rotateX(5deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-8:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-9 {
@@ -147,7 +146,7 @@
 }
 
 .reflection-container .reflection-grid-cell-9:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(10deg);
+    transform: rotateX(5deg) rotateY(5deg);
 }
 
 .reflection-container .reflection-grid-cell-9:hover ~ .reflection-content:before {
@@ -160,11 +159,11 @@
 }
 
 .reflection-container .reflection-grid-cell-10:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(15deg);
+    transform: rotateX(5deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-10:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-11 {
@@ -173,11 +172,11 @@
 }
 
 .reflection-container .reflection-grid-cell-11:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(-15deg);
+    transform: rotateX(5deg) rotateY(-10deg);
 }
 
 .reflection-container .reflection-grid-cell-11:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-12 {
@@ -186,11 +185,11 @@
 }
 
 .reflection-container .reflection-grid-cell-12:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(-15deg);
+    transform: rotateX(5deg) rotateY(-10deg);
 }
 
 .reflection-container .reflection-grid-cell-12:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-13 {
@@ -199,11 +198,11 @@
 }
 
 .reflection-container .reflection-grid-cell-13:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(-10deg);
+    transform: rotateX(5deg) rotateY(-deg);
 }
 
 .reflection-container .reflection-grid-cell-13:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-14 {
@@ -212,11 +211,11 @@
 }
 
 .reflection-container .reflection-grid-cell-14:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(-5deg);
+    transform: rotateX(5deg) rotateY(0deg);
 }
 
 .reflection-container .reflection-grid-cell-14:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(5%);
 }
 
 .reflection-container .reflection-grid-cell-15 {
@@ -225,11 +224,11 @@
 }
 
 .reflection-container .reflection-grid-cell-15:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(0deg);
+    transform: rotateX(5deg) rotateY(0deg);
 }
 
 .reflection-container .reflection-grid-cell-15:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-16 {
@@ -238,11 +237,11 @@
 }
 
 .reflection-container .reflection-grid-cell-16:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(5deg);
+    transform: rotateX(5deg) rotateY(5deg);
 }
 
 .reflection-container .reflection-grid-cell-16:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-17 {
@@ -251,11 +250,11 @@
 }
 
 .reflection-container .reflection-grid-cell-17:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(10deg);
+    transform: rotateX(5deg) rotateY(5deg);
 }
 
 .reflection-container .reflection-grid-cell-17:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-18 {
@@ -264,11 +263,11 @@
 }
 
 .reflection-container .reflection-grid-cell-18:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(15deg);
+    transform: rotateX(5deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-18:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-19 {
@@ -277,11 +276,11 @@
 }
 
 .reflection-container .reflection-grid-cell-19:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(15deg);
+    transform: rotateX(5deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-19:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-20 {
@@ -290,11 +289,11 @@
 }
 
 .reflection-container .reflection-grid-cell-20:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(15deg);
+    transform: rotateX(5deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-20:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-21 {
@@ -303,11 +302,11 @@
 }
 
 .reflection-container .reflection-grid-cell-21:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(-15deg);
+    transform: rotateX(5deg) rotateY(-10deg);
 }
 
 .reflection-container .reflection-grid-cell-21:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-22 {
@@ -316,11 +315,11 @@
 }
 
 .reflection-container .reflection-grid-cell-22:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(-15deg);
+    transform: rotateX(5deg) rotateY(-10deg);
 }
 
 .reflection-container .reflection-grid-cell-22:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-23 {
@@ -329,11 +328,11 @@
 }
 
 .reflection-container .reflection-grid-cell-23:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(-10deg);
+    transform: rotateX(5deg) rotateY(-5deg);
 }
 
 .reflection-container .reflection-grid-cell-23:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-24 {
@@ -342,11 +341,11 @@
 }
 
 .reflection-container .reflection-grid-cell-24:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(-5deg);
+    transform: rotateX(5deg) rotateY(-2deg);
 }
 
 .reflection-container .reflection-grid-cell-24:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-25 {
@@ -355,11 +354,11 @@
 }
 
 .reflection-container .reflection-grid-cell-25:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(0deg);
+    transform: rotateX(5deg) rotateY(0deg);
 }
 
 .reflection-container .reflection-grid-cell-25:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-26 {
@@ -368,11 +367,11 @@
 }
 
 .reflection-container .reflection-grid-cell-26:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(5deg);
+    transform: rotateX(5deg) rotateY(2deg);
 }
 
 .reflection-container .reflection-grid-cell-26:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-27 {
@@ -381,11 +380,11 @@
 }
 
 .reflection-container .reflection-grid-cell-27:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(10deg);
+    transform: rotateX(5deg) rotateY(5deg);
 }
 
 .reflection-container .reflection-grid-cell-27:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-28 {
@@ -394,11 +393,11 @@
 }
 
 .reflection-container .reflection-grid-cell-28:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(15deg);
+    transform: rotateX(5deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-28:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-29 {
@@ -407,11 +406,11 @@
 }
 
 .reflection-container .reflection-grid-cell-29:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(20deg);
+    transform: rotateX(5deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-29:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-30 {
@@ -420,11 +419,11 @@
 }
 
 .reflection-container .reflection-grid-cell-30:hover ~ .reflection-content {
-    transform: rotateX(10deg) rotateY(25deg);
+    transform: rotateX(5deg) rotateY(12deg);
 }
 
 .reflection-container .reflection-grid-cell-30:hover ~ .reflection-content:before {
-    transform: translateY(10%);
+    transform: translateY(7%);
 }
 
 .reflection-container .reflection-grid-cell-31 {
@@ -433,7 +432,7 @@
 }
 
 .reflection-container .reflection-grid-cell-31:hover ~ .reflection-content {
-    transform: rotateX(5deg) rotateY(-20deg);
+    transform: rotateX(5deg) rotateY(-10deg);
 }
 
 .reflection-container .reflection-grid-cell-31:hover ~ .reflection-content:before {
@@ -446,7 +445,7 @@
 }
 
 .reflection-container .reflection-grid-cell-32:hover ~ .reflection-content {
-    transform: rotateX(5deg) rotateY(-15deg);
+    transform: rotateX(5deg) rotateY(-10deg);
 }
 
 .reflection-container .reflection-grid-cell-32:hover ~ .reflection-content:before {
@@ -459,7 +458,7 @@
 }
 
 .reflection-container .reflection-grid-cell-33:hover ~ .reflection-content {
-    transform: rotateX(5deg) rotateY(-10deg);
+    transform: rotateX(5deg) rotateY(-5deg);
 }
 
 .reflection-container .reflection-grid-cell-33:hover ~ .reflection-content:before {
@@ -511,7 +510,7 @@
 }
 
 .reflection-container .reflection-grid-cell-37:hover ~ .reflection-content {
-    transform: rotateX(5deg) rotateY(10deg);
+    transform: rotateX(5deg) rotateY(5deg);
 }
 
 .reflection-container .reflection-grid-cell-37:hover ~ .reflection-content:before {
@@ -524,7 +523,7 @@
 }
 
 .reflection-container .reflection-grid-cell-38:hover ~ .reflection-content {
-    transform: rotateX(5deg) rotateY(15deg);
+    transform: rotateX(5deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-38:hover ~ .reflection-content:before {
@@ -537,7 +536,7 @@
 }
 
 .reflection-container .reflection-grid-cell-39:hover ~ .reflection-content {
-    transform: rotateX(5deg) rotateY(15deg);
+    transform: rotateX(5deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-39:hover ~ .reflection-content:before {
@@ -550,7 +549,7 @@
 }
 
 .reflection-container .reflection-grid-cell-40:hover ~ .reflection-content {
-    transform: rotateX(5deg) rotateY(15deg);
+    transform: rotateX(5deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-40:hover ~ .reflection-content:before {
@@ -563,7 +562,7 @@
 }
 
 .reflection-container .reflection-grid-cell-41:hover ~ .reflection-content {
-    transform: rotateX(0deg) rotateY(-15deg);
+    transform: rotateX(0deg) rotateY(-10deg);
 }
 
 .reflection-container .reflection-grid-cell-41:hover ~ .reflection-content:before {
@@ -576,7 +575,7 @@
 }
 
 .reflection-container .reflection-grid-cell-42:hover ~ .reflection-content {
-    transform: rotateX(0deg) rotateY(-15deg);
+    transform: rotateX(0deg) rotateY(-10deg);
 }
 
 .reflection-container .reflection-grid-cell-42:hover ~ .reflection-content:before {
@@ -641,7 +640,7 @@
 }
 
 .reflection-container .reflection-grid-cell-47:hover ~ .reflection-content {
-    transform: rotateX(0deg) rotateY(10deg);
+    transform: rotateX(0deg) rotateY(5deg);
 }
 
 .reflection-container .reflection-grid-cell-47:hover ~ .reflection-content:before {
@@ -654,7 +653,7 @@
 }
 
 .reflection-container .reflection-grid-cell-48:hover ~ .reflection-content {
-    transform: rotateX(0deg) rotateY(15deg);
+    transform: rotateX(0deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-48:hover ~ .reflection-content:before {
@@ -667,7 +666,7 @@
 }
 
 .reflection-container .reflection-grid-cell-49:hover ~ .reflection-content {
-    transform: rotateX(0deg) rotateY(20deg);
+    transform: rotateX(0deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-49:hover ~ .reflection-content:before {
@@ -680,7 +679,7 @@
 }
 
 .reflection-container .reflection-grid-cell-50:hover ~ .reflection-content {
-    transform: rotateX(0deg) rotateY(25deg);
+    transform: rotateX(0deg) rotateY(12deg);
 }
 
 .reflection-container .reflection-grid-cell-50:hover ~ .reflection-content:before {
@@ -693,7 +692,7 @@
 }
 
 .reflection-container .reflection-grid-cell-51:hover ~ .reflection-content {
-    transform: rotateX(-5deg) rotateY(-20deg);
+    transform: rotateX(-5deg) rotateY(-10deg);
 }
 
 .reflection-container .reflection-grid-cell-51:hover ~ .reflection-content:before {
@@ -706,7 +705,7 @@
 }
 
 .reflection-container .reflection-grid-cell-52:hover ~ .reflection-content {
-    transform: rotateX(-5deg) rotateY(-15deg);
+    transform: rotateX(-5deg) rotateY(-10deg);
 }
 
 .reflection-container .reflection-grid-cell-52:hover ~ .reflection-content:before {
@@ -719,7 +718,7 @@
 }
 
 .reflection-container .reflection-grid-cell-53:hover ~ .reflection-content {
-    transform: rotateX(-5deg) rotateY(-10deg);
+    transform: rotateX(-5deg) rotateY(-5deg);
 }
 
 .reflection-container .reflection-grid-cell-53:hover ~ .reflection-content:before {
@@ -771,7 +770,7 @@
 }
 
 .reflection-container .reflection-grid-cell-57:hover ~ .reflection-content {
-    transform: rotateX(-5deg) rotateY(10deg);
+    transform: rotateX(-5deg) rotateY(5deg);
 }
 
 .reflection-container .reflection-grid-cell-57:hover ~ .reflection-content:before {
@@ -784,7 +783,7 @@
 }
 
 .reflection-container .reflection-grid-cell-58:hover ~ .reflection-content {
-    transform: rotateX(-5deg) rotateY(15deg);
+    transform: rotateX(-5deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-58:hover ~ .reflection-content:before {
@@ -797,7 +796,7 @@
 }
 
 .reflection-container .reflection-grid-cell-59:hover ~ .reflection-content {
-    transform: rotateX(-5deg) rotateY(20deg);
+    transform: rotateX(-5deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-59:hover ~ .reflection-content:before {
@@ -810,7 +809,7 @@
 }
 
 .reflection-container .reflection-grid-cell-60:hover ~ .reflection-content {
-    transform: rotateX(-5deg) rotateY(25deg);
+    transform: rotateX(-5deg) rotateY(12deg);
 }
 
 .reflection-container .reflection-grid-cell-60:hover ~ .reflection-content:before {
@@ -823,11 +822,11 @@
 }
 
 .reflection-container .reflection-grid-cell-61:hover ~ .reflection-content {
-    transform: rotateX(-10deg) rotateY(-20deg);
+    transform: rotateX(-5deg) rotateY(-10deg);
 }
 
 .reflection-container .reflection-grid-cell-61:hover ~ .reflection-content:before {
-    transform: translateY(-10%);
+    transform: translateY(-7%);
 }
 
 .reflection-container .reflection-grid-cell-62 {
@@ -836,11 +835,11 @@
 }
 
 .reflection-container .reflection-grid-cell-62:hover ~ .reflection-content {
-    transform: rotateX(-10deg) rotateY(-15deg);
+    transform: rotateX(-5deg) rotateY(-10deg);
 }
 
 .reflection-container .reflection-grid-cell-62:hover ~ .reflection-content:before {
-    transform: translateY(-10%);
+    transform: translateY(-7%);
 }
 
 .reflection-container .reflection-grid-cell-63 {
@@ -849,11 +848,11 @@
 }
 
 .reflection-container .reflection-grid-cell-63:hover ~ .reflection-content {
-    transform: rotateX(-10deg) rotateY(-10deg);
+    transform: rotateX(-5deg) rotateY(-5deg);
 }
 
 .reflection-container .reflection-grid-cell-63:hover ~ .reflection-content:before {
-    transform: translateY(-10%);
+    transform: translateY(-7%);
 }
 
 .reflection-container .reflection-grid-cell-64 {
@@ -862,11 +861,11 @@
 }
 
 .reflection-container .reflection-grid-cell-64:hover ~ .reflection-content {
-    transform: rotateX(-10deg) rotateY(-5deg);
+    transform: rotateX(-5deg) rotateY(-5deg);
 }
 
 .reflection-container .reflection-grid-cell-64:hover ~ .reflection-content:before {
-    transform: translateY(-10%);
+    transform: translateY(-7%);
 }
 
 .reflection-container .reflection-grid-cell-65 {
@@ -875,11 +874,11 @@
 }
 
 .reflection-container .reflection-grid-cell-65:hover ~ .reflection-content {
-    transform: rotateX(-10deg) rotateY(0deg);
+    transform: rotateX(-5deg) rotateY(0deg);
 }
 
 .reflection-container .reflection-grid-cell-65:hover ~ .reflection-content:before {
-    transform: translateY(-10%);
+    transform: translateY(-7%);
 }
 
 .reflection-container .reflection-grid-cell-66 {
@@ -888,11 +887,11 @@
 }
 
 .reflection-container .reflection-grid-cell-66:hover ~ .reflection-content {
-    transform: rotateX(-10deg) rotateY(5deg);
+    transform: rotateX(-5deg) rotateY(5deg);
 }
 
 .reflection-container .reflection-grid-cell-66:hover ~ .reflection-content:before {
-    transform: translateY(-10%);
+    transform: translateY(-7%);
 }
 
 .reflection-container .reflection-grid-cell-67 {
@@ -901,11 +900,11 @@
 }
 
 .reflection-container .reflection-grid-cell-67:hover ~ .reflection-content {
-    transform: rotateX(-10deg) rotateY(10deg);
+    transform: rotateX(-5deg) rotateY(5deg);
 }
 
 .reflection-container .reflection-grid-cell-67:hover ~ .reflection-content:before {
-    transform: translateY(-10%);
+    transform: translateY(-7%);
 }
 
 .reflection-container .reflection-grid-cell-68 {
@@ -914,11 +913,11 @@
 }
 
 .reflection-container .reflection-grid-cell-68:hover ~ .reflection-content {
-    transform: rotateX(-10deg) rotateY(15deg);
+    transform: rotateX(-5deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-68:hover ~ .reflection-content:before {
-    transform: translateY(-10%);
+    transform: translateY(-7%);
 }
 
 .reflection-container .reflection-grid-cell-69 {
@@ -927,11 +926,11 @@
 }
 
 .reflection-container .reflection-grid-cell-69:hover ~ .reflection-content {
-    transform: rotateX(-10deg) rotateY(20deg);
+    transform: rotateX(-5deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-69:hover ~ .reflection-content:before {
-    transform: translateY(-10%);
+    transform: translateY(-7%);
 }
 
 .reflection-container .reflection-grid-cell-70 {
@@ -940,11 +939,11 @@
 }
 
 .reflection-container .reflection-grid-cell-70:hover ~ .reflection-content {
-    transform: rotateX(-10deg) rotateY(25deg);
+    transform: rotateX(-5deg) rotateY(12deg);
 }
 
 .reflection-container .reflection-grid-cell-70:hover ~ .reflection-content:before {
-    transform: translateY(-10%);
+    transform: translateY(-7%);
 }
 
 .reflection-container .reflection-grid-cell-71 {
@@ -953,11 +952,11 @@
 }
 
 .reflection-container .reflection-grid-cell-71:hover ~ .reflection-content {
-    transform: rotateX(-15deg) rotateY(-20deg);
+    transform: rotateX(-10deg) rotateY(-12deg);
 }
 
 .reflection-container .reflection-grid-cell-71:hover ~ .reflection-content:before {
-    transform: translateY(-15%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-72 {
@@ -966,11 +965,11 @@
 }
 
 .reflection-container .reflection-grid-cell-72:hover ~ .reflection-content {
-    transform: rotateX(-15deg) rotateY(-15deg);
+    transform: rotateX(-10deg) rotateY(-12deg);
 }
 
 .reflection-container .reflection-grid-cell-72:hover ~ .reflection-content:before {
-    transform: translateY(-15%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-73 {
@@ -979,11 +978,11 @@
 }
 
 .reflection-container .reflection-grid-cell-73:hover ~ .reflection-content {
-    transform: rotateX(-15deg) rotateY(-10deg);
+    transform: rotateX(-10deg) rotateY(-5deg);
 }
 
 .reflection-container .reflection-grid-cell-73:hover ~ .reflection-content:before {
-    transform: translateY(-15%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-74 {
@@ -992,11 +991,11 @@
 }
 
 .reflection-container .reflection-grid-cell-74:hover ~ .reflection-content {
-    transform: rotateX(-15deg) rotateY(-5deg);
+    transform: rotateX(-10deg) rotateY(-5deg);
 }
 
 .reflection-container .reflection-grid-cell-74:hover ~ .reflection-content:before {
-    transform: translateY(-15%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-75 {
@@ -1005,11 +1004,11 @@
 }
 
 .reflection-container .reflection-grid-cell-75:hover ~ .reflection-content {
-    transform: rotateX(-15deg) rotateY(0deg);
+    transform: rotateX(-10deg) rotateY(0deg);
 }
 
 .reflection-container .reflection-grid-cell-75:hover ~ .reflection-content:before {
-    transform: translateY(-15%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-76 {
@@ -1018,11 +1017,11 @@
 }
 
 .reflection-container .reflection-grid-cell-76:hover ~ .reflection-content {
-    transform: rotateX(-15deg) rotateY(5deg);
+    transform: rotateX(-10deg) rotateY(5deg);
 }
 
 .reflection-container .reflection-grid-cell-76:hover ~ .reflection-content:before {
-    transform: translateY(-15%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-77 {
@@ -1031,11 +1030,11 @@
 }
 
 .reflection-container .reflection-grid-cell-77:hover ~ .reflection-content {
-    transform: rotateX(-15deg) rotateY(10deg);
+    transform: rotateX(-10deg) rotateY(5deg);
 }
 
 .reflection-container .reflection-grid-cell-77:hover ~ .reflection-content:before {
-    transform: translateY(-15%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-78 {
@@ -1044,11 +1043,11 @@
 }
 
 .reflection-container .reflection-grid-cell-78:hover ~ .reflection-content {
-    transform: rotateX(-15deg) rotateY(15deg);
+    transform: rotateX(-10deg) rotateY(12deg);
 }
 
 .reflection-container .reflection-grid-cell-78:hover ~ .reflection-content:before {
-    transform: translateY(-15%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-79 {
@@ -1057,11 +1056,11 @@
 }
 
 .reflection-container .reflection-grid-cell-79:hover ~ .reflection-content {
-    transform: rotateX(-15deg) rotateY(20deg);
+    transform: rotateX(-10deg) rotateY(12deg);
 }
 
 .reflection-container .reflection-grid-cell-79:hover ~ .reflection-content:before {
-    transform: translateY(-15%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-80 {
@@ -1070,11 +1069,11 @@
 }
 
 .reflection-container .reflection-grid-cell-80:hover ~ .reflection-content {
-    transform: rotateX(-15deg) rotateY(25deg);
+    transform: rotateX(-10deg) rotateY(12deg);
 }
 
 .reflection-container .reflection-grid-cell-80:hover ~ .reflection-content:before {
-    transform: translateY(-15%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-81 {
@@ -1083,11 +1082,11 @@
 }
 
 .reflection-container .reflection-grid-cell-81:hover ~ .reflection-content {
-    transform: rotateX(-20deg) rotateY(-20deg);
+    transform: rotateX(-10deg) rotateY(-12deg);
 }
 
 .reflection-container .reflection-grid-cell-81:hover ~ .reflection-content:before {
-    transform: translateY(-20%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-82 {
@@ -1096,11 +1095,11 @@
 }
 
 .reflection-container .reflection-grid-cell-82:hover ~ .reflection-content {
-    transform: rotateX(-20deg) rotateY(-15deg);
+    transform: rotateX(-10deg) rotateY(-12deg);
 }
 
 .reflection-container .reflection-grid-cell-82:hover ~ .reflection-content:before {
-    transform: translateY(-20%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-83 {
@@ -1109,11 +1108,11 @@
 }
 
 .reflection-container .reflection-grid-cell-83:hover ~ .reflection-content {
-    transform: rotateX(-20deg) rotateY(-10deg);
+    transform: rotateX(-10deg) rotateY(-5deg);
 }
 
 .reflection-container .reflection-grid-cell-83:hover ~ .reflection-content:before {
-    transform: translateY(-20%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-84 {
@@ -1122,11 +1121,11 @@
 }
 
 .reflection-container .reflection-grid-cell-84:hover ~ .reflection-content {
-    transform: rotateX(-20deg) rotateY(-5deg);
+    transform: rotateX(-10deg) rotateY(-5deg);
 }
 
 .reflection-container .reflection-grid-cell-84:hover ~ .reflection-content:before {
-    transform: translateY(-20%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-85 {
@@ -1135,11 +1134,11 @@
 }
 
 .reflection-container .reflection-grid-cell-85:hover ~ .reflection-content {
-    transform: rotateX(-20deg) rotateY(0deg);
+    transform: rotateX(-10deg) rotateY(0deg);
 }
 
 .reflection-container .reflection-grid-cell-85:hover ~ .reflection-content:before {
-    transform: translateY(-20%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-86 {
@@ -1148,11 +1147,11 @@
 }
 
 .reflection-container .reflection-grid-cell-86:hover ~ .reflection-content {
-    transform: rotateX(-20deg) rotateY(5deg);
+    transform: rotateX(-10deg) rotateY(5deg);
 }
 
 .reflection-container .reflection-grid-cell-86:hover ~ .reflection-content:before {
-    transform: translateY(-20%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-87 {
@@ -1161,11 +1160,11 @@
 }
 
 .reflection-container .reflection-grid-cell-87:hover ~ .reflection-content {
-    transform: rotateX(-20deg) rotateY(10deg);
+    transform: rotateX(-10deg) rotateY(5deg);
 }
 
 .reflection-container .reflection-grid-cell-87:hover ~ .reflection-content:before {
-    transform: translateY(-20%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-88 {
@@ -1174,11 +1173,11 @@
 }
 
 .reflection-container .reflection-grid-cell-88:hover ~ .reflection-content {
-    transform: rotateX(-20deg) rotateY(15deg);
+    transform: rotateX(-10deg) rotateY(12deg);
 }
 
 .reflection-container .reflection-grid-cell-88:hover ~ .reflection-content:before {
-    transform: translateY(-20%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-89 {
@@ -1187,11 +1186,11 @@
 }
 
 .reflection-container .reflection-grid-cell-89:hover ~ .reflection-content {
-    transform: rotateX(-20deg) rotateY(20deg);
+    transform: rotateX(-10deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-89:hover ~ .reflection-content:before {
-    transform: translateY(-20%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-90 {
@@ -1200,11 +1199,11 @@
 }
 
 .reflection-container .reflection-grid-cell-90:hover ~ .reflection-content {
-    transform: rotateX(-20deg) rotateY(25deg);
+    transform: rotateX(-10deg) rotateY(12deg);
 }
 
 .reflection-container .reflection-grid-cell-90:hover ~ .reflection-content:before {
-    transform: translateY(-20%);
+    transform: translateY(-10%);
 }
 
 .reflection-container .reflection-grid-cell-91 {
@@ -1213,11 +1212,11 @@
 }
 
 .reflection-container .reflection-grid-cell-91:hover ~ .reflection-content {
-    transform: rotateX(-25deg) rotateY(-20deg);
+    transform: rotateX(-12deg) rotateY(-10deg);
 }
 
 .reflection-container .reflection-grid-cell-91:hover ~ .reflection-content:before {
-    transform: translateY(-25%);
+    transform: translateY(-12%);
 }
 
 .reflection-container .reflection-grid-cell-92 {
@@ -1226,11 +1225,11 @@
 }
 
 .reflection-container .reflection-grid-cell-92:hover ~ .reflection-content {
-    transform: rotateX(-25deg) rotateY(-15deg);
+    transform: rotateX(-12deg) rotateY(-10deg);
 }
 
 .reflection-container .reflection-grid-cell-92:hover ~ .reflection-content:before {
-    transform: translateY(-25%);
+    transform: translateY(-12%);
 }
 
 .reflection-container .reflection-grid-cell-93 {
@@ -1239,11 +1238,11 @@
 }
 
 .reflection-container .reflection-grid-cell-93:hover ~ .reflection-content {
-    transform: rotateX(-25deg) rotateY(-10deg);
+    transform: rotateX(-12deg) rotateY(-5deg);
 }
 
 .reflection-container .reflection-grid-cell-93:hover ~ .reflection-content:before {
-    transform: translateY(-25%);
+    transform: translateY(-12%);
 }
 
 .reflection-container .reflection-grid-cell-94 {
@@ -1252,11 +1251,11 @@
 }
 
 .reflection-container .reflection-grid-cell-94:hover ~ .reflection-content {
-    transform: rotateX(-25deg) rotateY(-5deg);
+    transform: rotateX(-12deg) rotateY(-5deg);
 }
 
 .reflection-container .reflection-grid-cell-94:hover ~ .reflection-content:before {
-    transform: translateY(-25%);
+    transform: translateY(-12%);
 }
 
 .reflection-container .reflection-grid-cell-95 {
@@ -1265,11 +1264,11 @@
 }
 
 .reflection-container .reflection-grid-cell-95:hover ~ .reflection-content {
-    transform: rotateX(-25deg) rotateY(0deg);
+    transform: rotateX(-12deg) rotateY(0deg);
 }
 
 .reflection-container .reflection-grid-cell-95:hover ~ .reflection-content:before {
-    transform: translateY(-25%);
+    transform: translateY(-12%);
 }
 
 .reflection-container .reflection-grid-cell-96 {
@@ -1278,11 +1277,11 @@
 }
 
 .reflection-container .reflection-grid-cell-96:hover ~ .reflection-content {
-    transform: rotateX(-25deg) rotateY(5deg);
+    transform: rotateX(-12deg) rotateY(5deg);
 }
 
 .reflection-container .reflection-grid-cell-96:hover ~ .reflection-content:before {
-    transform: translateY(-25%);
+    transform: translateY(-12%);
 }
 
 .reflection-container .reflection-grid-cell-97 {
@@ -1291,11 +1290,11 @@
 }
 
 .reflection-container .reflection-grid-cell-97:hover ~ .reflection-content {
-    transform: rotateX(-25deg) rotateY(10deg);
+    transform: rotateX(-12deg) rotateY(5deg);
 }
 
 .reflection-container .reflection-grid-cell-97:hover ~ .reflection-content:before {
-    transform: translateY(-25%);
+    transform: translateY(-12%);
 }
 
 .reflection-container .reflection-grid-cell-98 {
@@ -1304,11 +1303,11 @@
 }
 
 .reflection-container .reflection-grid-cell-98:hover ~ .reflection-content {
-    transform: rotateX(-25deg) rotateY(15deg);
+    transform: rotateX(-12deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-98:hover ~ .reflection-content:before {
-    transform: translateY(-25%);
+    transform: translateY(-12%);
 }
 
 .reflection-container .reflection-grid-cell-99 {
@@ -1317,11 +1316,11 @@
 }
 
 .reflection-container .reflection-grid-cell-99:hover ~ .reflection-content {
-    transform: rotateX(-25deg) rotateY(20deg);
+    transform: rotateX(-12deg) rotateY(10deg);
 }
 
 .reflection-container .reflection-grid-cell-99:hover ~ .reflection-content:before {
-    transform: translateY(-25%);
+    transform: translateY(-12%);
 }
 
 .reflection-container .reflection-grid-cell-100 {
@@ -1330,9 +1329,9 @@
 }
 
 .reflection-container .reflection-grid-cell-100:hover ~ .reflection-content {
-    transform: rotateX(-25deg) rotateY(25deg);
+    transform: rotateX(-12deg) rotateY(12deg);
 }
 
 .reflection-container .reflection-grid-cell-100:hover ~ .reflection-content:before {
-    transform: translateY(-25%);
+    transform: translateY(-12%);
 }
