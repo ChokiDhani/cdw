@@ -717,7 +717,6 @@ section {
         /*background-color: transparent;*/
         position: fixed;
         width: 100%;
-        top: 5px;
         z-index: 10000;
     }
     #header_mobile .overlay {
@@ -3604,10 +3603,10 @@ table span {
         padding-top: 0px;
     }
     .corporate_container {
-        padding-top: 70px;
+        /*   padding-top: 70px;*/
     }
     .corporateheading h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
@@ -4409,7 +4408,7 @@ table span {
 
 @media(max-width:767px) {
     .corporateheading h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
