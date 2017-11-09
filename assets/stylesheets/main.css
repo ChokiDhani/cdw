@@ -717,6 +717,7 @@ section {
         /*background-color: transparent;*/
         position: fixed;
         width: 100%;
+        top: 5px;
         z-index: 10000;
     }
     #header_mobile .overlay {
@@ -726,7 +727,7 @@ section {
     }
     /*start*/
     .phoneicon {
-        left: 88%;
+        left: 100%;
         position: absolute;
         font-size: 21px;
         top: 4px;
