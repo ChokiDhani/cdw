@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
     <!-- Page Title & Favicon -->
-    <title>Gallery|Chokhi Dhani</title>
+    <title>GALLERY | CHOKHI DHANI</title>
+    <link rel="icon" href="assets/images/menu_overlay_logo.png" type="image/png" sizes="16x16">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/stylesheets/normalize.css">
     <link rel="stylesheet" href="assets/stylesheets/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/stylesheets/navAnim.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
@@ -20,12 +20,11 @@
     <link rel="stylesheet" href="assets/stylesheets/owl.carousel.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link rel="stylesheet" href="assets/stylesheets/centuryGothic.css">
-    <link rel="stylesheet" href="assets/stylesheets/lightbox.css">
     <link rel="stylesheet" href="assets/stylesheets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/stylesheets/main.css">
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css
-    ">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/simpleMobileMenu.css">
+    <link rel="stylesheet" href="assets/stylesheets/lightbox.css">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
     <!-- Javascript -->
     <script src="assets/javascripts/vendor/head.core.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/javascripts/vendor/modernizr.custom.js"></script>
@@ -45,7 +44,18 @@
         <div id="topbar">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 text-left menu_icon"> <a href="#aboutUs"><span class="optbar optgap">ABOUT US</span></a> <a href="contact.html"><span class="optgap">CONTACT US</span></a> </div>
+                    <div class="col-6 text-left menu_icon"> <a id="open-modal" class="triger-modal" data-triger="modal-demo"><span class="optbar optgap">ABOUT US</span></a> <a href="contact.html"><span class="optgap">CONTACT US</span></a> </div>
+                    <div class="modal-wrap" id="modal-demo">
+                        <div class="modal-container ">
+                            <div class="modal-header headeradjust">
+                                <h2 class="modal-title titlechange">About Us</h2>
+                                <button class="close-modal">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <p class="parachanged">A perfect work of art of craftsmanship spread over 12.5 acres of lush gardens; it is a one-stop destination for entertainment, food & excitement. Chokhi Dhani Sonipat enlivens, a vivid Rajasthani legacy that abandons you awestruck with every one of the attractions and components of ethnic culture and convention. Beginning from the welcome tilak that helps to recall "PADHARO MAHRE DES" neighbourliness of Rajasthan, the mandir, town bazaar, animal rides on horse, camel etc., bioscope, village style photograph studio, palm reading by learned jyotish pundits, artists applying mehendi, recreations zone, open gardens to unwind and bond with each other… , you'll savour each moment of this awesome destination of Chokhi Dhani Sonipat where time slows to a tropical tempo.</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-6 text-right">
                         <div class="logos">
                             <ul>
@@ -71,7 +81,7 @@
                         <ul>
                             <li class="main-nav"><a href="dining.html">DINNING</a></li>
                             <li class="main-nav"><a href="attraction.html">ATTRACTION</a></li>
-                            <li><a href="#">DASTAR</a></li>
+                            <li><a href="dastar.html">DASTAR</a></li>
                         </ul>
                     </div>
                     <div class="col-6">
@@ -92,6 +102,7 @@
                 <ul class="mobimenu">
                     <li><a href="index.html">Home</a> </li>
                     <li><a href="dining.html">Dining</a></li>
+                    <li><a href="dastar.html">Dastar</a></li>
                     <li><a href="attraction.html">Attraction</a></li>
                     <li><a href="ticketprice.html">Ticket Price</a></li>
                     <li><a href="corporate.html">Corporate Parties</a></li>
@@ -126,83 +137,23 @@
         jQuery(document).ready(function ($) {
             $('.smobitrigger').smplmnu();
         });
-        $(document).ready(function () {
-            $(".navigation ul li").click(function () {
-                $('.navigation ul li > ul').not($(this).children("ul ").toggle()).hide();
-            });
-        });
     </script>
     <div id="banner">
         <div class="owl-carousel owl-theme" id="owl-carousel1">
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop%201.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop%202.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
-                <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
-            </div>
-            <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop%203.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
         </div>
     </div>
-    <!-- <header id="header-mobile">
-        <div class="overlay overlay-scale">
-            <div>
-                <div class="container">
-                    <div class="menu_logo text-center">
-                        <a href="index.html"> <img src="assets/images/menu_overlay_logo.png" alt="logo"> </a>
-                    </div>
-                    <button type="button" id="closeMenu" class="overlay-close"> <i class="fa fa-times" aria-hidden="true" style="font-size: 35px;"></i> </button>
-                    <div class="fat-nav__wrapper">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-4 overlay_menu_list text-left">
-                                    <ul>
-                                        <li><a href="dining.html">Dining</a></li>
-                                        <li><a href="attraction.html">Attraction</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="ticketprice.html">Ticket Price</a></li>
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-4 pad text-center">
-                                    <ul>
-                                        <li><a href="corporate.html">Corporate Parties</a></li>
-                                        <li><a href="privacy.html">Privacy Policy</a></li>
-                                        <li><a href="terms.html">Terms of Service</a></li>
-                                        <li><a href="legal.html">Legal Policy</a></li>
-                                        <li><a href="site.html">Site Map</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-4 overlay_menu_list2 text-right">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com/ChokhiDhaniSonipat/"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-                                        <li><a href="https://www.instagram.com/explore/locations/307454466/chokhi-dhani-sonipat/"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-                                        <li><a href="https://twitter.com/cdhanisonipat?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
-                                        <li><a href="https://www.youtube.com/results?search_query=chokhi+dhani+sonipat"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="logo_mobile">
-            <a href="index.html"> <img src="assets/images/mobile-logo.png" alt="logo"> </a>
-        </div>
-        <div class="mobile-menu">
-            <div id="trigger-overlay" class="menu"> <span>
-                    <i class="fa fa-bars btn" aria-hidden="true"></i>
-                    </span> </div> <i class="fa fa-phone btn" aria-hidden="true"></i> </div>
-    </header>-->
     <div id="content">
         <section id="gallery">
             <div class="container gallery_container">
@@ -221,54 +172,54 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-md-12 gap">
-                                                    <a href="assets/images/gal-1.jpg" class="lightBox"> <img src="assets/images/gal-1.jpg" alt="gallery"> </a>
+                                                    <a href="assets/images/Gallery%20big%20img.jpg" class="lightBox"> <img src="assets/images/Gallery%20big%20img.jpg" alt="gallery"> </a>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6 gap">
-                                                    <a href="assets/images/gal-2.jpg" class="lightBox"> <img src="assets/images/gal-2.jpg" alt="gallery"> </a>
+                                                    <a href="assets/images/1%20(1).jpg" class="lightBox"> <img src="assets/images/1%20(1).jpg" alt="gallery"> </a>
                                                 </div>
                                                 <div class="col-md-6 gap">
-                                                    <a href="assets/images/gal-3.jpg" class="lightBox"> <img src="assets/images/gal-3.jpg" alt="gallery"> </a>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6 gap">
-                                                    <a href="assets/images/gal-4.jpg" class="lightBox"> <img src="assets/images/gal-4.jpg" alt="gallery"> </a>
-                                                </div>
-                                                <div class="col-md-6 gap">
-                                                    <a href="assets/images/gal-5.jpg" class="lightBox"> <img src="assets/images/gal-5.jpg" alt="gallery"> </a>
+                                                    <a href="assets/images/2.jpg" class="lightBox"> <img src="assets/images/2.jpg" alt="gallery"> </a>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6 gap">
-                                                    <a href="assets/images/gal-6.jpg" class="lightBox"> <img src="assets/images/gal-6.jpg" alt="gallery"> </a>
+                                                    <a href="assets/images/3.jpg" class="lightBox"> <img src="assets/images/3.jpg" alt="gallery"> </a>
                                                 </div>
                                                 <div class="col-md-6 gap">
-                                                    <a href="assets/images/gal-7.jpg" class="lightBox"> <img src="assets/images/gal-7.jpg" alt="gallery"> </a>
+                                                    <a href="assets/images/4.jpg" class="lightBox"> <img src="assets/images/4.jpg" alt="gallery"> </a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 gap">
+                                                    <a href="assets/images/5.jpg" class="lightBox"> <img src="assets/images/5.jpg" alt="gallery"> </a>
+                                                </div>
+                                                <div class="col-md-6 gap">
+                                                    <a href="assets/images/6.jpg" class="lightBox"> <img src="assets/images/6.jpg" alt="gallery"> </a>
                                                 </div>
                                             </div>
                                             <div class="row toshow">
                                                 <div class="col-sm-12">
                                                     <div class="row">
                                                         <div class="col-md-6 gap">
-                                                            <a href="assets/images/gal-2.jpg" class="lightBox"> <img src="assets/images/gal-2.jpg" alt="gallery"> </a>
+                                                            <a href="assets/images/7.jpg" class="lightBox"> <img src="assets/images/7.jpg" alt="gallery"> </a>
                                                         </div>
                                                         <div class="col-md-6 gap">
-                                                            <a href="assets/images/gal-3.jpg" class="lightBox"> <img src="assets/images/gal-3.jpg" alt="gallery"> </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-6 gap">
-                                                            <a href="assets/images/gal-4.jpg" class="lightBox"> <img src="assets/images/gal-4.jpg" alt="gallery"> </a>
-                                                        </div>
-                                                        <div class="col-md-6 gap">
-                                                            <a href="assets/images/gal-5.jpg" class="lightBox"> <img src="assets/images/gal-5.jpg" alt="gallery"> </a>
+                                                            <a href="assets/images/8.jpg" class="lightBox"> <img src="assets/images/8.jpg" alt="gallery"> </a>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-md-6 gap">
-                                                            <a href="assets/images/gal-6.jpg" class="lightBox"> <img src="assets/images/gal-6.jpg" alt="gallery"> </a>
+                                                            <a href="assets/images/9.jpg" class="lightBox"> <img src="assets/images/9.jpg" alt="gallery"> </a>
+                                                        </div>
+                                                        <div class="col-md-6 gap">
+                                                            <a href="assets/images/10.jpg" class="lightBox"> <img src="assets/images/10.jpg" alt="gallery"> </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 gap">
+                                                            <a href="assets/images/11.jpg" class="lightBox"> <img src="assets/images/11.jpg" alt="gallery"> </a>
                                                         </div>
                                                         <div class="col-md-6 gap">
                                                             <a href="assets/images/gal-7.jpg" class="lightBox"> <img src="assets/images/gal-7.jpg" alt="gallery"> </a>
@@ -325,25 +276,25 @@
                                                                 <div class="carousel-item active">
                                                                     <div class="row">
                                                                         <div class="quote">
-                                                                            <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit. Nam nec tellus </p> <span>
-              RAJAT SEHDEV
-          </span> </div>
+                                                                            <p>"It was the amazing experience with family, best place for family, best service, best quality of food ane also value for money. I would suggest to everyone that please visit this place if they want to hangout with family and want some value time with familiy" </p> <span>
+                                                                               Devender Singh Bhati,Delhi
+                                                                             </span> </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="carousel-item">
                                                                     <div class="row">
                                                                         <div class="quote">
-                                                                            <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit. Nam nec tellus </p> <span>
-              RAJAT SEHDEV
-          </span> </div>
+                                                                            <p>"A place where you experience something which this delhi has lost true hospitality without the hunger of money....very delightful experience.. Every one must visit here and roads are so good there is no hassle reaching this place.." </p> <span>
+                                                                          Abdul Mazhar gujajgeer, New Delhi
+                                                                          </span> </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="carousel-item">
                                                                     <div class="row">
                                                                         <div class="quote">
-                                                                            <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit. Nam nec tellus </p> <span>
-              RAJAT SEHDEV
-          </span> </div>
+                                                                            <p>"Really amazing place.. loved the hospitality and ambience... amazing food quality.. activities and artwork is incredible... Place where you can spend nyc time with family and friends.. Keep up the good job!!" </p> <span>
+                                                                              Capt. Ashish Bansal, New delhi
+                                                                          </span> </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -355,73 +306,507 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-sm-12">
-                                                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit. Nam nec tellus tincidunt auctor a ornare accumsan ipsum velit. Nam accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit.</p>
-                                                        <h6>RAJAT SEHDEV</h6> </div>
+                                                        <p>"I wish every domestic of foreign tourist must visit CHOKHI DHANI of Sonipat (Haryana). I have admired the concept of traditional Rajasthan village feeling, right from creative imaginative folk, cultural atmosphere, courteous and well-behaved staff, right from top to attendants. And at last the century old tradition Rajasthan food and service made every visitor relaxed. Finally, everything in Choki Dhani made me relaxed and proud being Indian."</p>
+                                                        <h6>Shanker Suhail, Chairman, Minister of State</h6>
+                                                        Lucknow
+                                                    </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-sm-12">
-                                                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit. Nam nec tellus tincidunt auctor a ornare accumsan ipsum velit. Nam accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit.</p>
-                                                        <h6>RAJAT SEHDEV</h6> </div>
+                                                        <p>"A thoughtful friend brought me to Chowk Dhani Sonipat and it was an interesting, fun, and educating experience."</p>
+                                                        <h6>Carmen Lane, Olympia</h6> </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-sm-12">
-                                                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit. Nam nec tellus tincidunt auctor a ornare accumsan ipsum velit. Nam accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit.</p>
-                                                        <h6>RAJAT SEHDEV</h6> </div>
+                                                        <p>"A memorable outing on 8/9/13 with the family. A must go place for families n for those who want to dance madly. I danced the maximum I could with all those Rajasthani people. "Chokhi dhani se ghano chokho to unko vyavhar che". I am a CA student & these type of Sundays matters a lot for us. Great!!!!"</p>
+                                                        <h6>Govind Rai Garg, Delhi</h6> </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-sm-12">
-                                                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit. Nam nec tellus tincidunt auctor a ornare accumsan ipsum velit. Nam accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit.</p>
-                                                        <h6>RAJAT SEHDEV</h6> </div>
+                                                        <p>"This is quite nice that Chokhi Dhani is opened near Delhi. Its approachable than that of Jaipur. I have been to Chokhi Dhani, Pune earlier. They have maintained almost same activities in Sonepat. All the activities are really a fun. Food I think could be improved more. I find the same taste as in Pune.... Otherwise overall it is really enjoyable spot with family and friends.... This is a place one must go.... :-) "</p>
+                                                        <h6>Nitin, Ghaziabad</h6> </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-sm-12">
-                                                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit. Nam nec tellus tincidunt auctor a ornare accumsan ipsum velit. Nam accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit.</p>
-                                                        <h6>RAJAT SEHDEV</h6> </div>
+                                                        <p>"I visited Chokhi Dhani Sonipat and celebrated my daughters birthday here and by the time we left the place i found out i have lost my diamond bangle there. I informed the staff there. I had a sleepless night and in the morning i get a call from the Chokhi Dhani Management that they have found my diamond bangle. I was on cloud 9 and they made my day...... amazing staff and the management....."</p>
+                                                        <h6>Rashmi Jain, Delhi</h6> </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-sm-12">
-                                                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit. Nam nec tellus tincidunt auctor a ornare accumsan ipsum velit. Nam accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit.</p>
-                                                        <h6>RAJAT SEHDEV</h6> </div>
+                                                        <p>"Awesome weekend with awesome food and cultural activities....."</p>
+                                                        <h6>Neha, Noida</h6> </div>
                                                 </div>
-                                                <div class="row toshow2">
+                                                <div class="row ">
                                                     <div class="col-sm-12">
                                                         <div class="row">
                                                             <div class="col-sm-12">
-                                                                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit. Nam nec tellus tincidunt auctor a ornare accumsan ipsum velit. Nam accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit.</p>
-                                                                <h6>RAJAT SEHDEV</h6> </div>
+                                                                <p>"Loved the ambiance, the cultural programmes are so nice and the artist make you dance on your toes, truly a wonderful place and a must visit destination point...."</p>
+                                                                <h6>Kiran, Patiala</h6> </div>
                                                         </div>
-                                                        <div class="row">
+                                                        <div class="row ">
                                                             <div class="col-sm-12">
-                                                                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit. Nam nec tellus tincidunt auctor a ornare accumsan ipsum velit. Nam accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit.</p>
-                                                                <h6>RAJAT SEHDEV</h6> </div>
+                                                                <p>"We visited here on the weekend, and really loved the place, with very nice architecture, the staff greets you by Ram Ram Sa and they make you eat so much......."</p>
+                                                                <h6>Ajay Sharma, Karnal</h6> </div>
                                                         </div>
-                                                        <div class="row">
+                                                        <div class="row ">
                                                             <div class="col-sm-12">
-                                                                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit. Nam nec tellus tincidunt auctor a ornare accumsan ipsum velit. Nam accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit.</p>
-                                                                <h6>RAJAT SEHDEV</h6> </div>
+                                                                <p>"I ate here with my husband and his family. They are a Rajasthani family. The food here is spicy, tasty, and authentic. You are served thali very traditionally, on a big plate with several small bowls into which different foods are added very quickly by guys running around with pots and ladles. The meal even includes little clay cups of buttermilk."</p>
+                                                                <h6>Nayanthara S., Hyderabad</h6> </div>
                                                         </div>
-                                                        <div class="row">
+                                                        <div class="row xys ">
                                                             <div class="col-sm-12">
-                                                                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit. Nam nec tellus tincidunt auctor a ornare accumsan ipsum velit. Nam accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit.</p>
-                                                                <h6>RAJAT SEHDEV</h6> </div>
+                                                                <p>"We enjoyed the Rajasthani folk dance. Chokhi Dhani concept is amazing! Loved it very much!!!"</p>
+                                                                <h6>Graham Lurrman, Leicester</h6> </div>
                                                         </div>
-                                                        <div class="row">
+                                                        <div class="row xys">
                                                             <div class="col-sm-12">
-                                                                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit. Nam nec tellus tincidunt auctor a ornare accumsan ipsum velit. Nam accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit.</p>
-                                                                <h6>RAJAT SEHDEV</h6> </div>
+                                                                <p>"Amazing place on the highway! A must stop destination... One can actually experience the tradition of Rajasthan in a wonderful manner."</p>
+                                                                <h6>Suman Rajvanshi, New Delhi</h6> </div>
                                                         </div>
-                                                        <div class="row">
+                                                        <div class="row xys">
                                                             <div class="col-sm-12">
-                                                                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit. Nam nec tellus tincidunt auctor a ornare accumsan ipsum velit. Nam accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare accumsan ipsum velit.</p>
-                                                                <h6>RAJAT SEHDEV</h6> </div>
+                                                                <p>A wonderful place which fills our heart with soul stirring memories....... Workers at chokhi dhani have a very good hospitality....."</p>
+                                                                <h6>Kousalya, Chandigarh</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"good place to visit with family, explore traditional with unlimited tasty foods."</p>
+                                                                <h6>Sachin Kumar,delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"supereb place..."</p>
+                                                                <h6>ankur chawla,delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"A very nice place with feeling of Jaipur.... Willing to visit again..."</p>
+                                                                <h6>Kumar Mrigank, New Delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"A thoughtful friend brought me to Chowk Dhani Sonipat and it was an interesting, fun, and educating experience. "</p>
+                                                                <h6>Carmen Lane, Olympia</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Amazing &amp; Superawesome place to visit and enjoy with family.Lots of fun and totally amazing experience."</p>
+                                                                <h6>Neha Vashisht, Delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"AMEZING VERY GOOD PALACE"</p>
+                                                                <h6>ALAM@GMAIL.COM, DELHI</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"very good place for refreshment."</p>
+                                                                <h6>ANIL PATHAK<!--, delhi--></h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Very nice &amp; enjoyable. full enjoy with family."</p>
+                                                                <h6>Vimal Kumar Sharma, Delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"I want to celebrate my daughter first bday there.. Can u please tell me what activities and other things you people can plan for the bday eve"</p>
+                                                                <h6>Nidhi Garg, Gurgaon</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"SHALL WE STAY HERE IN NIGHT. WE WILL PLAN FOR SATURDAY EVENING AND RETURN ON SUNDAY MORNING IS THAT POSSIBLE N SAFE "</p>
+                                                                <h6>MADHURENDER, New delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Recently Visited with my friends. It was amazing and wonderful place where u can feel free out of any tension. "</p>
+                                                                <h6>TARUN GOEL, New delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Hmmm.....we r also planning....hope so acha Ho..."</p>
+                                                                <h6>hrt, gr noida</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"A must Visit place for all. Enjoyed a lot with family after a long journey."</p>
+                                                                <h6>Saurabh Negi, Noida</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Good place to spend time ! Gud food and Gud taste makes it memorable !!!!"</p>
+                                                                <h6>Sakshi, New delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"A memorable outing on 31/12/2015 with family &amp; friends. lots of things you can see there, yummy north Indian &amp;  rajasthani food with village tuch."</p>
+                                                                <h6>Vishal Sharma, New delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"very nice place must go with family "</p>
+                                                                <h6>Anand Prakash, New delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Today Eve i Spent here with Family, Excited to the visit"</p>
+                                                                <h6>Hemant Bisht, New delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"nice place....and food was awosomeeeeeeeeeeeeeee .......RAM RAM SA.. :)"</p>
+                                                                <h6>SHALINI, New delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Very nice experience! "</p>
+                                                                <h6>Sonu Khatri, NARELA</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"A must visit place. I enjoyed a lot with my family and friends."</p>
+                                                                <h6>Manoj Kumar Pal, New delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Enjoyed my weekend by visiting this place. It was really wonderful to spend time here. Everyone should go there with family/friends. Its a happening place around delhi."</p>
+                                                                <h6>Anubhav Ranjan, Ghaziabad</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Amazing weekend destination. One must visit once with entire family..."</p>
+                                                                <h6>Deepak Sharma, New delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"SHALL WE STAY HERE IN NIGHT. WE WILL PLAN FOR SATURDAY EVENING AND RETURN ON SUNDAY MORNING IS THAT POSSIBLE N SAFE "</p>
+                                                                <h6>MADHURENDER, New delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Really very beautiful place a perfect outing for all age, great very Nice place"</p>
+                                                                <h6>Dr. M.Z.Chauham, New delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Awsum experience with family . Full relaxing in Delhi life"</p>
+                                                                <h6>khushi, New delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Wonderful place, amazing cuisines and typical rajastani look. Kids really enjoyed."</p>
+                                                                <h6>Sandeep Mittal, New delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"An osome palce to vist"</p>
+                                                                <h6>kartik, New delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"very very nice place familey to enjoy and me and my school to very enjoy to p.s.m.public sr sec school to suraj singh"</p>
+                                                                <h6>suraj singh!--, New delhi--></h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"fun being at chokhi dhani sonipat .... really very beautiful place!!!!"</p>
+                                                                <h6>seysha, New delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Heyyy all have to must go. I went on 5th October 2014 with my luv one.. I really enjoyed this place."</p>
+                                                                <h6>Arohi, Delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"A perfect outing for all age groups "</p>
+                                                                <h6>vinay prakash singh, noida</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Very nice place"</p>
+                                                                <h6>Lsraisingh, New delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"A good place to visit..."</p>
+                                                                <h6>minal, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"But a smiling visitor here to share the love , btw outstanding layout. gcekegaecgkecbea"</p>
+                                                                <h6>Smitha204, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Very good place for family get to gether"</p>
+                                                                <h6>navneet tyagi, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>A very heart touchable real village life seen in my life. A full family entertainment place."</p>
+                                                                <h6>Navya, faridabad</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"its amazon, really unique place to enjoy life with family."</p>
+                                                                <h6>Dinesh, Faridabad</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Very nice place... A must visit for everyone!!!"</p>
+                                                                <h6>Manish K., delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Except for the Welcome Drink, every thing else is exceptionally good. A must visit place for atleast once with the Family"</p>
+                                                                <h6>Naresh Mittal, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"good for outing,...real village atmosphere...real fun with fresh air...!!! "</p>
+                                                                <h6>Dr. Arvind Yogi, Thiruvananthapuram</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Dis is seriously 1 of d best indian places I have visited...!!"</p>
+                                                                <h6>Mr. John Travolta, Wolverhampton</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Entertainment entertainment entertainment, nice place. "</p>
+                                                                <h6>ashish singhal, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"chowki dhani wonder full palace"</p>
+                                                                <h6>indresh singh, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>" awesome place...! only rs.500 ! lots of things to do here!! great fun..!! 5 stars :) :) "</p>
+                                                                <h6>seema nagpal, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Awesome...Life breathes here afresh with amazing food and fun..."</p>
+                                                                <h6>Deva Nand, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"I have visited this place with my family to Celebrate my father’s 80th birthday. We enjoyed a lot!! Ambience and food was very good, staff was very cooperative and humble…. we had lots of fund dance its worth visiting….Place value for money!! "</p>
+                                                                <h6>Lalita Kala, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"This is very great style, special for village style and foods are very interesting of the choki dhani. One Choki Dhani is also aviable in Jaipur on Tonk Road. I daily see this to go to sitapura to vatika college. But in real I belong to Hisar Haryana, . In jaipur just for study"</p>
+                                                                <h6>Kuldeep SAHARAN SANDOL, SANDOL HISAR</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Must Yaar, Chokhi Dhani is also aviable in Jaipur Haryana Top General Knowledge now on facebook"</p>
+                                                                <h6>Kuldeep Saharan Sandol, AGROHA HISAR</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"thanks fr giving the info.. palace is awesum.. "</p>
+                                                                <h6>shivam agarwal, portlouis</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"this place is amazing.......food is also vry tasty...alll should go there wid family and friends......i had a lot of fun there..."</p>
+                                                                <h6>shilpa, safidon(jind)></h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"The awesome place , i celebrated my son's b'day on 12 nov ...great place to visit..kids enjoyed a lot. Good going chokhi Dhani ...!!!"</p>
+                                                                <h6>Tony, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Chetan Mann Good job buddy......thanks for giving info on call...you guys understand your customer well... :-)"</p>
+                                                                <h6>philip, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"I visited on 17th Nov to attend a meeting of Lions Clubs International. Nice place. Food & courtesy needs appreciation. All the best."</p>
+                                                                <h6>Vijay Garg, Shahabad Markanda</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Awesum Dining ♥♥ "</p>
+                                                                <h6>Lovish, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"RAJSTHANI FOOD VERY NICE "</p>
+                                                                <h6>RAJ GOTHWAL, jaipur</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"its was a very great and a rajasthani experience i had."</p>
+                                                                <h6>rahul khare, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"superb place loving it great fun with lot of entertenment."</p>
+                                                                <h6>sujeet khari, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Very very nice place to visit with family and feel good after having dinner. Tasty food pure rajasthani touch . Awesome"</p>
+                                                                <h6>Sunil Mishra, Samalkha (Panipat)</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Very nice place !!! Enjoyed a lot !!!!! Truly Traditional enjoyment....."</p>
+                                                                <h6>Pranov Gupta, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Nice place..... Excellent artwork..... Awesome place..... Peace of mind..... Zara hatt ke....."</p>
+                                                                <h6>Simran, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Recently we all visited with our family to Chokhi Dhani. Nice place, good lighting, amazing environment, but lack of snacks counters. Some snacks must be provided during entertainment times on including entry fees charges."</p>
+                                                                <h6>Vinod Kr., delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Yesterday I visited this place... No doubt it is awesome, but the quality I enjoyed at Jaipur is beyond comparison. True mirror of Rajasthani culture, but the food taste was not so tasty. Need to improve it."</p>
+                                                                <h6>Pardeep Sharma, Chandigarh</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Heartiest congratulations and best wishes for your new initiative. We are very happy to listen daily about Chokhi Dhani, Ganaur, Sonepat & feel very proud about this."</p>
+                                                                <h6>R.P. Sharma, Kundli</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Real INDIAN touch...nice place!"</p>
+                                                                <h6>Sachin Kimti Lal, Baraut</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Heartiest congratulations! We all feeL very proud because we are your neighbor from Ganaur & Patti Brahmnan. Everything is very good including dinner etc. We are very happy to find this type of thing nearby our hometown."</p>
+                                                                <h6>Ravinder Kaushik, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Very nice experience! Everyone should visit once."</p>
+                                                                <h6>Ranjit Kumar, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Ram Ram sa.... the way they greet you, and in dining hall, the staff while serving greets you with seth and sethani which is very unusual but very catchy and likable..."</p>
+                                                                <h6>Pankaj Juneja, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"The place is really good and enjoyable with the family...."</p>
+                                                                <h6>Rachit Dikshit, Panchkula</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Its a place where u r too yourself, with fresh air, ambiance and specially the dining part, they make u eat so much and their way of greeting is very different from any other hotels or restaurants...."</p>
+                                                                <h6>Prerna Arora, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Nyc place 2 hangout wid frndzz....."</p>
+                                                                <h6>Chirag, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Wonderful way of greeting the guests by saying Ram Ram Sa.... and wonderful way of welcoming the guest! Truly a traditional royal rajasthani culture, loved the food and the style of service."</p>
+                                                                <h6>Sumer, Amritsar</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Awesome weekend with awesome food and cultural activities....."</p>
+                                                                <h6>Neha, Noida</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Nice place and food"</p>
+                                                                <h6>Manjeet Singh, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"The authenticity of the place is amazing and wonderful......"</p>
+                                                                <h6>Simran, Ludhiana</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Amazing place, loved the concept... After a long journey in the flight, felt really happy enjoying the rural ambiance with the family....."</p>
+                                                                <h6>Parvinder Brar, Birmingham</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Good value for money......... Excellent hangout place with friends and family...."</p>
+                                                                <h6>Rahul, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"A wonderful place which fills our heart with soul stirring memories....... Workers at chokhi dhani have a very good hospitality.....</p>
+                                                                <h6>Kousalya, Chandigarh</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Excellent Artwork. A place where U find yourself out of busy life in Delhi. Just perfectly done.They make u feel like a king. Keep it up guys!!!!"</p>
+                                                                <h6>Ayon Das Gupta, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Wonderful place ! A must visit !!!"</p>
+                                                                <h6>Manish K, delhi</h6> </div>
+                                                        </div>
+                                                        <div class="row xys">
+                                                            <div class="col-sm-12">
+                                                                <p>"Ram Ram sa.... the way they greet you, and in dining hall, the staff while serving greets you with seth and sethani which is very unusual but very catchy and likable..."</p>
+                                                                <h6>Pankaj Juneja, delhi</h6> </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row tohide2 text-center">
+                                                <div class="row text-center">
+                                                    <!--tohide2-->
                                                     <div class="col-sm-12">
-                                                        <button> <a class="loadMore2">
-                                                    MORE FROM OUR CUSTOMERS
-                                               <i class="fa fa-angle-right" aria-hidden="true"></i></a> </button>
+                                                        <button> <a id="loadMore" class="loadMore2"> More From Our Customers<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                                            <script>
+                                                                $(function () {
+                                                                    $(".xys").slice(0, 4).show();
+                                                                    $("#loadMore").on('click', function (e) {
+                                                                        e.preventDefault();
+                                                                        $(".xys:hidden").slice(0, 4).slideDown();
+                                                                        if ($(".xys:hidden").length == 0) {
+                                                                            $("#load").fadeOut('slow');
+                                                                        }
+                                                                        $('html,body').animate({
+                                                                            scrollTop: $(this).offset().top
+                                                                        }, 650);
+                                                                    });
+                                                                });
+                                                            </script>
+                                                        </button>
+                                                        <p class="totop"> <a href="#top" style="color:rgb(137,102,51)">Back to top</a> </p>
+                                                        <script>
+                                                            $('a[href=#top]').click(function () {
+                                                                $('body,html').animate({
+                                                                    scrollTop: 560
+                                                                }, 600);
+                                                                return false;
+                                                            });
+                                                            $(window).scroll(function () {
+                                                                if ($(this).scrollTop() > 1500) {
+                                                                    $('.totop a').fadeIn();
+                                                                }
+                                                                else {
+                                                                    $('.totop a').fadeOut();
+                                                                }
+                                                            });
+                                                        </script>
                                                     </div>
                                                 </div>
                                             </div>
@@ -453,10 +838,10 @@
             </div>
             <div class="row">
                 <div class="col-12 footlast">
-                    <h6 class="foothead">Keep in touch</h6>
+                    <h6 class="foothead1">Keep in touch</h6>
                     <ul class="optlist">
                         <li><a href="https://www.facebook.com/ChokhiDhaniSonipat/" class="fbook"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-                        <li><a href="https://www.instagram.com/explore/locations/307454466/chokhi-dhani-sonipat/" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+                        <li><a href="https://www.instagram.com/chokhidhanisonipat/" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
                         <li><a href="https://twitter.com/cdhanisonipat?lang=en" class="tweet"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
                         <li><a href="https://www.youtube.com/results?search_query=chokhi+dhani+sonipat" class="ytube"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
                     </ul>
@@ -473,8 +858,6 @@
     <script src="assets/javascripts/vendor/owl.carousel.min.js"></script>
     <script src="assets/javascripts/vendor/jquery-lightbox.0.41.js"></script>
     <script src="assets/javascripts/main.js"></script>
-    <script src="assets/javascripts/vendor/classie.js"></script>
-    <script src="assets/javascripts/vendor/demo1.js"></script>
     <!-- Custom JS Code for this page -->
     <script>
         $(".loadMore").click(function () {

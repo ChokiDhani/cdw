@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
     <!-- Page Title & Favicon -->
-    <title>Attractions | Choki Dhani</title>
+    <title>ATTRACTION | CHOKHI DHANI</title>
+    <link rel="icon" href="assets/images/menu_overlay_logo.png" type="image/png" sizes="16x16">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/stylesheets/normalize.css">
     <link rel="stylesheet" href="assets/stylesheets/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/stylesheets/navAnim.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
@@ -21,8 +21,8 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link rel="stylesheet" href="assets/stylesheets/centuryGothic.css">
     <link rel="stylesheet" href="assets/stylesheets/owl.theme.default.min.css">
-    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/simpleMobileMenu.css" />
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/simpleMobileMenu.css">
     <link rel="stylesheet" href="assets/stylesheets/main.css">
     <!-- Javascript -->
     <script src="assets/javascripts/vendor/head.core.min.js" type="text/javascript" charset="utf-8"></script>
@@ -33,6 +33,7 @@
     <!--[if lt IE 7]>
 	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	<![endif]-->
+    <!--Carousel-->
     <header id="header">
         <a href="index.html">
             <div class="logo-wrapper">
@@ -43,7 +44,18 @@
         <div id="topbar">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 text-left menu_icon"> <a href="#aboutUs"><span class="optbar optgap">ABOUT US</span></a> <a href="contact.html"><span class="optgap">CONTACT US</span></a> </div>
+                    <div class="col-6 text-left menu_icon"> <a id="open-modal" class="triger-modal" data-triger="modal-demo"><span class="optbar optgap">ABOUT US</span></a> <a href="contact.html"><span class="optgap">CONTACT US</span></a> </div>
+                    <div class="modal-wrap" id="modal-demo">
+                        <div class="modal-container ">
+                            <div class="modal-header headeradjust">
+                                <h2 class="modal-title titlechange">About Us</h2>
+                                <button class="close-modal">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <p class="parachanged">A perfect work of art of craftsmanship spread over 12.5 acres of lush gardens; it is a one-stop destination for entertainment, food & excitement. Chokhi Dhani Sonipat enlivens, a vivid Rajasthani legacy that abandons you awestruck with every one of the attractions and components of ethnic culture and convention. Beginning from the welcome tilak that helps to recall "PADHARO MAHRE DES" neighbourliness of Rajasthan, the mandir, town bazaar, animal rides on horse, camel etc., bioscope, village style photograph studio, palm reading by learned jyotish pundits, artists applying mehendi, recreations zone, open gardens to unwind and bond with each other… , you'll savour each moment of this awesome destination of Chokhi Dhani Sonipat where time slows to a tropical tempo.</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-6 text-right">
                         <div class="logos">
                             <ul>
@@ -69,7 +81,7 @@
                         <ul>
                             <li class="main-nav"><a href="dining.html">DINING</a></li>
                             <li class="main-nav"><a href="attraction.html">ATTRACTION</a></li>
-                            <li><a href="#">DASTAR</a></li>
+                            <li><a href="dastar.html">DASTAR</a></li>
                         </ul>
                     </div>
                     <div class="col-6">
@@ -83,66 +95,6 @@
             </div>
         </div>
     </header>
-    <!-- <header id="header_mobile">
-       // <div class="overlay overlay-scale">
-            <div>
-                <div class="container">
-                    <div class="menu_logo text-center">
-                        <a href="index.html"><img src="assets/images/menu_overlay_logo.png" alt="logo"> </a>
-                    </div>
-                    <button type="button" id="closeMenu" class="overlay-close"> <i class="fa fa-times" aria-hidden="true" style="font-size: 35px;"></i> </button>
-                    <div class="fat-nav__wrapper">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-4 overlay_menu_list text-left">
-                                    <ul>
-                                        <li><a href="dining.html">Dining</a></li>
-                                        <li><a href="attraction.html">Attraction</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="ticketprice.html">Ticket Price</a></li>
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-4 pad text-center">
-                                    <ul>
-                                        <li><a href="corporate.html">Corporate Parties</a></li>
-                                        <li><a href="privacy.html">Privacy Policy</a></li>
-                                        <li><a href="terms.html">Terms of Service</a></li>
-                                        <li><a href="legal.html">Legal Policy</a></li>
-                                        <li><a href="site.html">Site Map</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-4 overlay_menu_list2 text-right">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com/ChokhiDhaniSonipat/"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-                                        <li><a href="https://www.instagram.com/explore/locations/307454466/chokhi-dhani-sonipat/"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-                                        <li><a href="https://twitter.com/cdhanisonipat?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
-                                        <li><a href="https://www.youtube.com/results?search_query=chokhi+dhani+sonipat"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="logo_mobile">
-            <a href="index.html"> <img src="assets/images/mobile-logo.png" alt="logo"> </a>
-        </div>
-        <div class="mobile-menu"> <i class="fa fa-phone btn" aria-hidden="true"></i>
-            <div id="trigger-overlay" class="menu"> <span>
-                    <i class="fa fa-bars btn" aria-hidden="true"></i>
-                </span> </div>
-        </div>
-    </header>-->
-    <!-- <div id="banner">
-        <div class="owl-carousel owl-theme" id="owl-carousel1">
-            <div> <img class="w-100 " src="assets/images/blueperma.jpg" alt="First slide"> </div>
-            <div> <img class="w-100 " src="assets/images/blueperma.jpg" alt="Second slide"> </div>
-            <div> <img class="w-100 " src="assets/images/blueperma.jpg" alt="Third slide"> </div>
-            <div> <img class="w-100 " src="assets/images/blueperma.jpg" alt="Fourth slide"> </div>
-        </div>
-    </div>-->
     <header id="header_mobile" class="cf">
         <div class="navigation">
             <nav class="floatico"> <i class="fa fa-phone btn phoneicon" aria-hidden="true"></i>
@@ -150,6 +102,7 @@
                 <ul class="mobimenu">
                     <li><a href="index.html">Home</a> </li>
                     <li><a href="dining.html">Dining</a></li>
+                    <li><a href="dastar.html">Dastar</a></li>
                     <li><a href="attraction.html">Attraction</a></li>
                     <li><a href="ticketprice.html">Ticket Price</a></li>
                     <li><a href="corporate.html">Corporate Parties</a></li>
@@ -184,32 +137,24 @@
         jQuery(document).ready(function ($) {
             $('.smobitrigger').smplmnu();
         });
-        $(document).ready(function () {
-            $(".navigation ul li").click(function () {
-                $('.navigation ul li > ul').not($(this).children("ul ").toggle()).hide();
-            });
-        });
     </script>
     <div id="banner">
         <div class="owl-carousel owl-theme" id="owl-carousel1">
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop%201.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop%202.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
-                <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
-            </div>
-            <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop%203.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
         </div>
     </div>
+    <!--content-->
     <div id="content">
         <section id="attraction">
             <div class="container attract_container">
@@ -233,145 +178,123 @@
                                     <div class="tab-pane fade show active" id="live" role="tabpanel" aria-labelledby="live-tab">
                                         <div class="part">
                                             <div>
-                                                <div class="head row">
-                                                    <div class="col-sm-12">
-                                                        <h3>TONGA RIDE</h3> </div>
-                                                </div>
-                                                <div class="parting">
-                                                    <div class="main_image"> <img src="assets/images/atrract_main.png" alt="image"> </div>
-                                                    <div class="row">
-                                                        <div class="col-md-4">
+                                                <div class="part_row row">
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>BEEN PARTY (SNAKE CHARMERS)</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Fun%20been%20party%206.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>Witness the musical ensemble of the snake charmers playing different instruments and entertaining
+the audience.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>THE PUPPET SHOW - KATHPUTLI RO NAACH</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Fun%20PUPPET%202.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>The colourful Puppet Show transports you into the world of valiant Kings, beautiful princesses and all
+powerful magicians. The puppeteer makes episodes and scenes from their lives come alive to give
+you a glimpse of their lifestyle.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>MEHENDI(HENNA)</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Fun%20mehndi%203.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>Our experienced professional artists apply in intricate, beautiful patterns on your hands. And it is
+complimentary from Chokhi Dhani Sonipat.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="part">
-                                            <div>
-                                                <div class="head row">
-                                                    <div class="col-sm-12">
-                                                        <h3>BULLOCK CART RIDE</h3> </div>
-                                                </div>
-                                                <div class="parting">
-                                                    <div class="main_image"> <img src="assets/images/atrract_main.png" alt="image"> </div>
-                                                    <div class="row">
-                                                        <div class="col-md-4">
+                                                <div class="part_row row">
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>THE MAGIC SHOW - JAADU RO KHEL</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Fun%20magic%204.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>The magician performs his captivating show with some hand tricks and hypnotism which will puzzle
+your mind.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>LIVE BAJRE KI ROTTI SERVED WITH GUR AND CHUTNEY</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Fun%20bajre%20ki%20roti%205.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>Enjoy the exotic taste of bajre ki roti with Gur (jaggery) and chutney cooked and prepared in front of
+you at Chokhi Dhani Sonipat</p>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>FOLK DANCE AND MUSIC SHOW - CHAUPAL NAACH GAAN RE</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Fun%20FOLK%20DANCE%201.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>Witness different forms of Rajasthani folk dances such as Ghoomar, Potter Dance, Kalbeliya - the
+Snake Dance, Bhopa-Bhopi Dance, etc.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="part">
-                                            <div>
-                                                <div class="head row">
-                                                    <div class="col-sm-12">
-                                                        <h3>SKILL GAMES</h3> </div>
-                                                </div>
-                                                <div class="parting">
-                                                    <div class="main_image"> <img src="assets/images/atrract_main.png" alt="image"> </div>
-                                                    <div class="row">
-                                                        <div class="col-md-4">
+                                                <div class="part_row row">
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>ASTROLOGISTS</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Fun%20astrologer7.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
-                                                                <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
-                                                                <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>Know your future by trained and learned astrologers only at Chokhi Dhani Sonipat</p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="part">
-                                            <div>
-                                                <div class="head row">
-                                                    <div class="col-sm-12">
-                                                        <h3>MEHANDI</h3> </div>
-                                                </div>
-                                                <div class="parting">
-                                                    <div class="main_image"> <img src="assets/images/atrract_main.png" alt="image"> </div>
-                                                    <div class="row">
-                                                        <div class="col-md-4">
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>NAGADA PARTY</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Fun%20nagada%208.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>Let the beats of nagada and dhol shake your soul. Nagada party will surely make you groove over the
+beats.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>FIRE PERFORMANCE</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Fun%20fire%209.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
-                                                                <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>Get mesmerized and witness the skills that involve the manipulation of fire</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -383,145 +306,125 @@
                                     <div class="tab-pane fade" id="fun" role="tabpanel" aria-labelledby="fun-tab">
                                         <div class="part">
                                             <div>
-                                                <div class="head row">
-                                                    <div class="col-sm-12">
-                                                        <h3>TONGA RIDE</h3> </div>
-                                                </div>
-                                                <div class="parting">
-                                                    <div class="main_image"> <img src="assets/images/atrract_main.png" alt="image"> </div>
-                                                    <div class="row">
-                                                        <div class="col-md-4">
+                                                <div class="part_row row">
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>CAMEL RIDE</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Live%201.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>Experience the excitement and fun of camel ride. Have a tour of entire Chokhi Dhani Sonipat in style,
+enjoying the sights and sounds at a comfortable pace.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>BULLOCK CART RIDE</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Live%20bullcart%207.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>Explore the beautiful sights and the simple architecture of the entire village on a comfortable bullock
+cart.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>TONGA RIDE</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Live%20tonga%202.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>In the era of cars and bikes, tonga ride is a forgotten luxury. However, at Chokhi Dhani Sonipat we
+have all the arrangements made to make you travel back in time and experience the most amazing
+tonga ride.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="part">
-                                            <div>
-                                                <div class="head row">
-                                                    <div class="col-sm-12">
-                                                        <h3>BULLOCK CART RIDE</h3> </div>
-                                                </div>
-                                                <div class="parting">
-                                                    <div class="main_image"> <img src="assets/images/atrract_main.png" alt="image"> </div>
-                                                    <div class="row">
-                                                        <div class="col-md-4">
+                                                <div class="part_row row">
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>SKILL GAMES</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Live%20skill%20game%203.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>Enjoy trying your hand at the many skill games available like dart game &amp; aiming, shooting games
+and much more. There are children play areas with slides and other junior activities to keep them
+entertained.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>MINI TRAIN RIDE</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Live%20train%204.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>Get ready to smile and recall those joyful and innocent memories of your childhood riding Mini Train
+only at Chokhi Dhani Sonipat.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>BHOOL BHULAIYA</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Live%20Bhool%20Bhulaiya%205.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>Do you love solving puzzles? Then bhool bhulaiya is for you which is a maze wherein you can enter
+from one gate and have to find your way to get out of from another gate.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="part">
-                                            <div>
-                                                <div class="head row">
-                                                    <div class="col-sm-12">
-                                                        <h3>SKILL GAMES</h3> </div>
-                                                </div>
-                                                <div class="parting">
-                                                    <div class="main_image"> <img src="assets/images/atrract_main.png" alt="image"> </div>
-                                                    <div class="row">
-                                                        <div class="col-md-4">
+                                                <div class="part_row row">
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>GONG</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Live%20gong%206.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
-                                                                <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
-                                                                <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>That old school bell just got bigger in size. And you can ring it as many times as you want.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="part">
-                                            <div>
-                                                <div class="head row">
-                                                    <div class="col-sm-12">
-                                                        <h3>MEHANDI</h3> </div>
-                                                </div>
-                                                <div class="parting">
-                                                    <div class="main_image"> <img src="assets/images/atrract_main.png" alt="image"> </div>
-                                                    <div class="row">
-                                                        <div class="col-md-4">
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>ETHNIC COSTUME PHOTOGRAPHY</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Fun%20fire%209.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>In the era of selfies and Instagram why not get clicked wearing the ethnic rajasthani costumes and
+make the world go jealous.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-4">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="head">
+                                                            <h3>ANCIENT CAVE - (GUFA JHARNA)</h3> </div>
+                                                        <div class="parting">
                                                             <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
+                                                                <div class="gallery_image"> <img src="assets/images/Att%20Live%20Jharna%208.jpg" alt="ride"> </div>
                                                                 <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="gallery">
-                                                                <div class="gallery_image"> <img src="assets/images/attract.jpg" alt="ride"> </div>
-                                                                <div class="gallery_info">
-                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam incidunt aspernatur beatae odio, quod sequi alias nisi eius vero. Minima officia tenetur eos architecto a ipsa fugit harum, optio?</p>
+                                                                    <p>If you always wished to be an explorer then Gufa Jharna is for you. Feel the adventurous journey as
+you travel through this ancient cave.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -557,10 +460,10 @@
             </div>
             <div class="row">
                 <div class="col-12 footlast">
-                    <h6 class="foothead">Keep in touch</h6>
+                    <h6 class="foothead1">Keep in touch</h6>
                     <ul class="optlist">
                         <li><a href="https://www.facebook.com/ChokhiDhaniSonipat/" class="fbook"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-                        <li><a href="https://www.instagram.com/explore/locations/307454466/chokhi-dhani-sonipat/" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+                        <li><a href="https://www.instagram.com/chokhidhanisonipat/" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
                         <li><a href="https://twitter.com/cdhanisonipat?lang=en" class="tweet"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
                         <li><a href="https://www.youtube.com/results?search_query=chokhi+dhani+sonipat" class="ytube"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
                     </ul>
@@ -577,8 +480,6 @@
     <script src="assets/javascripts/vendor/owl.carousel.min.js"></script>
     <script src="assets/javascripts/vendor/jquery-lightbox.0.41.js"></script>
     <script src="assets/javascripts/main.js"></script>
-    <script src="assets/javascripts/vendor/classie.js"></script>
-    <script src="assets/javascripts/vendor/demo1.js"></script>
     <!-- Custom JS Code for this page -->
 </body>
 

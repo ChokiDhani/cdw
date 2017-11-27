@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
     <!-- Page Title & Favicon -->
-    <title>Legal Policy | Choki Dhani</title>
+    <title>LEGAL | CHOKHI DHANI</title>
+    <link rel="icon" href="assets/images/menu_overlay_logo.png" type="image/png" sizes="16x16">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/stylesheets/normalize.css">
     <link rel="stylesheet" href="assets/stylesheets/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/stylesheets/navAnim.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
@@ -21,15 +20,13 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link rel="stylesheet" href="assets/stylesheets/centuryGothic.css">
     <link rel="stylesheet" href="assets/stylesheets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/stylesheets/main.css">
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css
-    ">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/simpleMobileMenu.css">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
     <!-- Javascript -->
     <script src="assets/javascripts/vendor/head.core.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/javascripts/vendor/modernizr.custom.js"></script>
 </head>
-
 <body>
     <!--[if lt IE 7]>
 	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -44,7 +41,19 @@
         <div id="topbar">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 text-left menu_icon"> <a href="#aboutUs"><span class="optbar optgap">ABOUT US</span></a> <a href="contact.html"><span class="optgap">CONTACT US</span></a> </div>
+                    <div class="col-6 text-left menu_icon"> <a id="open-modal" class="triger-modal" data-triger="modal-demo"><span class="optbar optgap">ABOUT US</span></a> <a href="contact.html"><span class="optgap">CONTACT US</span></a> </div>
+                    <div class="modal-wrap" id="modal-demo">
+                        <div class="modal-container ">
+                            <div class="modal-header headeradjust">
+                                <h2 class="modal-title titlechange">About Us</h2>
+                                <button class="close-modal">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                
+                                <p class="parachanged">A perfect work of art of craftsmanship spread over 12.5 acres of lush gardens; it is a one-stop destination for entertainment, food & excitement. Chokhi Dhani Sonipat enlivens, a vivid Rajasthani legacy that abandons you awestruck with every one of the attractions and components of ethnic culture and convention. Beginning from the welcome tilak that helps to recall "PADHARO MAHRE DES" neighbourliness of Rajasthan, the mandir, town bazaar, animal rides on horse, camel etc., bioscope, village style photograph studio, palm reading by learned jyotish pundits, artists applying mehendi, recreations zone, open gardens to unwind and bond with each other… , you'll savour each moment of this awesome destination of Chokhi Dhani Sonipat where time slows to a tropical tempo.</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-6 text-right">
                         <div class="logos">
                             <ul>
@@ -70,7 +79,7 @@
                         <ul>
                             <li class="main-nav"><a href="dining.html">DINING</a></li>
                             <li class="main-nav"><a href="attraction.html">ATTRACTION</a></li>
-                            <li><a href="#">DASTAR</a></li>
+                            <li><a href="dastar.html">DASTAR</a></li>
                         </ul>
                     </div>
                     <div class="col-6">
@@ -83,67 +92,7 @@
                 </div>
             </div>
         </div>
-    </header>
-    <!--  <header id="header_mobile">
-        <div class="overlay overlay-scale">
-            <div>
-                <div class="container">
-                    <div class="menu_logo text-center">
-                        <a href="index.html"> <img src="assets/images/menu_overlay_logo.png" alt="logo"> </a>
-                    </div>
-                    <button type="button" id="closeMenu" class="overlay-close"> <i class="fa fa-times" aria-hidden="true" style="font-size: 35px;"></i> </button>
-                    <div class="fat-nav__wrapper">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-4 overlay_menu_list text-left">
-                                    <ul>
-                                        <li><a href="dining.html">Dining</a></li>
-                                        <li><a href="attraction.html">Attraction</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="ticketprice.html">Ticket Price</a></li>
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-4 pad text-center">
-                                    <ul>
-                                        <li><a href="corporate.html">Corporate Parties</a></li>
-                                        <li><a href="privacy.html">Privacy Policy</a></li>
-                                        <li><a href="terms.html">Terms of Service</a></li>
-                                        <li><a href="legal.html">Legal Policy</a></li>
-                                        <li><a href="site.html">Site Map</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-4 overlay_menu_list2 text-right">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com/ChokhiDhaniSonipat/"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-                                        <li><a href="https://www.instagram.com/explore/locations/307454466/chokhi-dhani-sonipat/"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-                                        <li><a href="https://twitter.com/cdhanisonipat?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
-                                        <li><a href="https://www.youtube.com/results?search_query=chokhi+dhani+sonipat"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="logo_mobile">
-            <a href="index.html"> <img src="assets/images/mobile-logo.png" alt="logo"> </a>
-        </div>
-        <div class="mobile-menu"> <i class="fa fa-phone btn" aria-hidden="true"></i>
-            <div id="trigger-overlay" class="menu"> <span>
-                    <i class="fa fa-bars btn" aria-hidden="true"></i>
-                    </span> </div>
-        </div>
-    </header>
-    <div id="banner">
-     <div class="owl-carousel owl-theme" id="owl-carousel1">
-              <div> <img class="w-100 " src="assets/images/blueperma.jpg" alt="First slide"> </div>
-              <div> <img class="w-100 " src="assets/images/blueperma.jpg" alt="Second slide"> </div>
-              <div> <img class="w-100 " src="assets/images/blueperma.jpg" alt="Third slide"> </div>
-              <div> <img class="w-100 " src="assets/images/blueperma.jpg" alt="Fourth slide"> </div>
-        </div>
-    </div>-->
+    </header>  
     <header id="header_mobile" class="cf">
         <div class="navigation">
             <nav class="floatico"> <i class="fa fa-phone btn phoneicon" aria-hidden="true"></i>
@@ -151,6 +100,7 @@
                 <ul class="mobimenu">
                     <li><a href="index.html">Home</a> </li>
                     <li><a href="dining.html">Dining</a></li>
+                    <li><a href="dastar.html">Dastar</a></li>
                     <li><a href="attraction.html">Attraction</a></li>
                     <li><a href="ticketprice.html">Ticket Price</a></li>
                     <li><a href="corporate.html">Corporate Parties</a></li>
@@ -185,11 +135,6 @@
         jQuery(document).ready(function ($) {
             $('.smobitrigger').smplmnu();
         });
-        $(document).ready(function () {
-            $(".navigation ul li").click(function () {
-                $('.navigation ul li > ul').not($(this).children("ul ").toggle()).hide();
-            });
-        });
     </script>
     <div id="banner">
         <div class="owl-carousel owl-theme" id="owl-carousel1">
@@ -198,15 +143,15 @@
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop 1.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop 2.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop 3.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
         </div>
@@ -222,13 +167,46 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <ul class="points">
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est cumque maxime fuga ad dolorem labore dicta doloribus ab accusantium, nihil, facilis, amet laudantium quaerat recusandae, totam ducimus omnis repellat illum.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est cumque maxime fuga ad dolorem labore dicta doloribus ab accusantium, nihil, facilis, amet laudantium quaerat recusandae, totam ducimus omnis repellat illum.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est cumque maxime fuga ad dolorem labore dicta doloribus ab accusantium, nihil, facilis, amet laudantium quaerat recusandae, totam ducimus omnis repellat illum.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est cumque maxime fuga ad dolorem labore dicta doloribus ab accusantium, nihil, facilis, amet laudantium quaerat recusandae, totam ducimus omnis repellat illum.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est cumque maxime fuga ad dolorem labore dicta doloribus ab accusantium, nihil, facilis, amet laudantium quaerat recusandae, totam ducimus omnis repellat illum.</li>
-                        </ul>
+                        <div class="matter">
+                            <h5>Legal Disclaimer</h5>
+                            <p>Adah Hospitality Pvt. Ltd. (referred to as &quot;Chokhi Dhani Sonipat&quot; hereafter) does not evaluate or
+                               guarantee the accuracy of all the information displayed on the website. You agree that any use you
+                               make of such information is at your own risk and that Chokhi Dhani Sonipat is not responsible for
+                               any losses resulting from your reliance on any such information. Please refer to the &quot;Terms of
+                               Service&quot; document carefully.</p>
+                            <p>By submitting any information including enquiry to Chokhi Dhani Sonipat, you acknowledge that
+                               Chokhi Dhani Sonipat is not liable to process the information including answer you receive or do not
+                               receive, and you agree to hold Chokhi Dhani Sonipat harmless from any loss, harm, injury or damage
+                               resulting from or arising out of your submission of the information including enquiry or your use of
+                               or reliance on any response thereto.</p>
+                            <p>Chokhi Dhani Sonipat is not responsible for any errors, omissions or representations on any of our
+                               pages or on any links on any of our pages. We should not and cannot be held responsible for any
+                               content advertised on our website and from any loss or damage aroused due to the advertisement
+                               displayed on the website. Please verify the veracity of all information on your own before
+                               undertaking any reliance. The linked sites are not under our control and we are not responsible for
+                               the contents of any linked site or any link contained in a linked site, or any changes or updates to
+                               such sites. We are providing these links to you only as a convenience, and the inclusion of any link
+                               does not imply endorsement by us of the site.</p>
+                            <p>Chokhi Dhani Sonipat hereby expressly disclaims any implied warranties imputed by the laws of any
+                               jurisdiction. Chokhi Dhani Sonipat considers itself and intends to be subject to the jurisdiction only of
+                               the courts of Sonipat, Haryana, India.</p>
+                            <h6>Chokhi Dhani Sonipat makes no warranty that:</h6>
+                            <ul>
+                                <li>-the service will meet your requirements.</li>
+                                <li>- the service will be uninterrupted, timely, secure, or error-free.</li>
+                                <li>- the results that may be obtained from the use of the service will be accurate or reliable.</li>
+                                <li>- any products, services, information, or other material purchased or obtained by you through the
+                                      services or any transactions entered into through the services, or that any of these will meet your
+                                      expectations.</li>
+                                <li>- any errors in the service will be corrected.</li>
+                            </ul>
+                            <p>Any material downloaded or otherwise obtained through the use of the service is done at your own
+                               discretion and risk and that you will be solely responsible for any damage to your computer system
+                               or loss of data that results from the download of any such material. No advice or information,
+                               whether oral or written, obtained by you from Chokhi Dhani Sonipat or through or from the service
+                               shall create any warranty not expressly stated in the Terms of Service.</p>  
+                            <h6>If you don&#39;t agree with any of our disclaimers above, please do not browse through any of our pages.</h6>                          
+                        </div>
                     </div>
                 </div>
             </div>
@@ -252,7 +230,7 @@
             </div>
             <div class="row">
                 <div class="col-12 footlast">
-                    <h6 class="foothead">Keep in touch</h6>
+                    <h6 class="foothead1">Keep in touch</h6>
                     <ul class="optlist">
                         <li><a href="https://www.facebook.com/ChokhiDhaniSonipat/" class="fbook"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
                         <li><a href="https://www.instagram.com/explore/locations/307454466/chokhi-dhani-sonipat/" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
@@ -272,8 +250,7 @@
     <script src="assets/javascripts/vendor/owl.carousel.min.js"></script>
     <script src="assets/javascripts/vendor/jquery-lightbox.0.41.js"></script>
     <script src="assets/javascripts/main.js"></script>
-    <script src="assets/javascripts/vendor/classie.js"></script>
-    <script src="assets/javascripts/vendor/demo1.js"></script>
+    
     <!-- Custom JS Code for this page -->
 </body>
 

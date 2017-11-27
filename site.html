@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
     <!-- Page Title & Favicon -->
-    <title>Site Map| Choki Dhani</title>
+    <title>SITE | CHOKHI DHANI</title>
+    <link rel="icon" href="assets/images/menu_overlay_logo.png" type="image/png" sizes="16x16">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/stylesheets/normalize.css">
     <link rel="stylesheet" href="assets/stylesheets/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/stylesheets/navAnim.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
@@ -21,15 +20,13 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link rel="stylesheet" href="assets/stylesheets/centuryGothic.css">
     <link rel="stylesheet" href="assets/stylesheets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/stylesheets/main.css">
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css
-    ">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/simpleMobileMenu.css">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
     <!-- Javascript -->
     <script src="assets/javascripts/vendor/head.core.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/javascripts/vendor/modernizr.custom.js"></script>
 </head>
-
 <body>
     <!--[if lt IE 7]>
 	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -44,7 +41,19 @@
         <div id="topbar">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 text-left menu_icon"> <a href="#aboutUs"><span class="optbar optgap">ABOUT US</span></a> <a href="contact.html"><span class="optgap">CONTACT US</span></a> </div>
+                    <div class="col-6 text-left menu_icon"> <a id="open-modal" class="triger-modal" data-triger="modal-demo"><span class="optbar optgap">ABOUT US</span></a> <a href="contact.html"><span class="optgap">CONTACT US</span></a> </div>
+                    <div class="modal-wrap" id="modal-demo">
+                        <div class="modal-container ">
+                            <div class="modal-header headeradjust">
+                                <h2 class="modal-title titlechange">About Us</h2>
+                                <button class="close-modal">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                
+                                <p class="parachanged">A perfect work of art of craftsmanship spread over 12.5 acres of lush gardens; it is a one-stop destination for entertainment, food & excitement. Chokhi Dhani Sonipat enlivens, a vivid Rajasthani legacy that abandons you awestruck with every one of the attractions and components of ethnic culture and convention. Beginning from the welcome tilak that helps to recall "PADHARO MAHRE DES" neighbourliness of Rajasthan, the mandir, town bazaar, animal rides on horse, camel etc., bioscope, village style photograph studio, palm reading by learned jyotish pundits, artists applying mehendi, recreations zone, open gardens to unwind and bond with each other… , you'll savour each moment of this awesome destination of Chokhi Dhani Sonipat where time slows to a tropical tempo.</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-6 text-right">
                         <div class="logos">
                             <ul>
@@ -84,66 +93,6 @@
             </div>
         </div>
     </header>
-    <!--<header id="header_mobile">
-        <div class="overlay overlay-scale">
-            <div>
-                <div class="container">
-                    <div class="menu_logo text-center">
-                        <a href="index.html"> <img src="assets/images/menu_overlay_logo.png" alt="logo"> </a>
-                    </div>
-                    <button type="button" id="closeMenu" class="overlay-close"> <i class="fa fa-times" aria-hidden="true" style="font-size: 35px;"></i> </button>
-                    <div class="fat-nav__wrapper">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-4 overlay_menu_list text-left">
-                                    <ul>
-                                        <li><a href="dining.html">Dining</a></li>
-                                        <li><a href="attraction.html">Attraction</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="ticketprice.html">Ticket Price</a></li>
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-4 pad text-center">
-                                    <ul>
-                                        <li><a href="corporate.html">Corporate Parties</a></li>
-                                        <li><a href="privacy.html">Privacy Policy</a></li>
-                                        <li><a href="terms.html">Terms of Service</a></li>
-                                        <li><a href="legal.html">Legal Policy</a></li>
-                                        <li><a href="site.html">Site Map</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-4 overlay_menu_list2 text-right">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com/ChokhiDhaniSonipat/"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-                                        <li><a href="https://www.instagram.com/explore/locations/307454466/chokhi-dhani-sonipat/"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-                                        <li><a href="https://twitter.com/cdhanisonipat?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
-                                        <li><a href="https://www.youtube.com/results?search_query=chokhi+dhani+sonipat"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="logo_mobile">
-            <a href="index.html"> <img src="assets/images/mobile-logo.png" alt="logo"> </a>
-        </div>
-        <div class="mobile-menu"> <i class="fa fa-phone btn" aria-hidden="true"></i>
-            <div id="trigger-overlay" class="menu"> <span>
-                    <i class="fa fa-bars btn" aria-hidden="true"></i>
-                    </span> </div>
-        </div>
-    </header>
-    <div id="banner">
-        <div class="owl-carousel owl-theme" id="owl-carousel1">
-            <div> <img class="w-100 " src="assets/images/blueperma.jpg" alt="First slide"> </div>
-            <div> <img class="w-100 " src="assets/images/blueperma.jpg" alt="Second slide"> </div>
-            <div> <img class="w-100 " src="assets/images/blueperma.jpg" alt="Third slide"> </div>
-            <div> <img class="w-100 " src="assets/images/blueperma.jpg" alt="Fourth slide"> </div>
-        </div>
-    </div>-->
     <header id="header_mobile" class="cf">
         <div class="navigation">
             <nav class="floatico"> <i class="fa fa-phone btn phoneicon" aria-hidden="true"></i>
@@ -184,11 +133,6 @@
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
             $('.smobitrigger').smplmnu();
-        });
-        $(document).ready(function () {
-            $(".navigation ul li").click(function () {
-                $('.navigation ul li > ul').not($(this).children("ul ").toggle()).hide();
-            });
         });
     </script>
     <div id="banner">
@@ -264,7 +208,8 @@
             </div>
         </section>
         <div>
-            <hr> </div>
+            <hr> 
+        </div>
     </div>
     <footer id="footer" class="text-justify">
         <div class="link"> <img src="assets/images/footer_phone.png" alt="phone"> <img src="assets/images/footer_icon_after.png" alt="line"> <img src="assets/images/footer_message.png" alt="message"> </div>
@@ -302,8 +247,7 @@
     <script src="assets/javascripts/vendor/owl.carousel.min.js"></script>
     <script src="assets/javascripts/vendor/jquery-lightbox.0.41.js"></script>
     <script src="assets/javascripts/main.js"></script>
-    <script src="assets/javascripts/vendor/classie.js"></script>
-    <script src="assets/javascripts/vendor/demo1.js"></script>
+    
     <!-- Custom JS Code for this page -->
 </body>
 

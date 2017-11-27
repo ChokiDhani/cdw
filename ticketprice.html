@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
     <!-- Page Title & Favicon -->
-    <title>TICKET PRICE| CHOKHI DHANI</title>
+    <title>TICKETPRICE | CHOKHI DHANI</title>
+    <link rel="icon" href="assets/images/menu_overlay_logo.png" type="image/png" sizes="16x16">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/stylesheets/normalize.css">
     <link rel="stylesheet" href="assets/stylesheets/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/stylesheets/navAnim.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
@@ -21,10 +21,9 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link rel="stylesheet" href="assets/stylesheets/centuryGothic.css">
     <link rel="stylesheet" href="assets/stylesheets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/stylesheets/main.css">
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css
-    ">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/simpleMobileMenu.css">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
     <!-- Javascript -->
     <script src="assets/javascripts/vendor/head.core.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/javascripts/vendor/modernizr.custom.js"></script>
@@ -44,7 +43,18 @@
         <div id="topbar">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 text-left menu_icon"> <a href="#aboutUs"><span class="optbar optgap">ABOUT US</span></a> <a href="contact.html"><span class="optgap">CONTACT US</span></a> </div>
+                    <div class="col-6 text-left menu_icon"> <a id="open-modal" class="triger-modal" data-triger="modal-demo"><span class="optbar optgap">ABOUT US</span></a> <a href="contact.html"><span class="optgap">CONTACT US</span></a> </div>
+                    <div class="modal-wrap" id="modal-demo">
+                        <div class="modal-container ">
+                            <div class="modal-header headeradjust">
+                                <h2 class="modal-title titlechange">About Us</h2>
+                                <button class="close-modal">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <p class="parachanged">A perfect work of art of craftsmanship spread over 12.5 acres of lush gardens; it is a one-stop destination for entertainment, food &amp; excitement. Chokhi Dhani Sonipat enlivens, a vivid Rajasthani legacy that abandons you awestruck with every one of the attractions and components of ethnic culture and convention. Beginning from the welcome tilak that helps to recall "PADHARO MAHRE DES" neighbourliness of Rajasthan, the mandir, town bazaar, animal rides on horse, camel etc., bioscope, village style photograph studio, palm reading by learned jyotish pundits, artists applying mehendi, recreations zone, open gardens to unwind and bond with each other… , you'll savour each moment of this awesome destination of Chokhi Dhani Sonipat where time slows to a tropical tempo.</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-6 text-right">
                         <div class="logos">
                             <ul>
@@ -70,7 +80,7 @@
                         <ul>
                             <li class="main-nav"><a href="dining.html">DINING</a></li>
                             <li class="main-nav"><a href="attraction.html">ATTRACTION</a></li>
-                            <li><a href="#">DASTAR</a></li>
+                            <li><a href="dastar.html">DASTAR</a></li>
                         </ul>
                     </div>
                     <div class="col-6">
@@ -84,63 +94,6 @@
             </div>
         </div>
     </header>
-    <!--<header id="header-mobile">
-       <div class="overlay overlay-scale">
-            <div>
-                <div class="container">
-                    <div class="menu_logo text-center">
-                        <a href="index.html"> <img src="assets/images/menu_overlay_logo.png" alt="logo"> </a>
-                    </div>
-                    <button type="button" id="closeMenu" class="overlay-close">
-                     <i class="fa fa-times" aria-hidden="true" style="font-size: 35px;"></i> </button>
-                    <div class="fat-nav__wrapper">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-4 overlay_menu_list text-left">
-                                    <ul>
-                                        <li><a href="dining.html">Dining</a></li>
-                                        <li><a href="attraction.html">Attraction</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="ticketprice.html">Ticket Price</a></li>
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-4 pad text-center">
-                                    <ul>
-                                        <li><a href="corporate.html">Corporate Parties</a></li>
-                                        <li><a href="privacy.html">Privacy Policy</a></li>
-                                        <li><a href="terms.html">Terms of Service</a></li>
-                                        <li><a href="legal.html">Legal Policy</a></li>
-                                        <li><a href="site.html">Site Map</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-4 overlay_menu_list2 text-right">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com/ChokhiDhaniSonipat/"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-                                        <li><a href="https://www.instagram.com/explore/locations/307454466/chokhi-dhani-sonipat/"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-                                        <li><a href="https://twitter.com/cdhanisonipat?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
-                                        <li><a href="https://www.youtube.com/results?search_query=chokhi+dhani+sonipat"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="logo_mobile">
-            <a href="index.html">
-                <img src="assets/images/mobile-logo.png" alt="logo">
-            </a>
-        </div>
-        <div class="mobile-menu">
-        <div id="trigger-overlay" class="menu"> <span>
-                    <i class="fa fa-bars btn" aria-hidden="true"></i>
-                    </span>
-                        </div>
-                         <i class="fa fa-phone btn" aria-hidden="true"></i>
-        </div>
-    </header>-->
     <header id="header_mobile" class="cf">
         <div class="navigation">
             <nav class="floatico"> <i class="fa fa-phone btn phoneicon" aria-hidden="true"></i>
@@ -148,6 +101,7 @@
                 <ul class="mobimenu">
                     <li><a href="index.html">Home</a> </li>
                     <li><a href="dining.html">Dining</a></li>
+                    <li><a href="dastar.html">Dastar</a></li>
                     <li><a href="attraction.html">Attraction</a></li>
                     <li><a href="ticketprice.html">Ticket Price</a></li>
                     <li><a href="corporate.html">Corporate Parties</a></li>
@@ -182,28 +136,19 @@
         jQuery(document).ready(function ($) {
             $('.smobitrigger').smplmnu();
         });
-        $(document).ready(function () {
-            $(".navigation ul li").click(function () {
-                $('.navigation ul li > ul').not($(this).children("ul ").toggle()).hide();
-            });
-        });
     </script>
     <div id="banner">
         <div class="owl-carousel owl-theme" id="owl-carousel1">
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop%201.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop%202.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
-                <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
-            </div>
-            <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop%203.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
         </div>
@@ -216,7 +161,7 @@
                         <div class="corporateheading heading">
                             <h2>TICKET PRICE AND DIRECTIONS</h2> </div>
                         <div class="corporatecontent">
-                            <p>This is Photoshop's version of Lorem Ipsum. Proin nibh vel velit auctor This is Ipsum.This is Photoshop's version of This is Photoshop's version of Lorem Photoshop's This is Ipsum.This is Photoshop's version of Photoshop's version.Photoshop's version of Lorem Ipsum.This is Photoshop's version of Lorem Photoshop's</p>
+                            <p>Check out our attractive ticket fares and experience the essence of rajasthani culture. We pride ourselves in providing you with amazing memories that could be cherished for lifetime.</p>
                         </div>
                     </div>
                 </div>
@@ -237,7 +182,7 @@
                                 <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-expanded="true">
                                     <div class="row align-items-center">
                                         <div class="col-sm-5 set"> <img src="assets/images/t2.png" class="nav_inactive" alt="t2"> <img src="assets/images/t2a.png" class="nav_active" alt="t2"> </div>
-                                        <div class="col-sm-7 set2"> <span>PARK TIMINGS</span> </div>
+                                        <div class="col-sm-7 set2"> <span>TIMINGS</span> </div>
                                     </div>
                                 </a>
                                 <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-expanded="true">
@@ -249,7 +194,7 @@
                                 <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true">
                                     <div class="row align-items-center">
                                         <div class="col-sm-5 set"> <img src="assets/images/t4.png" class="nav_inactive" alt="t4"> <img src="assets/images/t4a.png" class="nav_active" alt="t4"> </div>
-                                        <div class="col-sm-7 set2"> <span> PARK MAP</span> </div>
+                                        <div class="col-sm-7 set2"> <span> ARIEL VIEW</span> </div>
                                     </div>
                                 </a>
                             </div>
@@ -257,10 +202,16 @@
                         <div class="col-sm-8 space2">
                             <div class="tab-content" id="v-pills-tabContent">
                                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                    <div class="tab_content_image"> <img src="assets/images/ticket_main_head.png" alt="image"> </div>
-                                    <div class="tab_details">
+                                    <div class="tab_content_image"> <img src="assets/images/Ticket%20price.jpg" alt="image"> </div>
+                                  <div class="col-sm-12">
+                                      <h4 class="heading">ENTRY RATES</h4><table>
+                                      <tbody>
+                                          <tr><td>ADULT<br>(age 9yrs above)</td><td>CHILD<br>(age between 3-9yrs)</td></tr>
+                                          <tr><td>INR 750</td><td>INR 450</td></tr>
+                                      </tbody>
+                                      </table></div>  <!--<div class="tab_details">
                                         <div class="tab_details_head_ticket">
-                                            <h3>DIRECTIONS</h3> </div>
+                                            <h3>ENTRY RATES</h3> </div>
                                         <div class="tab_details_content">
                                             <div id="accordion" role="tablist">
                                                 <div class="card">
@@ -370,11 +321,50 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>-->
                                 </div>
                                 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                    <div class="tab_content_image"> <img src="assets/images/ticket_main_head.png" alt="image"> </div>
-                                    <div class="tab_details">
+                                    <div class="tab_content_image"> <img src="assets/images/Ticket%20price.jpg" alt="image"> </div>
+                                   <div class="col-sm-12">
+                                      <h4 class="heading">TIMINGS</h4><table>
+                                      <tbody>
+                                          <tr><td>DAYS</td><td>OPERATIONAL HOURS</td></tr>
+                                          <tr><td>Monday to Sunday</td><td>05:00 pm to 11:00 pm</td></tr>
+                                      </tbody>
+                                      </table>
+                                      <br>
+                                      <h6>PACKAGE INCLUDES</h6>
+                                      <p>Welcome drink snacks on arrival pure veg dinner-North Indian &amp; Rajasthani Cuisine
+Rides (any 4): camel cart, bullock cart, tonga ride, tractor ride, columbus ride,
+Skill games (any 4): pyramid, airgun shooting, bow &amp; arrow, dart board, basket the ball, bowling
+Cultural folk dances: ghoomar, kalbeliya, terah taali, bhopa bhopi, been party, chaupal party</p>
+<h6>ALSO INCLUDES :</h6>
+<ul>
+    <li>Ethnic Costume Photography</li>
+    <li>Puppet Show</li>
+     <li>Magician</li>
+      <li>Acrobatics</li>
+       <li>Mehendi</li>
+        <li>Cave - Gufa Jharna ri</li>
+        <li>Live Pottery Making</li>
+        <li>Live Folk Songs</li>
+</ul>
+<h6>EXCLUDES :</h6>
+<ul>
+    <li>Astrology</li>
+    <li>Snacks Counter</li>
+    <li>Tattoo Making</li>
+
+</ul>
+<h6>*Chokhi Dhani Sonipat timings are subject to change as per management decision.</h6><br>
+<h6>DASTAR - THE PUNJABI DHABA</h6>
+<table>
+                                      <tbody>
+                                          <tr><td>CUISINE <br> PUNJABI</td><td>AVERAGE COST FOR TWO<br>INR 1000 plus taxes</td></tr>
+                                          <tr><td>TIMINGS<br> 24 hrs</td><td>ENQUIRIES <br>+91-8222 8222 81, 8222 8333 81</td></td></tr>
+                                      </tbody>
+                                      </table>
+                                      </div> <!--<div class="tab_details">
                                         <div class="tab_details_head_ticket">
                                             <h3>DIRECTIONS</h3> </div>
                                         <div class="tab_details_content">
@@ -486,11 +476,23 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>-->
                                 </div>
                                 <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                    <div class="tab_content_image"> <img src="assets/images/ticket_main_head.png" alt="image"> </div>
-                                    <div class="tab_details">
+                                    <div class="tab_content_image"> <img src="assets/images/Ticket%20price.jpg" alt="image"> </div>
+                                   <div class="col-sm-12"><img src="" alt=""><br>
+                                   <h6>Distance of the place from Major Landmarks</h6>
+                                   <ul class="distanceplace">
+                                       <li>Indira Gandhi International Airport, New Delhi - 76.2 kms</li>
+                                       <li>New Delhi Railway Station - 66.6 kms</li>
+                                       <li>Dhaula Kuan, Delhi - 68.6 kms</li>
+                                       <li>Karnal Bye-pass, Delhi - 46.0 kms</li>
+                                       <li>Panipat - 32 kms</li>
+                                       <li>Karnal - 67 kms</li>
+                                       <li>Chandigarh - 193 kms</li>
+                                   </ul>
+                                   
+                                   </div> <!--<div class="tab_details">
                                         <div class="tab_details_head_ticket">
                                             <h3>DIRECTIONS</h3> </div>
                                         <div class="tab_details_content">
@@ -602,13 +604,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>-->
                                 </div>
                                 <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                                    <div class="tab_content_image"> <img src="assets/images/ticket_main_head.png" alt="image"> </div>
-                                    <div class="tab_details">
+                                    <div class="tab_content_image"> <img src="assets/images/CD2.jpg" alt="image"> </div>
+                                   <br><h6> ARIEL VIEW OF CHOKHI DHANI SONIPAT</h6> <!--<div class="tab_details">
                                         <div class="tab_details_head_ticket">
-                                            <h3>DIRECTIONS</h3> </div>
+                                            <h3>ARIEL VIEW</h3> </div>
                                         <div class="tab_details_content">
                                             <div id="accordion3" role="tablist">
                                                 <div class="card">
@@ -717,7 +719,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div>-->
                                     </div>
                                 </div>
                             </div>
@@ -727,7 +729,7 @@
                 <div class="wrapper mobile_wrap">
                     <div class="wrapper_head">
                         <h3>
-                                    ENTRY RATES AND DIRECTIONS
+                                    ENTRY RATES 
                                 </h3> </div>
                     <div class="row">
                         <div class="col-sm-12">
@@ -755,8 +757,14 @@
                                             <div class="tab_details">
                                                 <div class="tab_content_image"> <img src="assets/images/ticket_main_head.png" alt="image"> </div>
                                                 <div class="tab_details_head_ticket">
-                                                    <h3>DIRECTIONS</h3> </div>
-                                                <div class="tab_details_content">
+                                                    <h3>ENTRY RATES</h3> </div>
+                                                    <table>
+                                      <tbody>
+                                          <tr><td>ADULT<br>(age 9yrs above)</td><td>CHILD<br>(age between 3-9yrs)</td></tr>
+                                          <tr><td>INR 750</td><td>INR 450</td></tr>
+                                      </tbody>
+                                      </table>
+                                                <!--<div class="tab_details_content">
                                                     <div class="card_head">
                                                         <h4>ENJOY A LONG RIDE</h4> </div>
                                                     <div class="row card_content">
@@ -774,7 +782,7 @@
                                                             <div id="map13" style="width:100%;height:180px"> </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div>-->
                                             </div>
                                         </div>
                                     </div>
@@ -791,7 +799,7 @@
                                                                      <img src="assets/images/t2a.png" class="nav_active" alt="t2">
                                                                 </div>
                                                                 <div class="col-7 set2">
-                                                                    <h5>PARK TIMINGS </h5> <i class="fa fa-caret-down down_icon" aria-hidden="true"></i> </div>
+                                                                    <h5>TIMINGS </h5> <i class="fa fa-caret-down down_icon" aria-hidden="true"></i> </div>
                         </div>
                         </a>
                         </h5>
@@ -803,8 +811,47 @@
                                     <div class="tab_details">
                                         <div class="tab_content_image"> <img src="assets/images/ticket_main_head.png" alt="image"> </div>
                                         <div class="tab_details_head_ticket">
-                                            <h3>DIRECTIONS</h3> </div>
-                                        <div class="tab_details_content">
+                                            <h3>TIMINGS</h3> </div>
+                                            <table>
+                                      <tbody>
+                                          <tr><td>DAYS</td><td>OPERATIONAL HOURS</td></tr>
+                                          <tr><td>Monday to Sunday</td><td>05:00 pm to 11:00 pm</td></tr>
+                                      </tbody>
+                                      </table>
+                                      <br>
+                                      <h6>PACKAGE INCLUDES</h6>
+                                      <p>Welcome drink snacks on arrival pure veg dinner-North Indian &amp; Rajasthani Cuisine
+Rides (any 4): camel cart, bullock cart, tonga ride, tractor ride, columbus ride,
+Skill games (any 4): pyramid, airgun shooting, bow &amp; arrow, dart board, basket the ball, bowling
+Cultural folk dances: ghoomar, kalbeliya, terah taali, bhopa bhopi, been party, chaupal party</p>
+<h6>ALSO INCLUDES :</h6>
+<ul>
+    <li>Ethnic Costume Photography</li>
+    <li>Puppet Show</li>
+     <li>Magician</li>
+      <li>Acrobatics</li>
+       <li>Mehendi</li>
+        <li>Cave - Gufa Jharna ri</li>
+        <li>Live Pottery Making</li>
+        <li>Live Folk Songs</li>
+</ul>
+<h6>EXCLUDES :</h6>
+<ul>
+    <li>Astrology</li>
+    <li>Snacks Counter</li>
+    <li>Tattoo Making</li>
+
+</ul>
+<h6>*Chokhi Dhani Sonipat timings are subject to change as per management decision.</h6><br>
+<h6>DASTAR - THE PUNJABI DHABA</h6>
+<table>
+                                      <tbody>
+                                          <tr><td>CUISINE <br> PUNJABI</td><td>AVERAGE COST FOR TWO<br>INR 1000 plus taxes</td></tr>
+                                          <tr><td>TIMINGS<br> 24 hrs</td><td>ENQUIRIES <br>+91-8222 8222 81, 8222 8333 81</td></td></tr>
+                                      </tbody>
+                                      </table>
+                                             
+                                        <!--<div class="tab_details_content">
                                             <div class="card_head">
                                                 <h4>ENJOY A LONG RIDE</h4> </div>
                                             <div class="row card_content">
@@ -822,7 +869,7 @@
                                                     <div id="map14" style="width:100%;height:180px"> </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div>-->
                                     </div>
                                 </div>
                             </div>
@@ -851,7 +898,20 @@
                                 <div class="tab_content_image"> <img src="assets/images/ticket_main_head.png" alt="image"> </div>
                                 <div class="tab_details_head_ticket">
                                     <h3>DIRECTIONS</h3> </div>
-                                <div class="tab_details_content">
+                                     <div class="col-sm-12"><img src="" alt=""><br>
+                                   <h6>Distance of the place from Major Landmarks</h6>
+                                   <ul class="distanceplace">
+                                       <li>Indira Gandhi International Airport, New Delhi - 76.2 kms</li>
+                                       <li>New Delhi Railway Station - 66.6 kms</li>
+                                       <li>Dhaula Kuan, Delhi - 68.6 kms</li>
+                                       <li>Karnal Bye-pass, Delhi - 46.0 kms</li>
+                                       <li>Panipat - 32 kms</li>
+                                       <li>Karnal - 67 kms</li>
+                                       <li>Chandigarh - 193 kms</li>
+                                   </ul>
+                                   
+                                   </div>
+                                <!--<div class="tab_details_content">
                                     <div class="card_head">
                                         <h4>ENJOY A LONG RIDE</h4> </div>
                                     <div class="row card_content">
@@ -869,7 +929,7 @@
                                             <div id="map15" style="width:100%;height:180px"> </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                     </div>
@@ -885,7 +945,7 @@
                                         <img src="assets/images/t4a.png" class="nav_active" alt="t4">
                                           </div>
                                         <div class="col-7 set2">
-                                            <h5> PARK MAP</h5> <i class="fa fa-caret-down down_icon" aria-hidden="true"></i> </div>
+                                            <h5> AERIAL VIEW</h5> <i class="fa fa-caret-down down_icon" aria-hidden="true"></i> </div>
     </div>
     </a>
     </h5>
@@ -897,8 +957,9 @@
                     <div class="tab_details">
                         <div class="tab_content_image"> <img src="assets/images/ticket_main_head.png" alt="image"> </div>
                         <div class="tab_details_head_ticket">
-                            <h3>DIRECTIONS</h3> </div>
-                        <div class="tab_details_content">
+                            <h3>AERIAL VIEW</h3> </div>
+                            <img src="assets/images/CD2.jpg" alt="aerial-view">
+                        <!--<div class="tab_details_content">
                             <div class="card_head">
                                 <h4>ENJOY A LONG RIDE</h4> </div>
                             <div class="row card_content">
@@ -916,7 +977,7 @@
                                     <div id="map16" style="width:100%;height:180px"> </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -929,7 +990,9 @@
     </div>
     </div>
     </section>
-    <hr> </div>
+    <div>
+        <hr> </div>
+    </div>
     <footer id="footer" class="text-justify">
         <div class="link"> <img src="assets/images/footer_phone.png" alt="phone"> <img src="assets/images/footer_icon_after.png" alt="line"> <img src="assets/images/footer_message.png" alt="message"> </div>
         <div class="container">
@@ -946,10 +1009,10 @@
             </div>
             <div class="row">
                 <div class="col-12 footlast">
-                    <h6 class="foothead">Keep in touch</h6>
+                    <h6 class="foothead1">Keep in touch</h6>
                     <ul class="optlist">
                         <li><a href="https://www.facebook.com/ChokhiDhaniSonipat/" class="fbook"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-                        <li><a href="https://www.instagram.com/explore/locations/307454466/chokhi-dhani-sonipat/" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+                        <li><a href="https://www.instagram.com/chokhidhanisonipat/" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
                         <li><a href="https://twitter.com/cdhanisonipat?lang=en" class="tweet"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
                         <li><a href="https://www.youtube.com/results?search_query=chokhi+dhani+sonipat" class="ytube"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
                     </ul>
@@ -966,8 +1029,6 @@
     <script src="assets/javascripts/vendor/owl.carousel.min.js"></script>
     <script src="assets/javascripts/vendor/jquery-lightbox.0.41.js"></script>
     <script src="assets/javascripts/main.js"></script>
-    <script src="assets/javascripts/vendor/classie.js"></script>
-    <script src="assets/javascripts/vendor/demo1.js"></script>
     <!-- Custom JS Code for this page -->
     <script>
         function initMap() {

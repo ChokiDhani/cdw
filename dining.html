@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
     <!-- Page Title & Favicon -->
-    <title>Dining | Chokhi Dhani</title>
+    <title>DINING | CHOKHI DHANI</title>
+    <link rel="icon" href="assets/images/menu_overlay_logo.png" type="image/png" sizes="16x16">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/stylesheets/normalize.css">
     <link rel="stylesheet" href="assets/stylesheets/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/stylesheets/navAnim.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
@@ -21,10 +21,9 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link rel="stylesheet" href="assets/stylesheets/centuryGothic.css">
     <link rel="stylesheet" href="assets/stylesheets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/stylesheets/main.css">
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css
-    ">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/simpleMobileMenu.css">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
     <!-- Javascript -->
     <script src="assets/javascripts/vendor/head.core.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/javascripts/vendor/modernizr.custom.js"></script>
@@ -44,7 +43,18 @@
         <div id="topbar">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 text-left menu_icon"> <a href="#aboutUs"><span class="optbar optgap">ABOUT US</span></a> <a href="contact.html"><span class="optgap">CONTACT US</span></a> </div>
+                    <div class="col-6 text-left menu_icon"> <a id="open-modal" class="triger-modal" data-triger="modal-demo"><span class="optbar optgap">ABOUT US</span></a> <a href="contact.html"><span class="optgap">CONTACT US</span></a> </div>
+                    <div class="modal-wrap" id="modal-demo">
+                        <div class="modal-container ">
+                            <div class="modal-header headeradjust">
+                                <h2 class="modal-title titlechange">About Us</h2>
+                                <button class="close-modal">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <p class="parachanged">A perfect work of art of craftsmanship spread over 12.5 acres of lush gardens; it is a one-stop destination for entertainment, food & excitement. Chokhi Dhani Sonipat enlivens, a vivid Rajasthani legacy that abandons you awestruck with every one of the attractions and components of ethnic culture and convention. Beginning from the welcome tilak that helps to recall "PADHARO MAHRE DES" neighbourliness of Rajasthan, the mandir, town bazaar, animal rides on horse, camel etc., bioscope, village style photograph studio, palm reading by learned jyotish pundits, artists applying mehendi, recreations zone, open gardens to unwind and bond with each other… , you'll savour each moment of this awesome destination of Chokhi Dhani Sonipat where time slows to a tropical tempo.</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-6 text-right">
                         <div class="logos">
                             <ul>
@@ -70,7 +80,7 @@
                         <ul>
                             <li class="main-nav"><a href="dining.html">DINING</a></li>
                             <li class="main-nav"><a href="attraction.html">ATTRACTION</a></li>
-                            <li><a href="#">DASTAR</a></li>
+                            <li><a href="dastar.html">DASTAR</a></li>
                         </ul>
                     </div>
                     <div class="col-6">
@@ -84,66 +94,6 @@
             </div>
         </div>
     </header>
-    <!--<header id="header_mobile">
-        <div class="overlay overlay-scale">
-            <div>
-                <div class="container">
-                    <div class="menu_logo text-center">
-                        <a href="index.html"> <img src="assets/images/menu_overlay_logo.png" alt="logo"> </a>
-                    </div>
-                    <button type="button" id="closeMenu" class="overlay-close"> <i class="fa fa-times" aria-hidden="true" style="font-size: 35px;"></i> </button>
-                    <div class="fat-nav__wrapper">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-4 overlay_menu_list text-left">
-                                    <ul>
-                                        <li><a href="dining.html">Dining</a></li>
-                                        <li><a href="attraction.html">Attraction</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="ticketprice.html">Ticket Price</a></li>
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-4 pad text-center">
-                                    <ul>
-                                        <li><a href="corporate.html">Corporate Parties</a></li>
-                                        <li><a href="privacy.html">Privacy Policy</a></li>
-                                        <li><a href="terms.html">Terms of Service</a></li>
-                                        <li><a href="legal.html">Legal Policy</a></li>
-                                        <li><a href="site.html">Site Map</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-4 overlay_menu_list2 text-right">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com/ChokhiDhaniSonipat/"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-                                        <li><a href="https://www.instagram.com/explore/locations/307454466/chokhi-dhani-sonipat/"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-                                        <li><a href="https://twitter.com/cdhanisonipat?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
-                                        <li><a href="https://www.youtube.com/results?search_query=chokhi+dhani+sonipat"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="logo_mobile">
-            <a href="index.html"> <img src="assets/images/mobile-logo.png" alt="logo"> </a>
-        </div>
-        <div class="mobile-menu"> <i class="fa fa-phone btn" aria-hidden="true"></i>
-            <div id="trigger-overlay" class="menu"> <span>
-                    <i class="fa fa-bars btn" aria-hidden="true"></i>
-                    </span> </div>
-        </div>
-    </header>
-    <div id="banner">
-     <div class="owl-carousel owl-theme" id="owl-carousel1">
-              <div> <img class="w-100 " src="assets/images/blueperma.jpg" alt="First slide"> </div>
-              <div> <img class="w-100 " src="assets/images/blueperma.jpg" alt="Second slide"> </div>
-              <div> <img class="w-100 " src="assets/images/blueperma.jpg" alt="Third slide"> </div>
-              <div> <img class="w-100 " src="assets/images/blueperma.jpg" alt="Fourth slide"> </div>
-        </div>
-    </div>-->
     <header id="header_mobile" class="cf">
         <div class="navigation">
             <nav class="floatico"> <i class="fa fa-phone btn phoneicon" aria-hidden="true"></i>
@@ -151,6 +101,7 @@
                 <ul class="mobimenu">
                     <li><a href="index.html">Home</a> </li>
                     <li><a href="dining.html">Dining</a></li>
+                    <li><a href="dastar.html">Dastar</a></li>
                     <li><a href="attraction.html">Attraction</a></li>
                     <li><a href="ticketprice.html">Ticket Price</a></li>
                     <li><a href="corporate.html">Corporate Parties</a></li>
@@ -185,32 +136,24 @@
         jQuery(document).ready(function ($) {
             $('.smobitrigger').smplmnu();
         });
-        $(document).ready(function () {
-            $(".navigation ul li").click(function () {
-                $('.navigation ul li > ul').not($(this).children("ul ").toggle()).hide();
-            });
-        });
     </script>
     <div id="banner">
         <div class="owl-carousel owl-theme" id="owl-carousel1">
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop 1.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop 2.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
-                <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
-            </div>
-            <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop 3.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
         </div>
     </div>
+    <!--content-->
     <div id="content">
         <section id="dining">
             <div class="container">
@@ -219,7 +162,8 @@
                         <div class="diningheading heading">
                             <h2>DINING</h2> </div>
                         <div class="diningcontent">
-                            <p>This is Photoshop's version of Lorem Ipsum. Proin nibh vel velit auctor This is Ipsum.This is Photoshop's version of This is Photoshop's version of Lorem Photoshop's This is Ipsum.This is Photoshop's version of Photoshop's version.Photoshop's version of Lorem Ipsum.This is Photoshop's version of Lorem Photoshop's</p>
+                            <p>An ideal blend of traditional and modern dining experiences awaits you at Chokhi Dhani Sonipat.
+Browse our fine-feasting eateries that offer bona fide Rajasthani and Punjabi cuisine.</p>
                         </div>
                     </div>
                 </div>
@@ -237,6 +181,7 @@
                         <div class="row">
                             <div class="col-md-7" style="padding:0px">
                                 <div class="restaurant_image">
+                                    <div class="fadein"> <img src="assets/images/CD3.jpg" alt="images"> <img src="assets/images/CD33.jpg" alt="images"> <img src="assets/images/CD333.jpg" alt="images"> </div>
                                     <div class="nxt"> <span class="title"><h6>LOBSTER SHACK<span class="arrow">></span></h6>
                                         </span>
                                     </div>
@@ -244,17 +189,18 @@
                             </div>
                             <div class="col-md-5 details">
                                 <div class="detail_main_head">
-                                    <h4>LOBSTER SHACK</h4> </div>
-                                <div class="detail_heading"> <span>Enjoy the freshest seafood at this seasonal beachfront venue.</span> </div>
+                                    <h4>DASTAR - THE PUNJABI DHABA</h4> </div>
+                                <div class="detail_heading"> <span>Modern Punjabi Dhaba serving the most authentic and delicious North Indian Cuisine on the
+highway</span> </div>
                                 <div class="details_table">
                                     <table>
                                         <tr>
-                                            <td> <span>CUISINE</span> <span>Sea Food</span> </td>
-                                            <td> <span>AVERAGE COST FOR TWO</span> <span>INR 6,000 plus taxes</span> </td>
+                                            <td> <span>CUISINE</span> <span>PUNJABI</span> </td>
+                                            <td> <span>AVERAGE COST FOR TWO</span> <span>INR 1,000 plus taxes</span> </td>
                                         </tr>
                                         <tr>
-                                            <td> <span>TIMING</span> <span>11:00-23:00</span> </td>
-                                            <td> <span>ENQUIRIES</span> <span>+91-83-2668-3333</span> </td>
+                                            <td> <span>TIMING</span> <span>24HRS</span> </td>
+                                            <td> <span>ENQUIRIES</span> <span>+91-8222 8222 81, 8222 8333 81</span> </td>
                                         </tr>
                                     </table>
                                 </div>
@@ -265,24 +211,26 @@
                         <div class="row">
                             <div class="col-md-5 details">
                                 <div class="detail_main_head">
-                                    <h4>LOBSTER SHACK</h4> </div>
-                                <div class="detail_heading"> <span>Enjoy the freshest seafood at this seasonal beachfront venue.</span> </div>
+                                    <h4>THE DINING HALL - SANGRI</h4> </div>
+                                <div class="detail_heading"> <span>Mouth-watering cuisine served on a leaf platter</span> </div>
                                 <div class="details_table">
                                     <table>
                                         <tr>
-                                            <td> <span>CUISINE</span> <span>Sea Food</span> </td>
-                                            <td> <span>AVERAGE COST FOR TWO</span> <span>INR 6,000 plus taxes</span> </td>
+                                            <td> <span>CUISINE</span> <span>RAJASTHANI</span> </td>
+                                            <td> <span>INCLUDED IN THE TICKET TO CHOKHI
+</span> <span>DHANI SONIPAT</span> </td>
                                         </tr>
                                         <tr>
-                                            <td> <span>TIMING</span> <span>11:00-23:00</span> </td>
-                                            <td> <span>ENQUIRIES</span> <span>+91-83-2668-3333</span> </td>
+                                            <td> <span>TIMING</span> <span>05:00 pm - 11:00 pm</span> </td>
+                                            <td> <span>ENQUIRIES</span> <span>+91-8222 8222 81, 8222 8333 81</span> </td>
                                         </tr>
                                     </table>
                                 </div>
                             </div>
                             <div class="col-md-7" style="padding:0px">
                                 <div class="restaurant_image">
-                                    <div class="nxt"> <a href="restaurant_2.html"><h6>LOBSTER SHACK<span>></span></h6></a> </div>
+                                    <div class="fadein"> <img src="assets/images/3.jpg" alt="images"> <img src="assets/images/CD34.jpg" alt="images"> <img src="assets/images/CD344.jpg" alt="images"> </div>
+                                    <div class="nxt"> <a href="restaurant_2.html"><h6><span>THE DINING HALL - SANGRI</span></h6></a> </div>
                                 </div>
                             </div>
                         </div>
@@ -291,59 +239,90 @@
                         <div class="row">
                             <div class="col-md-7" style="padding:0px">
                                 <div class="restaurant_image">
-                                    <div class="nxt"> <span class="title"><h6>LOBSTER SHACK<span class="arrow">></span></h6>
+                                    <div class="fadein"> <img src="assets/images/dinning.jpg" alt="images"> <img src="assets/images/3.jpg" alt="images"> <img src="assets/images/6.jpg" alt="images"> </div>
+                                    <div class="nxt"> <span class="title"><h6>DASTAR - THE PUNJABI DHABA<span class="arrow">></span></h6>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-5 details">
                                 <div class="detail_main_head">
-                                    <h4>LOBSTER SHACK</h4> </div>
-                                <div class="detail_heading"> <span>Enjoy the freshest seafood at this seasonal beachfront venue.</span> </div>
+                                    <h4>THE DINING HALL - SANGRI</h4> </div>
+                                <div class="detail_heading"> <span>Mouth-watering cuisine served on a leaf platter</span> </div>
                                 <div class="details_table">
                                     <table>
                                         <tr>
-                                            <td> <span>CUISINE</span> <span>Sea Food</span> </td>
-                                            <td> <span>AVERAGE COST FOR TWO</span> <span>INR 6,000 plus taxes</span> </td>
+                                            <td> <span>CUISINE</span> <span>RAJASTHANI</span> </td>
+                                            <td> <span>Included in the Ticket to Chokhi
+</span> <span>Dhani Sonipat</span> </td>
                                         </tr>
                                         <tr>
-                                            <td> <span>TIMING</span> <span>11:00-23:00</span> </td>
-                                            <td> <span>ENQUIRIES</span> <span>+91-83-2668-3333</span> </td>
+                                            <td> <span>TIMING</span> <span>05:00 pm - 11:00 pm</span> </td>
+                                            <td> <span>ENQUIRIES</span> <span>+91-8222 8222 81, 8222 8333 81</span> </td>
                                         </tr>
                                     </table>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="restaurants">
-                        <div class="row">
-                            <div class="col-md-7" style="padding:0px">
-                                <div class="restaurant_image">
-                                    <div class="nxt"> <span class="title"><h6>LOBSTER SHACK<span class="arrow">></span></h6>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 details">
-                                <div class="detail_main_head">
-                                    <h4>LOBSTER SHACK</h4> </div>
-                                <div class="detail_heading"> <span>Enjoy the freshest seafood at this seasonal beachfront venue.</span> </div>
-                                <div class="details_table">
-                                    <table>
-                                        <tr>
-                                            <td> <span>CUISINE</span> <span>Sea Food</span> </td>
-                                            <td> <span>AVERAGE COST FOR TWO</span> <span>INR 6,000 plus taxes</span> </td>
-                                        </tr>
-                                        <tr>
-                                            <td> <span>TIMING</span> <span>11:00-23:00</span> </td>
-                                            <td> <span>ENQUIRIES</span> <span>+91-83-2668-3333</span> </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="container">
+<div class="row">
+    <div class="col-sm-12">
+        <h2 class="heading">MENU AT CHOKHI DHANI SONIPAT</h2>
+    <div class="menunew">
+    
+    <table>
+        <tbody>
+            <tr><td>Jaljeera</td><td>Rice</td></tr>
+            <tr><td>Paneer Veg</td><td>Chaach</td></tr>
+
+            <tr><td>Maharaja Bajre Ra Khichdo</td><td>Kadhi</td></tr>
+            <tr><td>Dhani Chai &amp; Pakoras</td><td>Phulka Roti</td></tr>
+            <tr><td>Dal Makhani</td><td>Lehsun Ri Chutney</td></tr>
+            <tr><td>Ghee Boora</td><td>Jodhpuri Besan Gatta</td></tr>
+            <tr><td>Kadhi Kachori</td><td>Makka Roti</td></tr>
+            <tr><td>Seasonal Veg</td><td>Dish (Jalebi/Malpua/Halwa)</td></tr>
+            <tr><td>Dhaniye Ri Chutney </td></td><td>Dal Panchmel</td></tr>
+            <tr><td>Bajra roti</td><td>Kair Sangri Ro Aachar</td></tr>
+            <tr><td>Batti</td><td>Dal Makkhan</td></tr>
+            <tr><td>Papad</td><td>Churma</td></tr>
+        </tbody>
+    </table>
+    <p>* Menu is subject to change without prior notice.</p>
+    </div>
+    </div>
+</div>
+
                     </div>
+                    <!--<div class="restaurants">
+    <div class="row">
+        <div class="col-md-7" style="padding:0px">
+            <div class="restaurant_image">
+                <div class="fadein"> <img src="assets/images/dinning.jpg" alt="images"> <img src="assets/images/3.jpg" alt="images"> <img src="assets/images/6.jpg" alt="images"> </div>
+                <div class="nxt"> <span class="title"><h6>LOBSTER SHACK<span class="arrow">></span></h6>
+                    </span>
                 </div>
+            </div>
+        </div>
+        <div class="col-md-5 details">
+            <div class="detail_main_head">
+                <h4>LOBSTER SHACK</h4> </div>
+            <div class="detail_heading"> <span>Enjoy the freshest seafood at this seasonal beachfront venue.</span> </div>
+            <div class="details_table">
+                <table>
+                    <tr>
+                        <td> <span>CUISINE</span> <span>Sea Food</span> </td>
+                        <td> <span>AVERAGE COST FOR TWO</span> <span>INR 6,000 plus taxes</span> </td>
+                    </tr>
+                    <tr>
+                        <td> <span>TIMING</span> <span>11:00-23:00</span> </td>
+                        <td> <span>ENQUIRIES</span> <span>+91-83-2668-3333</span> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>--></div>
             </div>
         </section>
         <div>
@@ -365,10 +344,10 @@
             </div>
             <div class="row">
                 <div class="col-12 footlast">
-                    <h6 class="foothead">Keep in touch</h6>
+                    <h6 class="foothead1">Keep in touch</h6>
                     <ul class="optlist">
                         <li><a href="https://www.facebook.com/ChokhiDhaniSonipat/" class="fbook"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-                        <li><a href="https://www.instagram.com/explore/locations/307454466/chokhi-dhani-sonipat/" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+                        <li><a href="https://www.instagram.com/chokhidhanisonipat/" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
                         <li><a href="https://twitter.com/cdhanisonipat?lang=en" class="tweet"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
                         <li><a href="https://www.youtube.com/results?search_query=chokhi+dhani+sonipat" class="ytube"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
                     </ul>
@@ -385,8 +364,6 @@
     <script src="assets/javascripts/vendor/owl.carousel.min.js"></script>
     <script src="assets/javascripts/vendor/jquery-lightbox.0.41.js"></script>
     <script src="assets/javascripts/main.js"></script>
-    <script src="assets/javascripts/vendor/classie.js"></script>
-    <script src="assets/javascripts/vendor/demo1.js"></script>
     <!-- Custom JS Code for this page -->
 </body>
 

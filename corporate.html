@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
     <!-- Page Title & Favicon -->
-    <title>CORPORATE| CHOKHI DHANI</title>
+    <title>CORPORATE | CHOKHI DHANI</title>
+    <link rel="icon" href="assets/images/menu_overlay_logo.png" type="image/png" sizes="16x16">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/stylesheets/normalize.css">
     <link rel="stylesheet" href="assets/stylesheets/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/stylesheets/navAnim.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
@@ -21,8 +21,8 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link rel="stylesheet" href="assets/stylesheets/centuryGothic.css">
     <link rel="stylesheet" href="assets/stylesheets/owl.theme.default.min.css">
-    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/simpleMobileMenu.css" />
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/simpleMobileMenu.css">
     <link rel="stylesheet" href="assets/stylesheets/main.css">
     <!-- Javascript -->
     <script src="assets/javascripts/vendor/head.core.min.js" type="text/javascript" charset="utf-8"></script>
@@ -43,7 +43,18 @@
         <div id="topbar">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 text-left menu_icon"> <a href="#aboutUs"><span class="optbar optgap">ABOUT US</span></a> <a href="contact.html"><span class="optgap">CONTACT US</span></a> </div>
+                    <div class="col-6 text-left menu_icon"> <a id="open-modal" class="triger-modal" data-triger="modal-demo"><span class="optbar optgap">ABOUT US</span></a> <a href="contact.html"><span class="optgap">CONTACT US</span></a> </div>
+                    <div class="modal-wrap" id="modal-demo">
+                        <div class="modal-container ">
+                            <div class="modal-header headeradjust">
+                                <h2 class="modal-title titlechange">About Us</h2>
+                                <button class="close-modal">&times;</button>
+                            </div>
+                            <div class="modal-content">
+                                <p class="parachanged">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae itaque quaerat animi praesentium accusamus expedita rerum unde ipsum nihil est officia, quisquam sunt reiciendis, omnis placeat distinctio similique illum minus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae itaque quaerat animi praesentium accusamus expedita rerum unde ipsum nihil est officia, quisquam sunt reiciendis, omnis placeat distinctio similique illum minus.</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-6 text-right">
                         <div class="logos">
                             <ul>
@@ -69,7 +80,7 @@
                         <ul>
                             <li class="main-nav"><a href="dining.html">DINING</a></li>
                             <li class="main-nav"><a href="attraction.html">ATTRACTION</a></li>
-                            <li><a href="#">DASTAR</a></li>
+                            <li><a href="dastar.html">DASTAR</a></li>
                         </ul>
                     </div>
                     <div class="col-6">
@@ -90,6 +101,7 @@
                 <ul class="mobimenu">
                     <li><a href="index.html">Home</a> </li>
                     <li><a href="dining.html">Dining</a></li>
+                    <li><a href="dastar.html">Dastar</a></li>
                     <li><a href="attraction.html">Attraction</a></li>
                     <li><a href="ticketprice.html">Ticket Price</a></li>
                     <li><a href="corporate.html">Corporate Parties</a></li>
@@ -124,80 +136,19 @@
         jQuery(document).ready(function ($) {
             $('.smobitrigger').smplmnu();
         });
-        /*toggle*/
-        $(document).ready(function () {
-            $(".navigation ul li").click(function () {
-                $('.navigation ul li > ul').not($(this).children("ul ").toggle()).hide();
-            });
-        });
     </script>
-    <!-- <header id="header-mobile">
-        <div class="overlay overlay-scale">
-            <div>
-                <div class="container">
-                    <div class="menu_logo text-center">
-                        <a href="index.html"> <img src="assets/images/menu_overlay_logo.png" alt="logo"> </a>
-                    </div>
-                    <button type="button" id="closeMenu" class="overlay-close"> <i class="fa fa-times" aria-hidden="true" style="font-size: 35px;"></i> </button>
-                    <div class="fat-nav__wrapper">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-4 overlay_menu_list text-left">
-                                    <ul>
-                                        <li><a href="dining.html">Dining</a></li>
-                                        <li><a href="attraction.html">Attraction</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="ticketprice.html">Ticket Price</a></li>
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-4 pad text-center">
-                                    <ul>
-                                        <li><a href="corporate.html">Corporate Parties</a></li>
-                                        <li><a href="privacy.html">Privacy Policy</a></li>
-                                        <li><a href="terms.html">Terms of Service</a></li>
-                                        <li><a href="legal.html">Legal Policy</a></li>
-                                        <li><a href="site.html">Site Map</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-4 overlay_menu_list2 text-right">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com/ChokhiDhaniSonipat/"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-                                        <li><a href="https://www.instagram.com/explore/locations/307454466/chokhi-dhani-sonipat/"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-                                        <li><a href="https://twitter.com/cdhanisonipat?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
-                                        <li><a href="https://www.youtube.com/results?search_query=chokhi+dhani+sonipat"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="logo_mobile">
-            <a href="index.html"> <img src="assets/images/mobile-logo.png" alt="logo"> </a>
-        </div>
-        <div class="mobile-menu">
-            <div id="trigger-overlay" class="menu"> <span>
-                    <i class="fa fa-bars btn" aria-hidden="true"></i>
-                    </span> </div> <i class="fa fa-phone btn" aria-hidden="true"></i> </div>
-    </header>-->
     <div id="banner">
         <div class="owl-carousel owl-theme" id="owl-carousel1">
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop%201.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop%202.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
             <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
-                <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
-            </div>
-            <div>
-                <div class="desk"> <img src="assets/images/blueperma.jpg" alt="First slide"> </div>
+                <div class="desk"> <img src="assets/images/Desktop%203.jpg" alt="First slide"> </div>
                 <div class="mob"> <img src="assets/images/mobile-banner.gif" alt="First slide"> </div>
             </div>
         </div>
@@ -210,7 +161,8 @@
                         <div class="corporateheading heading">
                             <h2>CORPORATE PARTIES &amp; GROUPS</h2> </div>
                         <div class="corporatecontent">
-                            <p>This is Photoshop's version of Lorem Ipsum. Proin nibh vel velit auctor This is Ipsum.This is Photoshop's version of This is Photoshop's version of Lorem Photoshop's This is Ipsum.This is Photoshop's version of Photoshop's version.Photoshop's version of Lorem Ipsum.This is Photoshop's version of Lorem Photoshop's</p>
+                            <p>ChokhiDhaniSonipat is an ideal getaway for team building exercises, corporate occasions, product
+launches, merchant meets and gatherings, all in a conventional yet invigorating way.</p>
                         </div>
                     </div>
                 </div>
@@ -225,16 +177,16 @@
                                 <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-expanded="true">
                                     <div class="row align-items-center">
                                         <div class="col-sm-5 set"> <img src="assets/images/C1.png" class="nav_inactive" alt="c1"> <img src="assets/images/c1a.png" class="nav_active" alt="c1"> </div>
-                                        <div class="col-sm-7 set2"> <span>CORPORATES & MICE</span> </div>
+                                        <div class="col-sm-7 set2"> <span>CORPORATES EVENTS</span> </div>
                                     </div>
                                 </a>
                                 <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-expanded="true">
                                     <div class="row align-items-center">
                                         <div class="col-sm-5 set"> <img src="assets/images/C2.png" class="nav_inactive" alt="c2"> <img src="assets/images/c2a.png" class="nav_active" alt="c2"> </div>
-                                        <div class="col-sm-7 set2"> <span>SCHOOLS &amp; COACHING CLASSES</span> </div>
+                                        <div class="col-sm-7 set2"> <span>SCHOOL PICNICs</span> </div>
                                     </div>
                                 </a>
-                                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-expanded="true">
+                                <!--<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-expanded="true">
                                     <div class="row align-items-center">
                                         <div class="col-sm-5 set"> <img src="assets/images/C1.png" class="nav_inactive" alt="c3"> <img src="assets/images/c1a.png" class="nav_active" alt="c3"> </div>
                                         <div class="col-sm-7 set2"> <span>CORPORATE EVENT PACKAGE </span> </div>
@@ -251,34 +203,49 @@
                                         <div class="col-sm-5 set"> <img src="assets/images/C5.png" class="nav_inactive" alt="c5"> <img src="assets/images/c5a.png" class="nav_active" alt="c5"> </div>
                                         <div class="col-sm-7 set2"> <span>GROUPS </span> </div>
                                     </div>
-                                </a>
+                                </a>-->
                             </div>
                         </div>
                         <div class="col-sm-8 space2">
                             <div class="tab-content" id="v-pills-tabContent">
                                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                    <div class="tab_content_image"> <img src="assets/images/learn.jpg" alt="image"> </div>
+                                    <div class="tab_content_image"> <img src="assets/images/CD4.jpg" alt="image"> </div>
                                     <div class="tab_details">
                                         <div class="tab_details_head">
-                                            <h3>SCHOOLS &amp; COACHING CLASSES</h3> </div>
+                                            <h3>CORPORATES EVENTS</h3> </div>
                                         <div class="tab_details_intro">
-                                            <h4>GIVES US A RING: LET THE PICNIC BEGIN</h4>
-                                            <p>We believe in educating, inspiring and informing children through fun engagement activities. By educating them we strive to make a positive, lasting and sustainable impact on society.</p>
+                                            <h4>Get it touch with our sales team for group booking, for more than 30 people.</h4>
+                                            <p>If your organization is in Delhi NCR, ChokhiDhaniSonipat is the perfect place for a corporate get-
+together. ChokhiDhaniSonipat is a charming village which provides a real rural backdrop of
+Rajasthani culture.</p>
                                             <br>
-                                            <p>Learning is fun for kids when mixed with entertainment. Credited as country’s first green park and committed to environment and encompassed in a zero pollution zone. We have designed a special environment based outbound training program that will help kids understand nature first hand.</p>
+                                            <p>ChokhiDhaniSonipat is an ideal getaway for team building exercises, corporate occasions, product
+launches, merchant meets and gatherings, all in a conventional yet invigorating way.</p>
                                             <br>
-                                            <p>Also, its never-before seen attractions set amidst unique architecture with international standard amenities and hygiene; are truly an experience to look forward to.</p>
+                                            <p>Outfitted with all civilities for all corporate events, the fantastic dining facility and the decor which
+speaks about the tradition of Rajasthan. This village theme entertainment takes you on a voyage
+through Rajasthan&#39;s cultural hamlet in the days of abundance and glory.</p>
                                         </div>
                                         <div class="tab_details_content">
-                                            <h4>What’s in for Schools/ Coaching Classes:</h4>
+                                            <h4>E-mail: info@chokhidhanisonipat.comOur specialised solutions include:</h4>
                                             <ul>
-                                                <li>World Class rides & slides</li>
-                                                <li>Discounted entry rates with speedy entry</li>
-                                                <li>Safe & Secure Environment</li>
-                                                <li>Professional catering services</li>
-                                                <li>Edu-tainment packages</li>
-                                            </ul> <span>(ENTRY + FOOD)</span>
-                                            <div class="tab_table">
+                                                <li>Pure veg dinner-North Indian &amp;Rajasthani Cuisine</li>
+                                                <li>Rides (any 4) : camel cart, bullock cart, tonga ride, tractor ride, columbus ride,</li>
+                                                <li>Skill games (any 4) : pyramid, airgun shooting, bow &amp; arrow, dart board, basket the ball, bowling</li>
+                                                <li>Cultural folk dances : ghoomar, kalbeliya, terahtaali, bhopabhopi, been party, chaupal party</li>
+                                                <li>Puppet Show</li>
+                                                <li>Magician</li>
+                                                <li>MehendiBhoolBhulaiya</li>
+                                                <li>Cave - GufaJharnariGong</li>
+                                                <li>Lady Sitting with Choolah making Bajreki Roti served with Achar, Gur&amp; Chutney</li>
+                                                <li>Acrobatics</li>
+                                                <li>Head Massage</li>
+                                                <li>Fire Performance</li>
+                                                <li>Live Folk Songs</li>
+                                                <li>Live Pottery Making</li>
+
+                                            </ul> 
+                                            <!--<div class="tab_table">
                                                 <table>
                                                     <tr>
                                                         <td colspan="4"> Monsoon School Pricing Effective between 1st July 2017 to 30th September 2017 </td>
@@ -293,8 +260,8 @@
                                                         <td> <span>Higher Secondary, Colleges & Coaching Classes</span> <span>MRP</span> <span>₹ 625</span> </td>
                                                     </tr>
                                                 </table>
-                                            </div>
-                                            <div class="tab_note">
+                                            </div>-->
+                                            <!--<div class="tab_note">
                                                 <h6>NOTE:</h6> <span>Higher Secondary, Colleges & Coaching Classes</span> <span>Food (STD V to XII and Classes/Jr. College): Breakfast + Lunch OR Lunch + Evening Snacks</span> </div>
                                             <div class="terms_and_conditions">
                                                 <h6>Terms & Conditions</h6>
@@ -304,41 +271,56 @@
                                                     <li>Additional Rs 50 per student applicable for picnics on Sundays</li>
                                                     <li>The above rate is valid for a group of 30 & above students</li>
                                                 </ul>
-                                            </div>
+                                            </div>-->
                                         </div>
                                         <div class="tab_details_end">
                                             <h4>For Bookings, get in touch with our representatives:</h4>
-                                            <ul>
+                                            <!--<ul>
                                                 <li>Mumbai & Rest of India (mum@ew.esselgroup.com | Yogesh.verma@ew.esselgroup.com)</li>
                                                 <li>Gujarat (guj@ew.esselgroup.com | Suraj.sinha@ew.esselgroup.com | Yogesh.verma@ew.esselgroup.com) | sarvesh.kumravat@ew.esselgroup.com) </li>
                                                 <li> Rest of Maharashtra (rom@ew.esselgroup.com | Yogesh.verma@ew.esselgroup.com)</li>
-                                            </ul>
+                                            </ul>-->
                                         </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                    <div class="tab_content_image"> <img src="assets/images/learn.jpg" alt="image"> </div>
+                                    <div class="tab_content_image"> <img src="assets/images/CD0.jpg" alt="image"> </div>
                                     <div class="tab_details">
                                         <div class="tab_details_head">
-                                            <h3>SCHOOLS & COACHING CLASSES</h3> </div>
+                                            <h3>SCHOOL PICNICS</h3> </div>
                                         <div class="tab_details_intro">
                                             <h4>GIVES US A RING: LET THE PICNIC BEGIN</h4>
-                                            <p>We believe in educating, inspiring and informing children through fun engagement activities. By educating them we strive to make a positive, lasting and sustainable impact on society.</p>
+                                            <p>ChokhiDhaniSonipat offers different activities that give immense pleasure and enjoyment to the kids.
+Apart from the general activities like tonga ride, camel rides, mehndi, and stoneware , there are
+some other exciting activities like dholki dance, magic shows, puppet shows, mini train rides, etc.</p>
                                             <br>
-                                            <p>Learning is fun for kids when mixed with entertainment. Credited as country’s first green park and committed to environment and encompassed in a zero pollution zone. We have designed a special environment based outbound training program that will help kids understand nature first hand.</p>
+                                            <p>One distinct thing that school kids adore about ChokhiDhaniSonipat is the food. The authentic
+Rajasthani food that we offer is served on a leaf platter to give you the warm touch of Indian culture.</p>
                                             <br>
-                                            <p>Also, its never-before seen attractions set amidst unique architecture with international standard amenities and hygiene; are truly an experience to look forward to.</p>
+                                            <p>Apart from Rajasthani food we also serve North Indian Cuisine. Your taste buds will surely remember
+this treat for a long time. Come and experience true colors of exquisite Rajasthani heritage.</p>
                                         </div>
                                         <div class="tab_details_content">
-                                            <h4>What’s in for Schools/ Coaching Classes:</h4>
+                                            <h4>Our specialised solutions include:</h4>
                                             <ul>
-                                                <li>World Class rides & slides</li>
-                                                <li>Discounted entry rates with speedy entry</li>
-                                                <li>Safe & Secure Environment</li>
-                                                <li>Professional catering services</li>
-                                                <li>Edu-tainment packages</li>
-                                            </ul> <span>(ENTRY + FOOD)</span>
-                                            <div class="tab_table">
+                                                <li>World Class rides &amp; slides</li>
+                                                <li>Pure veg dinner-North Indian &amp;Rajasthani Cuisine</li>
+                                                <li>Rides (any 4) : camel cart, bullock cart, tonga ride, tractor ride, columbus ride,</li>
+                                                <li>Skill games (any 4) : pyramid, airgun shooting, bow &amp; arrow, dart board, basket the ball, bowling</li>
+                                                <li>Cultural folk dances : ghoomar, kalbeliya, terahtaali, bhopabhopi, been party, chaupal party</li>
+                                                <li>Ethnic Costume Photography</li>
+                                                <li>Puppet Show</li>
+                                                <li>Acrobatics</li>
+                                                <li>Magician</li>
+                                                <li>MehendiBhoolBhulaiya</li>
+                                                <li>Cave - GufaJharnariGong</li>
+                                                <li>Lady Sitting with Choolah making Bajreki Roti served with Achar, Gur&amp; Chutney</li>
+                                               <li>Live Pottery Making</li> 
+                                               <li>Live Folk Songs</li> 
+                                               <li>Fire Performance</li> 
+                                               <li>Head Massage</li> 
+                                            </ul> 
+                                            <!--<div class="tab_table">
                                                 <table>
                                                     <tr>
                                                         <td colspan="4"> Monsoon School Pricing Effective between 1st July 2017 to 30th September 2017 </td>
@@ -353,8 +335,8 @@
                                                         <td> <span>Higher Secondary, Colleges & Coaching Classes</span> <span>MRP</span> <span>₹ 625</span> </td>
                                                     </tr>
                                                 </table>
-                                            </div>
-                                            <div class="tab_note">
+                                            </div>-->
+                                            <!--<div class="tab_note">
                                                 <h6>NOTE:</h6> <span>Higher Secondary, Colleges & Coaching Classes</span> <span>Food (STD V to XII and Classes/Jr. College): Breakfast + Lunch OR Lunch + Evening Snacks</span> </div>
                                             <div class="terms_and_conditions">
                                                 <h6>Terms & Conditions</h6>
@@ -364,15 +346,15 @@
                                                     <li>Additional Rs 50 per student applicable for picnics on Sundays</li>
                                                     <li>The above rate is valid for a group of 30 & above students</li>
                                                 </ul>
-                                            </div>
+                                            </div>-->
                                         </div>
                                         <div class="tab_details_end">
                                             <h4>For Bookings, get in touch with our representatives:</h4>
-                                            <ul>
+                                            <!--<ul>
                                                 <li>Mumbai & Rest of India (mum@ew.esselgroup.com | Yogesh.verma@ew.esselgroup.com)</li>
                                                 <li>Gujarat (guj@ew.esselgroup.com | Suraj.sinha@ew.esselgroup.com | Yogesh.verma@ew.esselgroup.com) | sarvesh.kumravat@ew.esselgroup.com) </li>
                                                 <li> Rest of Maharashtra (rom@ew.esselgroup.com | Yogesh.verma@ew.esselgroup.com)</li>
-                                            </ul>
+                                            </ul>-->
                                         </div>
                                     </div>
                                 </div>
@@ -579,7 +561,7 @@
                                             <img src="assets/images/c1a.png" class="nav_active" alt="c1">
                                              </div>
                                         <div class="col-7 set2"> 
-                                        <h5>CORPORATES & MICE</h5> <i class="fa fa-caret-down down_icon" aria-hidden="true"></i> </div>
+                                        <h5>CORPORATES EVENTS</h5> <i class="fa fa-caret-down down_icon" aria-hidden="true"></i> </div>
                                 </div>
                                 </a>
                                 </h5>
@@ -587,46 +569,43 @@
                             <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                                 <div class="card-body">
                                     <div class="tab_content_image"> <img src="assets/images/learn.jpg" alt="image"> </div>
-                                    <div class="tab_details">
-                                        <div class="tab_details_head">
-                                            <h3>SCHOOLS &amp; COACHING CLASSES</h3> </div>
-                                        <div class="tab_details_intro">
-                                            <h4>GIVES US A RING: LET THE PICNIC BEGIN</h4>
-                                            <p>We believe in educating, inspiring and informing children through fun engagement activities. By educating them we strive to make a positive, lasting and sustainable impact on society.</p>
+                                    <div class="tab_details"><br>
+                                        <h4>Get it touch with our sales team for group booking, for more than 30 people.</h4>
+                                            <p>If your organization is in Delhi NCR, ChokhiDhaniSonipat is the perfect place for a corporate get-
+together. ChokhiDhaniSonipat is a charming village which provides a real rural backdrop of
+Rajasthani culture.</p>
+                                            <br>
+                                            <p>ChokhiDhaniSonipat is an ideal getaway for team building exercises, corporate occasions, product
+launches, merchant meets and gatherings, all in a conventional yet invigorating way.</p>
+                                            <br>
+                                            <p>Outfitted with all civilities for all corporate events, the fantastic dining facility and the decor which
+speaks about the tradition of Rajasthan. This village theme entertainment takes you on a voyage
+through Rajasthan&#39;s cultural hamlet in the days of abundance and glory.</p>
                                         </div>
                                         <div class="tab_details_content">
-                                            <h4>What’s in for Schools/ Coaching Classes:</h4>
+                                            <h4>E-mail: info@chokhidhanisonipat.comOur specialised solutions include:</h4>
                                             <ul>
-                                                <li>World Class rides & slides</li>
-                                                <li>Discounted entry rates with speedy entry</li>
-                                                <li>Safe & Secure Environment</li>
-                                            </ul> <span>(ENTRY + FOOD)</span>
-                                            <div class="tab_table">
-                                                <table>
-                                                    <tr>
-                                                        <td colspan="4"> Monsoon School Pricing Effective between 1st July 2017 to 30th September 2017 </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="4"> (ENTRY + BREAKFAST OR EVENING SNACKS + LUNCH) </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td> <span>Particulars</span> <span>July to September</span> </td>
-                                                        <td> <span>Jr. Kg to Std IV</span> <span>MRP</span> <span>₹ 550</span> </td>
-                                                        <td> <span>Std V to Std X</span> <span>MRP</span> <span>₹ 575</span> </td>
-                                                        <td> <span>Higher Secondary, Colleges & Coaching Classes</span> <span>MRP</span> <span>₹ 625</span> </td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="tab_details_end">
-                                            <h4>For Bookings, get in touch with our representatives:</h4>
-                                            <ul>
-                                                <li>Mumbai & Rest of India (mum@ew.esselgroup.com | Yogesh.verma@ew.esselgroup.com)</li>
-                                                <li>Gujarat (guj@ew.esselgroup.com | Suraj.sinha@ew.esselgroup.com | Yogesh.verma@ew.esselgroup.com) | sarvesh.kumravat@ew.esselgroup.com) </li>
-                                                <li> Rest of Maharashtra (rom@ew.esselgroup.com | Yogesh.verma@ew.esselgroup.com)</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                                <li>Pure veg dinner-North Indian &amp;Rajasthani Cuisine</li>
+                                                <li>Rides (any 4) : camel cart, bullock cart, tonga ride, tractor ride, columbus ride,</li>
+                                                <li>Skill games (any 4) : pyramid, airgun shooting, bow &amp; arrow, dart board, basket the ball, bowling</li>
+                                                <li>Cultural folk dances : ghoomar, kalbeliya, terahtaali, bhopabhopi, been party, chaupal party</li>
+                                                <li>Puppet Show</li>
+                                                <li>Magician</li>
+                                                <li>MehendiBhoolBhulaiya</li>
+                                                <li>Cave - GufaJharnariGong</li>
+                                                <li>Lady Sitting with Choolah making Bajreki Roti served with Achar, Gur&amp; Chutney</li>
+                                                <li>Acrobatics</li>
+                                                <li>Head Massage</li>
+                                                <li>Fire Performance</li>
+                                                <li>Live Folk Songs</li>
+                                                <li>Live Pottery Making</li>
+
+                                            </ul> 
+                                       
+                                </div>
+                                 <div class="tab_details_end">
+                                    <h4>For Bookings, get in touch with our representatives:</h4>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -638,7 +617,7 @@
                                        
                                          <div class="col-5 set"> <img src="assets/images/C2.png" class="nav_inactive" alt="c2"> <img src="assets/images/c2a.png" class="nav_active" alt="c2"> </div>
                                         <div class="col-7 set2">
-                                         <h5>SCHOOLS &amp; COACHING CLASSES</h5> <i class="fa fa-caret-down down_icon" aria-hidden="true"></i> </div>
+                                         <h5>SCHOOLS PICNICS</h5> <i class="fa fa-caret-down down_icon" aria-hidden="true"></i> </div>
                         </div>
                         </a>
                         </h5>
@@ -646,9 +625,40 @@
                     <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
                             <div class="tab_content_image"> <img src="assets/images/learn.jpg" alt="image"> </div>
-                            <div class="tab_details">
-                                <div class="tab_details_head">
-                                    <h3>SCHOOLS &amp; COACHING CLASSES</h3> </div>
+                            <div class="tab_details"><br>
+                                <h4>GIVES US A RING: LET THE PICNIC BEGIN</h4>
+                                            <p>ChokhiDhaniSonipat offers different activities that give immense pleasure and enjoyment to the kids.
+Apart from the general activities like tonga ride, camel rides, mehndi, and stoneware , there are
+some other exciting activities like dholki dance, magic shows, puppet shows, mini train rides, etc.</p>
+                                            <br>
+                                            <p>One distinct thing that school kids adore about ChokhiDhaniSonipat is the food. The authentic
+Rajasthani food that we offer is served on a leaf platter to give you the warm touch of Indian culture.</p>
+                                            <br>
+                                            <p>Apart from Rajasthani food we also serve North Indian Cuisine. Your taste buds will surely remember
+this treat for a long time. Come and experience true colors of exquisite Rajasthani heritage.</p>
+                                        </div>
+                                        <div class="tab_details_content">
+                                            <h4>Our specialised solutions include:</h4>
+                                            <ul>
+                                                <li>World Class rides &amp; slides</li>
+                                                <li>Pure veg dinner-North Indian &amp;Rajasthani Cuisine</li>
+                                                <li>Rides (any 4) : camel cart, bullock cart, tonga ride, tractor ride, columbus ride,</li>
+                                                <li>Skill games (any 4) : pyramid, airgun shooting, bow &amp; arrow, dart board, basket the ball, bowling</li>
+                                                <li>Cultural folk dances : ghoomar, kalbeliya, terahtaali, bhopabhopi, been party, chaupal party</li>
+                                                <li>Ethnic Costume Photography</li>
+                                                <li>Puppet Show</li>
+                                                <li>Acrobatics</li>
+                                                <li>Magician</li>
+                                                <li>MehendiBhoolBhulaiya</li>
+                                                <li>Cave - GufaJharnariGong</li>
+                                                <li>Lady Sitting with Choolah making Bajreki Roti served with Achar, Gur&amp; Chutney</li>
+                                               <li>Live Pottery Making</li> 
+                                               <li>Live Folk Songs</li> 
+                                               <li>Fire Performance</li> 
+                                               <li>Head Massage</li> 
+                                            </ul> 
+                                <!--<div class="tab_details_head">
+                                    <h3>SCHOOLS PICNICS</h3> </div>
                                 <div class="tab_details_intro">
                                     <h4>GIVES US A RING: LET THE PICNIC BEGIN</h4>
                                     <p>We believe in educating, inspiring and informing children through fun engagement activities. By educating them we strive to make a positive, lasting and sustainable impact on society.</p>
@@ -684,12 +694,12 @@
                                         <li>Gujarat (guj@ew.esselgroup.com | Suraj.sinha@ew.esselgroup.com | Yogesh.verma@ew.esselgroup.com) | sarvesh.kumravat@ew.esselgroup.com) </li>
                                         <li> Rest of Maharashtra (rom@ew.esselgroup.com | Yogesh.verma@ew.esselgroup.com)</li>
                                     </ul>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <!--<div class="card">
                     <div class="card-header" role="tab" id="headingThree">
                         <h5 class="mb-0">
         <a class="collapsed collapsible" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >
@@ -746,8 +756,8 @@
                     </div>
                 </div>
             </div>
-    </div>
-    <div class="card">
+    </div>-->
+    <!--<div class="card">
         <div class="card-header" role="tab" id="headingFour">
             <h5 class="mb-0">
         <a data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" class="collapsible">
@@ -804,8 +814,8 @@
             </div>
         </div>
     </div>
-    </div>
-    <div class="card">
+    </div>-->
+    <!--<div class="card">
         <div class="card-header" role="tab" id="headingFive">
             <h5 class="mb-0">
         <a data-toggle="collapse" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive" class="collapsible">
@@ -862,14 +872,16 @@
             </div>
         </div>
     </div>
-    </div>
+    </div>-->
     </div>
     </div>
     </div>
     </div>
     </div>
     </section>
-    <hr> </div>
+    <div>
+        <hr> </div>
+    </div>
     <footer id="footer" class="text-justify">
         <div class="link"> <img src="assets/images/footer_phone.png" alt="phone"> <img src="assets/images/footer_icon_after.png" alt="line"> <img src="assets/images/footer_message.png" alt="message"> </div>
         <div class="container">
@@ -886,10 +898,10 @@
             </div>
             <div class="row">
                 <div class="col-12 footlast">
-                    <h6 class="foothead">Keep in touch</h6>
+                    <h6 class="foothead1">Keep in touch</h6>
                     <ul class="optlist">
                         <li><a href="https://www.facebook.com/ChokhiDhaniSonipat/" class="fbook"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-                        <li><a href="https://www.instagram.com/explore/locations/307454466/chokhi-dhani-sonipat/" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+                        <li><a href="https://www.instagram.com/chokhidhanisonipat/" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
                         <li><a href="https://twitter.com/cdhanisonipat?lang=en" class="tweet"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
                         <li><a href="https://www.youtube.com/results?search_query=chokhi+dhani+sonipat" class="ytube"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
                     </ul>
@@ -906,8 +918,6 @@
     <script src="assets/javascripts/vendor/owl.carousel.min.js"></script>
     <script src="assets/javascripts/vendor/jquery-lightbox.0.41.js"></script>
     <script src="assets/javascripts/main.js"></script>
-    <script src="assets/javascripts/vendor/classie.js"></script>
-    <script src="assets/javascripts/vendor/demo1.js"></script>
     <!-- Custom JS Code for this page -->
 </body>
 
