@@ -2800,8 +2800,8 @@ h3 {
         padding: 8% 3%;
     }
     .gallery_image img {
-        width: 80%!important;
-        margin: 0% 10%;
+        width: 100% !important;
+        margin: 0% 0%;
         max-height: 250px;
     }
     .gallery_info {
@@ -2884,9 +2884,9 @@ h4 {
     display: none;
 }
 .menunew{
-    width: 60%;
+  
     text-align: center;
-    margin-left: 22%;
+    
 }
 .menunew table tr{
         background-color:white;
@@ -3023,7 +3023,7 @@ h4 {
         transition: 1s;
     }
     .restaurants:hover .details {
-        top: 15%;
+        top: 6%;
     }
     #restro .first {
         margin-top: 0px;
@@ -3073,7 +3073,7 @@ h4 {
 
 @media (max-width:480px) {
     .details {
-        min-height: 260px;
+        min-height: 325px;
     }
     .restro-container {
         max-width: 91%;
@@ -4298,7 +4298,7 @@ table span {
     padding: 10px;
 }
 #dastar .desk img{
-    min-height: 700px;
+    min-height: 206px;
 }
 #dastar .tab_content_carousel .owl-carousel .owl-item {
     padding: 0px 6px;
@@ -4446,3 +4446,36 @@ table span {
 .shie{
     display: block !important;
 }
+.whencli{
+    color: blue !important;
+}
+@media(max-width:1200px){
+.menunew {
+  width: 50%;
+  margin-left: 60%;
+}
+}
+@media(max-width:900px){
+.menunew {
+    margin-left: 22%;
+    width: 60%;}
+    .menunew td{
+        width: 50%;
+    }
+    }
+    @media(max-width:767px){
+.menunew {
+    margin-left: 10%;
+    width: 100%;}
+    .menunew td{
+        width: 50%;
+    }
+    }
+    @media(max-width:540px){
+.menunew {
+    margin-left: 1%;
+    width: 100%;}
+    .menunew td{
+        width: 50%;
+    }
+    }
