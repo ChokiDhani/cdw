@@ -183,7 +183,7 @@
                         <div class="contact_details">
                              <h4>THE KASBAH RESORT Office</h4> <span>Chokhi Dhani Sonipat
 64th Milestone, National Highway - 1,
-</span> <span>Ganaur, Sonipat - 131 101, Haryana, INDIA</span> <span>Email: <span class="brown"> info@chokhidhanisonipat.com</span></span> <span class="brown">+91-8222822281, +91-8222833381</span> < </div>
+</span> <span>Ganaur, Sonipat - 131 101, Haryana, INDIA</span> <span>Email: <span class="brown"> info@chokhidhanisonipat.com</span></span> <span class="brown">+91-8222822281, +91-8222833381</span>  </div>
                     </div>
                 </div>
                 <div class="row">
@@ -201,7 +201,7 @@
             </div>
             <br>
             <div id="map" style="width:100;height:400px"> </div>
-            <div class="form">
+            <form id="jimba" class="form" action="https://formspree.io/rajatsehdev171@gmail.com" method="POST">
                 <div class="row">
                     <div class="col-12">
                         <div class="contactheading heading">
@@ -210,25 +210,25 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="Email">
-                        <input type="text" placeholder="Subject"> </div>
+                        <input id="namesend" type="text" placeholder="Name" name="name" required>
+                        <input id="emailsend" type="email" placeholder="Email" name="email" required>
+                        <input id="subjectsend" type="text" placeholder="Subject" name="subject" required> </div>
                     <div class="col-md-6">
-                        <textarea class="more" cols="0" rows="0" placeholder="Message"></textarea>
+                        <textarea id="textareasend" class="more" cols="0" rows="0" name="paragraph" required placeholder="Message"></textarea>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <input type="submit" class="submit" value="Send Message"> </div>
                 </div>
-            </div>
+            </form>
         </section>
         <div>
             <hr> </div>
     </div>
     <!--Footer-->
     <footer id="footer" class="text-justify">
-        <div class="link"> <img src="assets/images/footer_phone.png" alt="phone"> <img src="assets/images/footer_icon_after.png" alt="line"> <img src="assets/images/footer_message.png" alt="message"> </div>
+        <div class="link"> <a href="tel:8222822281"><img src="assets/images/footer_phone.png" alt="phone"></a> <a href="contact.html#jimba"><img  src="assets/images/footer_icon_after.png" alt="line"> <img src="assets/images/footer_message.png" alt="message"></a>  </div>
         <div class="container">
             <div class="row">
                 <div class="col-12 footsec">
@@ -262,26 +262,33 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/javascripts/vendor/owl.carousel.min.js"></script>
     <script src="assets/javascripts/vendor/jquery-lightbox.0.41.js"></script>
+    
     <script src="assets/javascripts/main.js"></script>
     <!-- Custom JS Code for this page -->
     <script>
-        function initMap() {
-            var uluru = {
-                lat: 29.1564
-                , lng: 77.0351
-            };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 10
-                , center: uluru
-            });
-            var marker = new google.maps.Marker({
-                position: uluru
-                , map: map
-            });
-        }
+        $('#jimba').submit(function(e){
+            var name=document.getElementById('namesend'),
+            var email=document.getElementById('emailsend'),
+            var subject=document.getElementById('subjectsend'),
+            var textarea=document.getElementById('textareasend');
+            if(!name.value || !email.value || !subject.value || !textarea.value){
+alertify.error('Please Fill Out This Field');
+            }
+            else{
+                $.ajax({
+                    url:"https://formspree.io/rajatsehdev171@gmail.com",
+                    method:"POST",
+                    data:$(this).serialize(),
+                    dataType:"json"
+                });
+                e.preventDefault()
+                $(this).get(0).reset()
+                alertify.success('Message Sent')
+
+            }
+        })
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGYy185Ewwcafw3Q7cDkAR5VDZgTjcgaM&callback=initMap">
-    </script>
+   
 </body>
 
 </html>

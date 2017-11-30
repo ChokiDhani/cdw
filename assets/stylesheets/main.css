@@ -820,6 +820,7 @@ section {
     padding-top: 20px;
     background-image: url(../images/background.png);
     opacity: 1;
+    margin-bottom: -9px;
 }
 
 @media(max-width:767px) {
