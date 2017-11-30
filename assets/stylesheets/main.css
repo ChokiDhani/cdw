@@ -704,7 +704,7 @@ section {
         padding-top: 0px !important;
     }
     #banner img {
-        max-height: 500px;
+        min-height: 530px;
     }
 }
 
@@ -3926,6 +3926,9 @@ table span {
     #gallery .gap img {
         min-height: 215px;
     }
+    #gallery  .notshowmobil{
+        display: none !important;
+    }
     #testimonial p {
         font-size: 13px;
     }
@@ -4450,10 +4453,13 @@ table span {
 .whencli{
     color: blue !important;
 }
-@media(max-width:1200px){
+@media(max-width:1400px){
 .menunew {
-  width: 50%;
-  margin-left: 60%;
+  width: 70%;
+  margin-left: 16%;
+}
+.menunew{
+    
 }
 }
 @media(max-width:900px){
