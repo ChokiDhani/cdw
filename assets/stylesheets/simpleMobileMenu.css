@@ -43,7 +43,7 @@ body {
 }
 
 header {
-    background: rgb(137,102,51);
+    background: rgb(100,59,15);
 }
 
 .logo {
@@ -69,6 +69,10 @@ header {
 .navigation nav ul li {
     display: inline-block;
     padding: 4px;
+     border: 0.1px solid transparent gray !important;
+       z-index: 3;
+       box-shadow: 10px;
+       margin-top: 6px;
 }
 
 .navigation nav ul li a {
@@ -96,16 +100,16 @@ header {
         display: inline-block
     }
     .smobitrigger {
-        color: #fff;
-        font-size: 30px;
-        line-height: 12px;
-        padding: 10px
+       color: #fff;
+    font-size: 28px;
+    line-height: 12px;
+    padding: 3px 7px;
     }
     .mnuclose {
         font-size: 20px;
         padding: 10px 20px;
         width: 100%;
-        background: rgba(0, 0, 0, 0.18)
+        background: rgba(0, 0, 0, 0.30);
     }
     .smobitrigger span,
     .mnuclose span {
@@ -117,17 +121,21 @@ header {
         padding-bottom: 40px;
         /*  overflow-y: auto*/
     }
+      
     .navigation nav ul li,
     .navigation nav ul li a {
         width: 100%
     }
     .navigation nav ul li a {
         padding-top: 5px;
-        padding-bottom: 5px
+        padding-bottom: 5px;
+        background-color: rgb(100,59,15);
+        
     }
     .navigation nav ul li a:hover {
         background: rgba(0, 0, 0, 0.29)
     }
+  
     .mobimenu {
         display: block;
         position: fixed;
@@ -166,6 +174,7 @@ header {
     .navigation nav ul li .comesup li {
         color: white;
         font-size: 12px;
+        
     }
     .navigation nav ul li .comesup li a {
         font-size: 11px;

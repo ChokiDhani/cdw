@@ -576,6 +576,24 @@ section {
     #topbar .optgap {
         padding: 0px 5px;
     }
+   .lessimptabs{
+       background-color: rgb(192,161,114) !important;
+       opacity: 0.5 ;
+       
+       outline-color: white;
+       
+       color: white;
+       border: 0.2px solid lightgrey;
+       z-index: 3;
+       box-shadow: 2px;
+       margin-top: 5px;
+    
+   }
+    .lessimptabs a{
+        color: white !important;
+       -webkit-text-stroke-color: darkgray;
+        opacity: 1;
+    }
 }
 
 @media (max-width:640px) {
@@ -615,6 +633,7 @@ section {
 #botbar ul li a {
     color: #896633;
     font-size: 12px;
+  
     text-decoration: none;
     position: relative;
 }
@@ -685,7 +704,7 @@ section {
         z-index: 100;
         left: 50%;
         margin-left: -60px;
-        top: 101px;
+        top: 59px;
     }
     #header_mobile .navigation {
         padding-right: 5px;
@@ -705,8 +724,8 @@ section {
     }
     #banner img {
         
-        min-height: 564px;
-    max-height: 600px;
+        min-height: 519px;
+    max-height:519px;
     }
 }
 
@@ -1013,7 +1032,9 @@ hr {
 .logos a.yo {
     background-position: -55px 0px;
 }
-
+.logos a.inst{
+    background-position: -246px 0px;
+}
 .logos a.fb:hover {
     background-position: 0px -27px;
     -webkit-transition: 0.5s;
@@ -1034,7 +1055,12 @@ hr {
     -o-transition: 0.5s;
     transition: 0.5s;
 }
-
+.logos a.inst:hover{
+     background-position: -246px -27px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
 .navigation nav ul li {
     cursor: pointer;
 }
@@ -1161,7 +1187,7 @@ hr {
         margin-right: 5px;
         border-radius: 2px 2px 0px 0px;
         bottom: 0px;
-        font-size: 25px;
+        font-size: 27px;
         padding: 0px 5px;
         background-color: #502B14;
         cursor: pointer;
@@ -2305,6 +2331,9 @@ button:hover a {
 
 #section_5 .card-body h4 {
     font-family: 'MyriadPro-Light';
+    font-weight: bold;
+    font-size: 22px;
+    text-align: -webkit-center;
 }
 
 #section_5 .card-body p {
@@ -2607,12 +2636,12 @@ h3 {
     padding-top: 20px;
     font-size: 25px;
     font-family: 'Myraid-pro';*/
-    font-weight: 545;
-    text-align: center;
+       text-align: center;
     color: #896633;
-    word-spacing: 0px;
+    word-spacing: 1px;
+    font-weight: bolder;
     padding-top: 20px;
-    font-size: 13px;
+    font-size: 12px;
     font-family: 'Myraid-pro';
 }
 
@@ -3186,9 +3215,11 @@ table span {
 }
 
 #corporate .set2 {
-    min-width: 70%;
+ min-width: 70%;
+    letter-spacing: 1.5px;
     padding: 0px;
-    font-size: 17px;
+    font-weight: bolder;
+    font-size: 16px;
     font-family: 'Cinzel', serif;
 }
 
@@ -4059,8 +4090,10 @@ table span {
 }
 
 #ticket .set2 {
-    min-width: 70%;
+  min-width: 70%;
+    letter-spacing: 1.5px;
     padding: 0px;
+    font-weight: bolder;
     font-size: 16px;
     font-family: 'Cinzel', serif;
 }
