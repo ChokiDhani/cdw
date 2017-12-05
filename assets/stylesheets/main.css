@@ -1475,7 +1475,7 @@ button a {
 @media(max-width:767px) {
     .modal-wrap {
         position: fixed;
-        top: 50px;
+        top: 34px;
     }
     #aboutUs {
         background-color: transparent;
