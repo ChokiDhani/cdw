@@ -43,7 +43,7 @@ body {
 }
 
 header {
-    background: rgb(100,59,15);
+    background: rgb(137, 102, 51);
 }
 
 .logo {
@@ -109,7 +109,7 @@ header {
         font-size: 20px;
         padding: 10px 20px;
         width: 100%;
-        background: rgba(0, 0, 0, 0.30);
+        background: rgba(0, 0, 0, 0.15);
     }
     .smobitrigger span,
     .mnuclose span {

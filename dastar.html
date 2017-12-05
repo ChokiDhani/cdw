@@ -71,10 +71,10 @@ moment of this awesome destination of Chokhi Dhani Sonipat where time slows to a
                                     <a href="https://twitter.com/cdhanisonipat?lang=en" class="twt"></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.youtube.com/results?search_query=chokhi+dhani+sonipat" class="yo"></a>
+                                    <a href=" https://www.youtube.com/channel/UCmqYIdbVZinQ2GPMa_0CQyA/featured?view_as=subscriber" class="yo"></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.youtube.com/results?search_query=chokhi+dhani+sonipat" class="inst"></a>
+                                    <a href=" https://www.instagram.com/explore/locations/307454466/chokhi-dhani-sonipat/" class="inst"></a>
                                 </li>
                             </ul>
                         </div>
@@ -131,7 +131,7 @@ moment of this awesome destination of Chokhi Dhani Sonipat where time slows to a
                             <li><a href="https://www.facebook.com/ChokhiDhaniSonipat/" class="fbook"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
                             <li><a href="https://www.instagram.com/explore/locations/307454466/chokhi-dhani-sonipat/" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
                             <li><a href="https://twitter.com/cdhanisonipat?lang=en" class="tweet"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
-                            <li><a href="https://www.youtube.com/results?search_query=chokhi+dhani+sonipat" class="ytube"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
+                            <li><a href=" https://www.youtube.com/channel/UCmqYIdbVZinQ2GPMa_0CQyA/featured?view_as=subscriber" class="ytube"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -323,7 +323,7 @@ $(document).ready(function () {
                         <li><a href="https://www.facebook.com/ChokhiDhaniSonipat/" class="fbook"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
                         <li><a href="https://www.instagram.com/chokhidhanisonipat/" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
                         <li><a href="https://twitter.com/cdhanisonipat?lang=en" class="tweet"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
-                        <li><a href="https://www.youtube.com/results?search_query=chokhi+dhani+sonipat" class="ytube"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
+                        <li><a href=" https://www.youtube.com/channel/UCmqYIdbVZinQ2GPMa_0CQyA/featured?view_as=subscriber" class="ytube"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
                     </ul>
                 </div>
             </div>
@@ -341,6 +341,11 @@ $(document).ready(function () {
     
     <!-- Custom JS Code for this page -->
     <script>
+      $(document).ready(function () {
+    $(".navigation ul li").click(function () {
+        $('.navigation ul li > ul').not($(this).children("ul ").toggle()).hide();
+    });
+});
         function initMap() {
             var uluru = {
                 lat: 29.1564
