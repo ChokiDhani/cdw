@@ -1033,7 +1033,9 @@ hr {
     background-position: -55px 0px;
 }
 .logos a.inst{
-    background-position: -246px 0px;
+    background-position: 0px 0px;
+        background: url(../images/download.png) no-repeat -250px -11px !important;
+        opacity: 1;
 }
 .logos a.fb:hover {
     background-position: 0px -27px;
@@ -1056,8 +1058,9 @@ hr {
     transition: 0.5s;
 }
 .logos a.inst:hover{
-     background-position: -246px -27px;
+     background-position: 0px 0px;
     -webkit-transition: 0.5s;
+    background: url(../images/download.png) no-repeat -250px -59px !important;
     -o-transition: 0.5s;
     transition: 0.5s;
 }
@@ -1192,6 +1195,9 @@ hr {
         background-color: #502B14;
         cursor: pointer;
     }
+      #footer .link a{
+          font-size: 26px;
+      }
     .optlist li {
         font-size: 13px;
         padding: 0px 22px;
@@ -2641,7 +2647,7 @@ h3 {
     word-spacing: 1px;
     font-weight: bolder;
     padding-top: 20px;
-    font-size: 12px;
+    font-size: 15px;
     font-family: 'Myraid-pro';
 }
 
