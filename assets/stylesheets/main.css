@@ -1034,8 +1034,10 @@ hr {
 }
 .logos a.inst{
     background-position: 0px 0px;
-        background: url(../images/0.png) no-repeat -20px -85px !important;
+        background: url(../images/final.jpg) no-repeat -20px -85px !important;
         opacity: 1;
+        border-radius: 22px;
+       
 }
 .logos a.fb:hover {
     background-position: 0px -27px;
@@ -1060,7 +1062,7 @@ hr {
 .logos a.inst:hover{
      background-position: 0px 0px;
     -webkit-transition: 0.5s;
-    background: url(../images/0.png) no-repeat -20px -31px !important;
+    background: url(../images/final.jpg) no-repeat -20px -31px !important;
     -o-transition: 0.5s;
     transition: 0.5s;
 }
